@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create, Modify and delete tags</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fcf85955-5eed-44fe-99c2-e07722a53710</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8955ed92-7f26-4a95-ace9-4de9ef7c2751</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>8955ed92-7f26-4a95-ace9-4de9ef7c2751</id>
+      <masked>false</masked>
+      <name>TagName</name>
+   </variable>
+</TestCaseEntity>

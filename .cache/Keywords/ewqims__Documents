@@ -1,0 +1,35 @@
+{
+  "keywordFileContentHash": "BB639408B02770176DDDF56B60933086",
+  "keywordClasses": [
+    {
+      "name": "ewqims.Documents",
+      "keywordMethods": [
+        {
+          "name": "openLevel",
+          "parameters": [
+            {
+              "name": "levelName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToActionsPage",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

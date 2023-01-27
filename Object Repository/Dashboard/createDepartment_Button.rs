@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>createDepartment_Button</name>
+   <tag></tag>
+   <elementGuidId>537f42f7-724d-420c-9d34-e9fa3469f3d3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='sub-menu']//span[contains(text(),'Create Department')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a579891a-37c1-43fd-811e-2a0eafb43da5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>hide_menu</value>
+      <webElementGuid>3dace293-9bcd-4231-9d1e-3ef2f15125d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Create Department</value>
+      <webElementGuid>3957edad-0b59-47b3-ae0f-be91f4607d93</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;submenu&quot;)/li[@class=&quot;submenu_list_li&quot;]/a[@class=&quot;submenu_list_link&quot;]/span[@class=&quot;hide_menu&quot;]</value>
+      <webElementGuid>db2abf0c-d11d-459d-968b-605e23c3ead0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='submenu']/li[7]/a/span</value>
+      <webElementGuid>33775bf0-12f3-4910-b086-1f4595e1b09c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entity'])[2]/following::span[1]</value>
+      <webElementGuid>967cfeb8-47d0-4e8e-93af-e6e560dcbb8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Batch Manager'])[2]/following::span[2]</value>
+      <webElementGuid>dc51c64a-88c3-4ddd-aa1a-c98d8748011f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Groups'])[2]/preceding::span[1]</value>
+      <webElementGuid>fcb18cbb-1537-4877-96b0-d84aa87f6ae7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Customize Email Messages'])[2]/preceding::span[2]</value>
+      <webElementGuid>69fdc106-84d7-4b2f-b063-71a8c079025c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/ul/li[7]/a/span</value>
+      <webElementGuid>bec57ac8-74e8-4df2-959e-2282c68ea2ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Create Department' or . = 'Create Department')]</value>
+      <webElementGuid>c55350f1-5b21-4028-aa22-93b84c923589</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

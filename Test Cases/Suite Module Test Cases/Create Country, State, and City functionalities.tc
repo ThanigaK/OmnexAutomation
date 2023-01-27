@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Country, State, and City functionalities</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c70147ed-205e-4425-8e06-57955d8feb5f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>136f9155-3fc5-4086-b495-e3036a6e81e8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>165af512-bb5f-4cfd-8bee-302238f00bd7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef4efeb2-2628-43b4-bb88-e8972dc7f858</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Test Automation City'</defaultValue>
+      <description></description>
+      <id>136f9155-3fc5-4086-b495-e3036a6e81e8</id>
+      <masked>false</masked>
+      <name>City</name>
+   </variable>
+   <variable>
+      <defaultValue>'Finland'</defaultValue>
+      <description></description>
+      <id>165af512-bb5f-4cfd-8bee-302238f00bd7</id>
+      <masked>false</masked>
+      <name>Country</name>
+   </variable>
+   <variable>
+      <defaultValue>'TamilNadu'</defaultValue>
+      <description></description>
+      <id>ef4efeb2-2628-43b4-bb88-e8972dc7f858</id>
+      <masked>false</masked>
+      <name>State</name>
+   </variable>
+</TestCaseEntity>

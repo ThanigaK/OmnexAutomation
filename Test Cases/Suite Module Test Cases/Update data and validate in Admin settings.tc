@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Update data and validate in Admin settings</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6266a16-4e6e-47e0-8fe9-f8d6e1fc610e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>03dd4aa9-4b55-4e54-ae38-4ef9103c09f4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d1a32a4c-f705-4d7a-a190-de402ca8d8b2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1469ae5d-c821-4f2a-9004-5b3496e1ce73</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ee8d97c3-17c1-4916-9fe0-efcf839ce65a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f570cd2-1c3f-4575-a713-a8abcc9b6702</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f1c013ee-b9e5-4bde-90fc-0156f268ff00</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'2\r\n'</defaultValue>
+      <description></description>
+      <id>03dd4aa9-4b55-4e54-ae38-4ef9103c09f4</id>
+      <masked>false</masked>
+      <name>PasswordLenth</name>
+   </variable>
+   <variable>
+      <defaultValue>'First Name'</defaultValue>
+      <description></description>
+      <id>d1a32a4c-f705-4d7a-a190-de402ca8d8b2</id>
+      <masked>false</masked>
+      <name>FirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'-'</defaultValue>
+      <description></description>
+      <id>1469ae5d-c821-4f2a-9004-5b3496e1ce73</id>
+      <masked>false</masked>
+      <name>Empty1</name>
+   </variable>
+   <variable>
+      <defaultValue>'Middle Name'</defaultValue>
+      <description></description>
+      <id>ee8d97c3-17c1-4916-9fe0-efcf839ce65a</id>
+      <masked>false</masked>
+      <name>MiddleName</name>
+   </variable>
+   <variable>
+      <defaultValue>'-'</defaultValue>
+      <description></description>
+      <id>9f570cd2-1c3f-4575-a713-a8abcc9b6702</id>
+      <masked>false</masked>
+      <name>Empty2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Last Name'</defaultValue>
+      <description></description>
+      <id>f1c013ee-b9e5-4bde-90fc-0156f268ff00</id>
+      <masked>false</masked>
+      <name>LastName</name>
+   </variable>
+</TestCaseEntity>

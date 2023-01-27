@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectFavFolder_Icon</name>
+   <tag></tag>
+   <elementGuidId>6fb8b938-c6af-48a9-9db4-d590943b60de</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@data-icon='sitemap']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@data-icon='sitemap']</value>
+      <webElementGuid>5dabc1ed-2cba-47ac-8f8c-fa4dd410fa4b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/DocPro_Module/tree_Iframe</value>
+      <webElementGuid>5ebb2b00-ab77-4081-9ade-a8249173ddc6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,59 @@
+{
+  "keywordFileContentHash": "DF7B00A63C86C302CD840B568261458E",
+  "keywordClasses": [
+    {
+      "name": "ewqims.LevelsPage",
+      "keywordMethods": [
+        {
+          "name": "createLevel",
+          "parameters": [
+            {
+              "name": "LevelName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "modifyLevelData",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "deleteModifiedLevel",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "levelDeletion",
+          "parameters": [
+            {
+              "name": "levelName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

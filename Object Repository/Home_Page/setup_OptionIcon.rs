@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>Setup option icon</description>
+   <name>setup_OptionIcon</name>
+   <tag></tag>
+   <elementGuidId>46a69fe9-4ceb-4621-af20-151ea85d9c03</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.hide-menu</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(contains(text(), 'Setup') or contains(., 'Setup'))]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@data-icon='cogs']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>34ec89a1-d9f6-44ad-b8b9-1336c1c28ecb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>hide-menu</value>
+      <webElementGuid>b53531e0-cc5a-4394-a635-257161596852</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Setup</value>
+      <webElementGuid>004051b0-f21a-459b-b75b-51f7c59c1e38</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;sidebarnav&quot;)/li[1]/a[@class=&quot;has-arrow  waves-effect waves-dark&quot;]/span[@class=&quot;hide-menu&quot;]</value>
+      <webElementGuid>d7afd776-0da1-44ef-b0d3-a98882ab3a2c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='sidebarnav']/li/a/span</value>
+      <webElementGuid>0cde031b-d5fe-4f6b-b701-c2a35051df0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Integrated Management System /QHSE Platform'])[2]/following::span[1]</value>
+      <webElementGuid>d4de1938-1597-4a16-b8bd-dff3646d567a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Notification기'])[1]/following::span[3]</value>
+      <webElementGuid>ec4d923f-998c-4c64-8b82-51b8df1340ad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Users기'])[1]/preceding::span[1]</value>
+      <webElementGuid>ef83a7ca-8ac7-4a88-b702-65e4ec9b41ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Users기'])[2]/preceding::span[2]</value>
+      <webElementGuid>72888798-9adf-46fb-a675-d304fb2eacf4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Setup기']/parent::*</value>
+      <webElementGuid>b355f5b9-46a2-40f1-920b-e5b8d2c50f0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//nav/ul/li/a/span</value>
+      <webElementGuid>1cfab0e1-fb62-4fa6-9ac3-9b389487169b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
