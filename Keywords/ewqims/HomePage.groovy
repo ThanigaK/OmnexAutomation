@@ -440,5 +440,13 @@ public class HomePage extends common {
 		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/documentRoute_Option'), 15)
 	}
 	
-	
+	@Keyword
+	public void goToFavouritesPage() {
+		WebUI.waitForPageLoad(30)
+		if(WebUI.getAttribute(findTestObject('Object Repository/Home_Page/sideMiniBar'), "class").contains("mini-sidebar")) {
+			waitForClickableAndClick(findTestObject('Home_Page/menu_Icon'), 15)
+		}
+		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/documnets_Icon'), 15)
+		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/favourite_Option'), 15)
+	}
 }

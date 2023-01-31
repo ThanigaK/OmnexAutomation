@@ -411,12 +411,12 @@ public class DocPro extends common {
 
 		KeywordUtil.logInfo("Document "+action.toUpperCase()+"ED successfully")
 	}
-	
+
 	@Keyword
 	public void moveAllAvailableFiles(String toLevel) {
 		moveAllDoc(toLevel)
 	}
-	
+
 	public void moveAllDoc(String levelName) {
 		Thread.sleep(2000)
 		WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/selectAllDocInDocManagement_CheckBox'))
@@ -430,10 +430,58 @@ public class DocPro extends common {
 		WebUI.verifyElementVisible(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/tableEmpty'))
 		KeywordUtil.logInfo("Documents Moved successfully..!")
 	}
-	
+
 	public void selectLevel(String levelName) {
 		WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/levelSearch_TextBox'), levelName+Keys.ENTER)
 		switchFrameAndDoActions('level', "//span[contains(@id,'tvDoc') and text()='"+levelName+"']", 'click', findTestObject('Object Repository/DocPro_Module/ifrpopuplevelTreeMenudata_IFarme'))
 		KeywordUtil.logInfo("Level selected succesfully..!")
+	}
+	
+	@Keyword
+	public void AssignAutoApprovalRoute(String resetLevel, String resetSubLevelRoute, String RouteName) {
+		'Scrolling to "Edit Route Option"'
+		WebUI.scrollToElement(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/route_Link'), 15)
+
+		WebUI.delay(3)
+
+		'Navigate to Edit Route Option'
+		WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/route_Link'))
+
+		'Select "Reset document routing" if need'
+		if (resetLevel.equals('yes')) {
+			WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/resetlevel_CheckBox'))
+
+			WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/alertOk_Button'))
+
+			KeywordUtil.logInfo('Reset Level checkbox clicked..!')
+		}
+
+		'Select "Reset Sub Level Routing" if need'
+		if (resetSubLevelRoute.equals('yes')) {
+			WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/resetsublevel_CheckBox'))
+
+			WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/alertOk_Button'))
+
+			KeywordUtil.logInfo('Reset Sub Level Routing checkbox clicked..!')
+		}
+
+		'Assign Value for "New Route"'
+		if (!(RouteName.toString().isEmpty())) {
+			WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/newRoute_DropDown'))
+
+			WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/searchBoxDropDownInRouteEdit_TextBox'),
+					RouteName + Keys.ENTER)
+		}
+
+		'Assign Value for Existing Route"'
+		if (!(RouteName.toString().isEmpty())) {
+			WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/existingRoute_DropDown'))
+
+			WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/searchBoxDropDownInRouteEdit_TextBox'),
+					RouteName + Keys.ENTER)
+		}
+
+		'Close the Route Option window'
+		WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/popupClose_Icon'))
 	}
 }

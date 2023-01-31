@@ -88,6 +88,8 @@ if (data.equals('yes')) {
 
 CustomKeywords.'ewqims.RouteCreation.AssignRoute'('No', 'No')
 
+CustomKeywords.'ewqims.DocPro.AssignAutoApprovalRoute'('No', 'No', 'Module Auto approval')
+
 'Assigning Level PDF Preferences if need'
 CustomKeywords.'ewqims.DocPro.levelpdfPrefSelection'('Document Type', LevelPDFPreference)
 
@@ -123,12 +125,21 @@ CustomKeywords.'ewqims.DocPro.enterRevisionNum'(Revison)
 'Upload the New Document'
 CustomKeywords.'ewqims.DocPro.uploadFile'(FilePath)
 
-WebUI.delay(6)
-
-'Click the Add Button'
 WebUI.click(findTestObject('Object Repository/DocPro_Module/New Documnet Request/addDocument_Button'))
 
-WebUI.delay(6)
+Thread.sleep(4000)
+
+if (FilePath.toString().isEmpty()) {
+    WebUI.verifyElementVisible(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
+
+    WebUI.click(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
+
+    KeywordUtil.logInfo('Proceeding without document')
+}
+
+CustomKeywords.'ewqims.Documents.NavigateToAdminActionsPage'()
+
+CustomKeywords.'ewqims.Documents.assignAuthorForCreatedRequest'('doNotDelete_2')
 
 CustomKeywords.'ewqims.KeyWord.Logout'()
 
@@ -137,20 +148,7 @@ CustomKeywords.'ewqims.KeyWord.LoginwithCredential'(GlobalVariable.url, 'donotde
 
 CustomKeywords.'ewqims.Documents.NavigateToActionsPage'()
 
-CustomKeywords.'ewqims.DocPro.approveOrrejectRequestInRequestNeedingApproval'('Approve', 'TtfzLQ/s9dQ=')
-
-not_run: CustomKeywords.'ewqims.HomePage.goToDocumentsPage'()
-
-not_run: if (FilePath.toString().isEmpty()) {
-    WebUI.verifyElementVisible(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
-
-    WebUI.click(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
-
-    KeywordUtil.logInfo('Proceeding without document')
-}
-
-'Validate the Document added as per the Level setting\r\n'
-not_run: CustomKeywords.'ewqims.DocPro.validateDocNum'(DocNumOption)
+CustomKeywords.'ewqims.Documents.attachDocumentInDocumentNeedingRevision'('D:\\\\Omnex\\\\Project\\\\Latest\\\\EWQIMS\\\\Book1.xlsx')
 
 'Going to Doc pro setup page\r\n'
 CustomKeywords.'ewqims.HomePage.NavigateToDocProSetupPage'()
@@ -163,8 +161,4 @@ CustomKeywords.'ewqims.DocPro.moveAllAvailableFiles'('bin')
 CustomKeywords.'ewqims.KeyWord.NavigateToLevelsPage'()
 
 CustomKeywords.'ewqims.LevelsPage.levelDeletion'(levName)
-
-CustomKeywords.'ewqims.HomePage.goToDocumentRoutePage'()
-
-CustomKeywords.'ewqims.RouteCreation.deleteRoute'()
 

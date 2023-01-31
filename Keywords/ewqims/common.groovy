@@ -301,4 +301,16 @@ public class common {
 		WebUI.selectOptionByValue(findTestObject('Object Repository/DocPro_Module/DocumentRoute_Page/tableRecordSizeInAddUser_DropDown'),
 				size, true)
 	}
+	
+	public static void switchToNextWindow() {
+		String wid = DriverFactory.getWebDriver().getWindowHandle()
+		Set<String> allWid = DriverFactory.getWebDriver().getWindowHandles()
+		for(String win:allWid) {
+			if(!win.equals(wid)) {
+				DriverFactory.getWebDriver().switchTo().window(win)
+				KeywordUtil.logInfo("Window switched..!")
+				break;
+			}
+		}
+	}
 }

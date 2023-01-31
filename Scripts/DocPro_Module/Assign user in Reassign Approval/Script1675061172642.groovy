@@ -137,6 +137,8 @@ CustomKeywords.'ewqims.KeyWord.LoginwithCredential'(GlobalVariable.url, 'donotde
 
 CustomKeywords.'ewqims.Documents.NavigateToActionsPage'()
 
+CustomKeywords.'ewqims.Documents.assignUserInReassignApproval'('doNotDelete_01', 'TtfzLQ/s9dQ=')
+
 CustomKeywords.'ewqims.DocPro.approveOrrejectRequestInRequestNeedingApproval'('Approve', 'TtfzLQ/s9dQ=')
 
 not_run: CustomKeywords.'ewqims.HomePage.goToDocumentsPage'()
