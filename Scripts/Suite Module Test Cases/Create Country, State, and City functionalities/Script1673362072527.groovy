@@ -19,10 +19,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application\r\n'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the Country Page\r\n'
-CustomKeywords.'ewqims.KeyWord.NavigateToCountryPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCountryPage'()
 
 WebUI.waitForElementClickable(findTestObject('Suite_Module/UsersDetailsHome_Page/add_Button'), 10)
 
@@ -41,18 +41,18 @@ WebUI.verifyElementVisible(findTestObject('Suite_Module/UserCreation_Page/succes
 KeywordUtil.logInfo('Country creation is successful.. ! Success message verified..!')
 
 'Navigating to the State Page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigatetoStatepage'()
+CustomKeywords.'docPro.HomePage.NavigatetoStatepage'()
 
 'Create New state\r\n'
-CustomKeywords.'ewqims.StatePage.createNewState'(Country, City)
+CustomKeywords.'docPro.StatePage.createNewState'(Country, City)
 
-CustomKeywords.'ewqims.KeyWord.NavigateToCityPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCityPage'()
 
 'Create New City\r\n'
-CustomKeywords.'ewqims.KeyWord.CreateCity'(City, Country, State)
+CustomKeywords.'docPro.KeyWord.CreateCity'(City, Country, State)
 
 'Navigate to city page'
-CustomKeywords.'ewqims.KeyWord.NavigateToCityPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCityPage'()
 
 'Enter City name'
 WebUI.setText(findTestObject('Suite_Module/UsersDetailsHome_Page/searchUser_Input'), City)
@@ -78,20 +78,20 @@ WebUI.click(findTestObject('Suite_Module/City_Page/poupUpOk_Button'))
 WebUI.verifyElementVisible(findTestObject('Suite_Module/City_Page/cityDeletionSuccessMessage'))
 
 'Navigating to state page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigatetoStatepage'()
+CustomKeywords.'docPro.HomePage.NavigatetoStatepage'()
 
 'Validate City Create\r\n'
-CustomKeywords.'ewqims.StatePage.validateCityCreation'(Country, City)
+CustomKeywords.'docPro.StatePage.validateCityCreation'(Country, City)
 
 'Delete the newely created state\r\n'
-CustomKeywords.'ewqims.StatePage.deleteState'()
+CustomKeywords.'docPro.StatePage.deleteState'()
 
 'Navigating to the Country page\r\n'
-CustomKeywords.'ewqims.KeyWord.NavigateToCountryPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCountryPage'()
 
 'Validate County '
-CustomKeywords.'ewqims.KeyWord.validateCountryCreation'(City)
+CustomKeywords.'docPro.KeyWord.validateCountryCreation'(City)
 
 'Delete the Country'
-CustomKeywords.'ewqims.KeyWord.deleteCountry'()
+CustomKeywords.'docPro.KeyWord.deleteCountry'()
 

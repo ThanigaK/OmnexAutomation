@@ -18,23 +18,23 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application\r\n'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the Entity Page'
-CustomKeywords.'ewqims.HomePage.NavigateToEntityPage'()
+CustomKeywords.'docPro.HomePage.NavigateToEntityPage'()
 
 'Creatin new Entity'
-CustomKeywords.'ewqims.HomePage.createNewEntity'(EntityName, Code)
+CustomKeywords.'docPro.HomePage.createNewEntity'(EntityName, Code)
 
 'Navigating to the Entity Owner Page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigateToEntityOwnerPage'()
+CustomKeywords.'docPro.HomePage.NavigateToEntityOwnerPage'()
 
 'Assign Enitity Owner\r\n'
-CustomKeywords.'ewqims.HomePage.assignEntityOwner'(Code)
+CustomKeywords.'docPro.HomePage.assignEntityOwner'(Code)
 
 'Navigating back to the Entity Page'
-CustomKeywords.'ewqims.HomePage.NavigateToEntityPage'()
+CustomKeywords.'docPro.HomePage.NavigateToEntityPage'()
 
 'Delete the Entity'
-CustomKeywords.'ewqims.HomePage.DeleteEntity'()
+CustomKeywords.'docPro.HomePage.DeleteEntity'()
 

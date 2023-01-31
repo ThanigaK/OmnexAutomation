@@ -18,17 +18,17 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the shift page'
-CustomKeywords.'ewqims.HomePage.NavigateToShiftPage'()
+CustomKeywords.'docPro.HomePage.NavigateToShiftPage'()
 
 'Create new shift'
-CustomKeywords.'ewqims.ShiftPage.CreateShift'(Name, FromTime, ToTime, NonWorkingFromTime, NonWorkingToTime)
+CustomKeywords.'docPro.ShiftPage.CreateShift'(Name, FromTime, ToTime, NonWorkingFromTime, NonWorkingToTime)
 
 'Navigating back to the shift page'
-CustomKeywords.'ewqims.HomePage.NavigateToShiftPage'()
+CustomKeywords.'docPro.HomePage.NavigateToShiftPage'()
 
 'Delete the Newely created shift'
-CustomKeywords.'ewqims.ShiftPage.DeleteShift'()
+CustomKeywords.'docPro.ShiftPage.DeleteShift'()
 

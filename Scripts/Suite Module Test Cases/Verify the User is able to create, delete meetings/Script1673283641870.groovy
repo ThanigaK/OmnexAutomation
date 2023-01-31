@@ -18,32 +18,32 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application\r\n'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the meetings page\r\n'
-CustomKeywords.'ewqims.KeyWord.NavigateToMeetingsPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToMeetingsPage'()
 
 'Create New meeting'
-CustomKeywords.'ewqims.Meetings.createNewMeeting'(City, Subject, recurringMeetingNo, FromTime, ToTime)
+CustomKeywords.'docPro.Meetings.createNewMeeting'(City, Subject, recurringMeetingNo, FromTime, ToTime)
 
 'Naviagting back to the meeting page'
-CustomKeywords.'ewqims.KeyWord.NavigateToMeetingsPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToMeetingsPage'()
 
 'Duplicate the new meeting'
-CustomKeywords.'ewqims.Meetings.duplicateMeetingCreation'()
+CustomKeywords.'docPro.Meetings.duplicateMeetingCreation'()
 
 'Again Navigating to the meeting page'
-CustomKeywords.'ewqims.KeyWord.NavigateToMeetingsPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToMeetingsPage'()
 
 'Delete the meeting'
-CustomKeywords.'ewqims.Meetings.DeleteMeeting'()
+CustomKeywords.'docPro.Meetings.DeleteMeeting'()
 
 'Create the meeting'
-CustomKeywords.'ewqims.Meetings.createNewMeeting'(City, Subject, recurringMettingYes, FromTime, ToTime)
+CustomKeywords.'docPro.Meetings.createNewMeeting'(City, Subject, recurringMettingYes, FromTime, ToTime)
 
 'Navigating to the meeting page'
-CustomKeywords.'ewqims.KeyWord.NavigateToMeetingsPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToMeetingsPage'()
 
 'Delete the meeting'
-CustomKeywords.'ewqims.Meetings.DeleteMeeting'()
+CustomKeywords.'docPro.Meetings.DeleteMeeting'()
 

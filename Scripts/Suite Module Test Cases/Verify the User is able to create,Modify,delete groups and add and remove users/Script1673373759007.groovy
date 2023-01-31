@@ -18,28 +18,28 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the gropus page'
-CustomKeywords.'ewqims.HomePage.NavigateToGroupsPage'()
+CustomKeywords.'docPro.HomePage.NavigateToGroupsPage'()
 
 'Create New group'
-CustomKeywords.'ewqims.GroupPage.createNewGroup'(GroupName, Option)
+CustomKeywords.'docPro.GroupPage.createNewGroup'(GroupName, Option)
 
 'Add user in the group'
-CustomKeywords.'ewqims.GroupPage.addUserInTheGroup'(Option)
+CustomKeywords.'docPro.GroupPage.addUserInTheGroup'(Option)
 
 'Remove the user in the group'
-CustomKeywords.'ewqims.GroupPage.removeUserInTheGroup'(Option)
+CustomKeywords.'docPro.GroupPage.removeUserInTheGroup'(Option)
 
 'Navigating back to the groups page'
-CustomKeywords.'ewqims.HomePage.NavigateToGroupsPage'()
+CustomKeywords.'docPro.HomePage.NavigateToGroupsPage'()
 
 'Modify the group name'
-CustomKeywords.'ewqims.GroupPage.modifyTheGroupName'(Option)
+CustomKeywords.'docPro.GroupPage.modifyTheGroupName'(Option)
 
 'Delete the group'
-CustomKeywords.'ewqims.GroupPage.deleteTheGroup'(Option)
+CustomKeywords.'docPro.GroupPage.deleteTheGroup'(Option)
 
 WebUI.closeBrowser()
 

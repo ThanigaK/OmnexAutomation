@@ -19,19 +19,19 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application\r\n'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the User page'
-CustomKeywords.'ewqims.HomePage.NavigateToUsersPage'()
+CustomKeywords.'docPro.HomePage.NavigateToUsersPage'()
 
 'Create new user'
-CustomKeywords.'ewqims.UserPage.createUser'(Code, FirstName, LastName, Email, UserName, Password, ITAR, ChangePassword)
+CustomKeywords.'docPro.UserPage.createUser'(Code, FirstName, LastName, Email, UserName, Password, ITAR, ChangePassword)
 
 'Logging out'
-CustomKeywords.'ewqims.KeyWord.Logout'()
+CustomKeywords.'docPro.KeyWord.Logout'()
 
 'Change the password from Forgot password link'
-NewUser = CustomKeywords.'ewqims.UserPage.ChangeForgotPassword'(NewPassword)
+NewUser = CustomKeywords.'docPro.UserPage.ChangeForgotPassword'(NewPassword)
 
 'Enter New User Name'
 WebUI.setText(findTestObject('Login_Page/userName_Input'), NewUser)
@@ -45,17 +45,17 @@ WebUI.click(findTestObject('Login_Page/login_Button'))
 KeywordUtil.logInfo('Login Successfully.. !')
 
 'Logging out'
-CustomKeywords.'ewqims.KeyWord.Logout'()
+CustomKeywords.'docPro.KeyWord.Logout'()
 
 'Login back with the Old Username and password'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigate back to the user page'
-CustomKeywords.'ewqims.HomePage.NavigateToUsersPage'()
+CustomKeywords.'docPro.HomePage.NavigateToUsersPage'()
 
 'Validate the newely created user'
-CustomKeywords.'ewqims.UserPage.searchAndValidateUser'()
+CustomKeywords.'docPro.UserPage.searchAndValidateUser'()
 
 'Delete user'
-CustomKeywords.'ewqims.UserPage.deleteUser'()
+CustomKeywords.'docPro.UserPage.deleteUser'()
 

@@ -1,4 +1,4 @@
-package ewqims
+package docPro
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -14,7 +14,6 @@ import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -33,40 +32,56 @@ import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObjectProperty
+import org.openqa.selenium.JavascriptExecutor
+import com.kms.katalon.core.util.KeywordUtil
 
-public class ManufacturerPage {
+public class TeamsPage extends common {
 	static SimpleDateFormat sdf1 = new SimpleDateFormat("ddMMyyyyHHmmss");
 	static Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 	public static String DateTimeStr = sdf1.format(timestamp);
 	public static String Rand;
-	static String ManufacturerName;
-	static String ManufacturerCode;
-
-	@Keyword
-	public void CreateManufacturer(String Name, String Code) {
-		Rand = DateTimeStr;
-
-		if (Name.equalsIgnoreCase("random")) {
-			ManufacturerName = "Test Automation - " + Rand;
-		} else {
-			ManufacturerName = Rand
-		}
-
-		if (Code.equalsIgnoreCase("random")) {
-			ManufacturerCode = "T-" + Rand;
-		} else {
-			ManufacturerCode = Rand
-		}
-		Thread.sleep(3000)
-		WebUI.waitForElementClickable(findTestObject('Object Repository/Suite_Module/UsersDetailsHome_Page/add_Button'), 20)
-		WebUI.click(findTestObject('Object Repository/Suite_Module/UsersDetailsHome_Page/add_Button'))
-		WebUI.setText(findTestObject('Object Repository/Suite_Module/Manufacturer_Page/manufacturerName_TextBox'),  ManufacturerName)
-		WebUI.setText(findTestObject('Object Repository/Suite_Module/Manufacturer_Page/manufacturerCode_TextBox'), ManufacturerCode)
-		WebUI.click(findTestObject('Object Repository/Suite_Module/Manufacturer_Page/preferredManufacturer_CheckBox'))
+	static String teamName;
+	static String Mail;
+	
+	public void selectLeader(String userCode){
+		WebUI.click(findTestObject('Object Repository/Suite_Module/Teams_Page/leaderName_Icon'))
+		selectUser(userCode)
 	}
 
+	public void addExternalMember(String name,String email) {
+		waitForClickableAndClick(findTestObject('Object Repository/Suite_Module/Teams_Page/addExternalTeamMem_Button'),20)
+		WebUI.setText(findTestObject('Object Repository/Suite_Module/Teams_Page/externalMemberName_TextBox'), name)
+		WebUI.setText(findTestObject('Object Repository/Suite_Module/Teams_Page/externalMemberEmail_TextBox'), email)
+	}
+
+	public void addMember(String userCode) {
+		WebUI.click(findTestObject('Object Repository/Suite_Module/Teams_Page/addMember_Button'))
+		selectUser(userCode)
+	}
+
+
 	@Keyword
-	public void DeleteManufacturer() {
+	public void CreateTeam(String Team, String Code)
+	{
+		Rand = DateTimeStr
+		Mail = "Test"+Rand+"@gmail.com";
+		if (Team.equalsIgnoreCase("random")) {
+			teamName = "Test Automation - " + Rand;
+		} else {
+			teamName = Rand
+		}
+
+		waitForClickableAndClick(findTestObject('Object Repository/Suite_Module/UsersDetailsHome_Page/add_Button'),30)
+		selectLeader(Code)
+		WebUI.setText(findTestObject('Object Repository/Suite_Module/Teams_Page/teams_TextBox'), teamName+Keys.TAB)
+		addExternalMember("Test Automation",Mail)
+		addMember("E001")
+	}
+	
+	@Keyword
+	public void DeleteTeam()
+	{
+		
 		Boolean flag;
 		String val;
 		WebUI.switchToFrame(findTestObject('Object Repository/Home_Page/detailView_iFrame'), 15)
@@ -74,24 +89,24 @@ public class ManufacturerPage {
 		WebUI.waitForJQueryLoad(10)
 		int size = DriverFactory.getWebDriver().findElements(By.xpath("//tbody/tr[@role='row']")).size()
 		for(int i =1; i<=size;i++) {
-			val = DriverFactory.getWebDriver().findElement(By.xpath("//*[@id='SuSupplierGridViewControl']/tbody/tr["+i+"]/td[2]/a")).getText();
-			if(val.equals(ManufacturerName)) {
-				DriverFactory.getWebDriver().findElement(By.xpath("//*[@id='SuSupplierGridViewControl']/tbody/tr["+i+"]/td[1]/input")).click()
+			val = DriverFactory.getWebDriver().findElement(By.xpath("//*[@id='Grid_TeamListing']/tbody/tr["+i+"]/td[2]")).getText();
+			if(val.equals(teamName)) {
+				DriverFactory.getWebDriver().findElement(By.xpath("//*[@id='Grid_TeamListing']/tbody/tr["+i+"]/td[1]/input")).click()
 				flag= true;
 				break;
 			}
 		}
 		WebUI.switchToDefaultContent()
 		if(flag) {
-			KeywordUtil.logInfo("Manufacturer/Vendor data found and selected.. !")
+			KeywordUtil.logInfo("Team data found and selected.. !")
 		} else {
-			throw new Error("Manufacturer/Vendor not found.. Please check the data ! Actual data is : " + val);
+			throw new Error("Team not found.. Please check the data ! Actual data is : " + val);
 		}
-
+		
 		WebUI.click(findTestObject('Object Repository/Suite_Module/UsersDetailsHome_Page/deleteUser_Button'))
 		WebUI.click(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
-		WebUI.click(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
 		WebUI.verifyElementVisible(findTestObject('Object Repository/Suite_Module/City_Page/cityDeletionSuccessMessage'))
-		KeywordUtil.logInfo("Deleted Success message verified..!")
+		KeywordUtil.logInfo("Team deleted successfully.. ! Deleted Success message verified..!")
 	}
+	
 }

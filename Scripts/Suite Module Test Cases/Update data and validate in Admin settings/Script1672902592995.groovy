@@ -19,16 +19,16 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application\r\n'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the Administration setting\r\n'
-CustomKeywords.'ewqims.KeyWord.NavigateToAdminSettingPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToAdminSettingPage'()
 
 'Modify and update the Admin settings'
-CustomKeywords.'ewqims.KeyWord.updateAdminSettingPage'(PasswordLenth, LastName, MiddleName, FirstName, Empty1)
+CustomKeywords.'docPro.KeyWord.updateAdminSettingPage'(PasswordLenth, LastName, MiddleName, FirstName, Empty1)
 
 'Logout from the current user\r\n'
-CustomKeywords.'ewqims.KeyWord.Logout'()
+CustomKeywords.'docPro.KeyWord.Logout'()
 
 'Enter new user name'
 WebUI.setText(findTestObject('Login_Page/userName_Input'), 'TestAutomation')
@@ -55,13 +55,13 @@ if (txt.equals('Automation-Test')) {
 }
 
 'Login to the application\r\n'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the Administration setting\r\n'
-CustomKeywords.'ewqims.KeyWord.NavigateToAdminSettingPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToAdminSettingPage'()
 
 'Reset the admin setting'
-CustomKeywords.'ewqims.KeyWord.updateAdminSettingPage'(PasswordLenth, FirstName, MiddleName, LastName, Empty1)
+CustomKeywords.'docPro.KeyWord.updateAdminSettingPage'(PasswordLenth, FirstName, MiddleName, LastName, Empty1)
 
 'Close the browser\r\n'
 WebUI.closeBrowser()

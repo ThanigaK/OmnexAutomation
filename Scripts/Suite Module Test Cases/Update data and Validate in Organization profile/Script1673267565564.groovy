@@ -18,11 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the organizatio profile page'
-CustomKeywords.'ewqims.HomePage.NavigateToOrganizationProfilePage'()
+CustomKeywords.'docPro.HomePage.NavigateToOrganizationProfilePage'()
 
 'Update the Organization profile details'
-CustomKeywords.'ewqims.HomePage.organizationProfileDatilsUpdate'()
+CustomKeywords.'docPro.HomePage.organizationProfileDatilsUpdate'()
 

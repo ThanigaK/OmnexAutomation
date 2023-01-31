@@ -18,17 +18,17 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application\r\n'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigatin to the Tags page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigateToTagsPage'()
+CustomKeywords.'docPro.HomePage.NavigateToTagsPage'()
 
 'Create the New Tag\r\n'
-CustomKeywords.'ewqims.TagsPage.CreateTag'(TagName)
+CustomKeywords.'docPro.TagsPage.CreateTag'(TagName)
 
 'Modify the newely created tag'
-CustomKeywords.'ewqims.TagsPage.modifyTag'()
+CustomKeywords.'docPro.TagsPage.modifyTag'()
 
 'Delete tag'
-CustomKeywords.'ewqims.TagsPage.deleteTag'()
+CustomKeywords.'docPro.TagsPage.deleteTag'()
 

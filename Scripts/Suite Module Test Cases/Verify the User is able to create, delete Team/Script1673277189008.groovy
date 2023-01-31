@@ -18,17 +18,17 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Logging to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the teams page'
-CustomKeywords.'ewqims.HomePage.NavigateToTeamsPage'()
+CustomKeywords.'docPro.HomePage.NavigateToTeamsPage'()
 
 'Create new team'
-CustomKeywords.'ewqims.TeamsPage.CreateTeam'(Team, Code)
+CustomKeywords.'docPro.TeamsPage.CreateTeam'(Team, Code)
 
 'Navigating back to the teams page'
-CustomKeywords.'ewqims.HomePage.NavigateToTeamsPage'()
+CustomKeywords.'docPro.HomePage.NavigateToTeamsPage'()
 
 'Delete the newly created team'
-CustomKeywords.'ewqims.TeamsPage.DeleteTeam'()
+CustomKeywords.'docPro.TeamsPage.DeleteTeam'()
 

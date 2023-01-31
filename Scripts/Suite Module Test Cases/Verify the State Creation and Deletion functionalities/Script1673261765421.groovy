@@ -18,20 +18,20 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the state page'
-CustomKeywords.'ewqims.HomePage.NavigatetoStatepage'()
+CustomKeywords.'docPro.HomePage.NavigatetoStatepage'()
 
 'Create new state'
-CustomKeywords.'ewqims.StatePage.createNewState'(Country, State)
+CustomKeywords.'docPro.StatePage.createNewState'(Country, State)
 
 'Navigating back to the state page'
-CustomKeywords.'ewqims.HomePage.NavigatetoStatepage'()
+CustomKeywords.'docPro.HomePage.NavigatetoStatepage'()
 
 'Validate the newely created State'
-CustomKeywords.'ewqims.StatePage.validateCityCreation'(Country, State)
+CustomKeywords.'docPro.StatePage.validateCityCreation'(Country, State)
 
 'Delete the newely created state'
-CustomKeywords.'ewqims.StatePage.deleteState'()
+CustomKeywords.'docPro.StatePage.deleteState'()
 

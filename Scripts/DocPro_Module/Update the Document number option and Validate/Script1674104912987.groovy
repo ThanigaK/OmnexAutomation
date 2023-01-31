@@ -22,13 +22,13 @@ import java.util.Date as Date
 import java.sql.Timestamp as Timestamp
 
 'Login to application with the Credentials'
-CustomKeywords.'ewqims.KeyWord.LoginwithCredential'(GlobalVariable.url, GlobalVariable.username1, GlobalVariable.Password1)
+CustomKeywords.'docPro.KeyWord.LoginwithCredential'(GlobalVariable.url, GlobalVariable.username1, GlobalVariable.Password1)
 
 'Going to Doc pro setup page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigateToDocProSetupPage'()
+CustomKeywords.'docPro.HomePage.NavigateToDocProSetupPage'()
 
 'Select the Required Level in the Folder management'
-CustomKeywords.'ewqims.DocPro.goToLevelInDocproSetup'(Page, Level)
+CustomKeywords.'docPro.DocPro.goToLevelInDocproSetup'(Page, Level)
 
 'Setting Day/Month value for "Documents Reviewed After"'
 WebUI.selectOptionByValue(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/drpDocReviewUnitName_DropDown'), 
@@ -65,10 +65,10 @@ WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/s
     Keys.ENTER)
 
 'Adding Level Owner'
-CustomKeywords.'ewqims.DocPro.AddLevelOwner'('Empcode', LevelOwner)
+CustomKeywords.'docPro.DocPro.AddLevelOwner'('Empcode', LevelOwner)
 
 'Selecting tag'
-CustomKeywords.'ewqims.DocPro.tagSelection'('')
+CustomKeywords.'docPro.DocPro.tagSelection'('')
 
 'Select "Records" Checkbox if need'
 if (data.equals('yes')) {
@@ -123,14 +123,14 @@ if (!(existing.toString().isEmpty())) {
 WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/popupClose_Icon'))
 
 'Assigning Level PDF Preferences if need'
-CustomKeywords.'ewqims.DocPro.levelpdfPrefSelection'('Document Type', LevelPDFPreference)
+CustomKeywords.'docPro.DocPro.levelpdfPrefSelection'('Document Type', LevelPDFPreference)
 
-CustomKeywords.'ewqims.DocPro.setAutoPublish'('100', Module)
+CustomKeywords.'docPro.DocPro.setAutoPublish'('100', Module)
 
 //WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/save_Button'))
 //KeywordUtil.logInfo("Save button clicked..!")
 'Navigating to "New Doc Request" Page '
-CustomKeywords.'ewqims.HomePage.NavigateToNewDocRequestPage'()
+CustomKeywords.'docPro.HomePage.NavigateToNewDocRequestPage'()
 
 'Click the Site DropDown'
 WebUI.click(findTestObject('Object Repository/DocPro_Module/New Documnet Request/site_DropDown'))
@@ -141,19 +141,19 @@ WebUI.setText(findTestObject('Object Repository/Suite_Module/City_Page/searchCou
 KeywordUtil.logInfo('Site selected successfully --> ' + siteName)
 
 'Select "Documnet Level"'
-CustomKeywords.'ewqims.NewDocRequest.levelSelection'(LevelName)
+CustomKeywords.'docPro.NewDocRequest.levelSelection'(LevelName)
 
 'Enter Document Number'
-CustomKeywords.'ewqims.DocPro.EnterDocNumber'(DocNumber)
+CustomKeywords.'docPro.DocPro.EnterDocNumber'(DocNumber)
 
 'Entering Document Name'
-CustomKeywords.'ewqims.DocPro.EnterDocName'(DocName)
+CustomKeywords.'docPro.DocPro.EnterDocName'(DocName)
 
 'Enter Revision Number'
-CustomKeywords.'ewqims.DocPro.enterRevisionNum'(Revison)
+CustomKeywords.'docPro.DocPro.enterRevisionNum'(Revison)
 
 'Upload the New Document'
-CustomKeywords.'ewqims.DocPro.uploadFile'(FilePath)
+CustomKeywords.'docPro.DocPro.uploadFile'(FilePath)
 
 'Click the Add Button'
 WebUI.click(findTestObject('Object Repository/DocPro_Module/New Documnet Request/addDocument_Button'))
@@ -167,22 +167,22 @@ if (FilePath.toString().isEmpty()) {
 }
 
 'Validate the Document added as per the Level setting\r\n'
-CustomKeywords.'ewqims.DocPro.validateDocNum'(DocNumOption)
+CustomKeywords.'docPro.DocPro.validateDocNum'(DocNumOption)
 
 'Navigate to TOC'
-CustomKeywords.'ewqims.HomePage.goToDocumentsPage'()
+CustomKeywords.'docPro.HomePage.goToDocumentsPage'()
 
 'Open the Level'
-CustomKeywords.'ewqims.Documents.openLevel'(Level)
+CustomKeywords.'docPro.Documents.openLevel'(Level)
 
 'Validate the documet added is present in the list and get it\'s position to delete'
-CustomKeywords.'ewqims.DocPro.DeleteAddedDocument'()
+CustomKeywords.'docPro.DocPro.DeleteAddedDocument'()
 
 'Right Click on the Newely created Document Number'
-CustomKeywords.'ewqims.DocPro.rightClickOnDoc'()
+CustomKeywords.'docPro.DocPro.rightClickOnDoc'()
 
 'Select "Change Request" option'
-CustomKeywords.'ewqims.DocPro.clickOnRightClickOptions'('Change Request')
+CustomKeywords.'docPro.DocPro.clickOnRightClickOptions'('Change Request')
 
 'Scrolling to "Delete Document" check box'
 WebUI.scrollToElement(findTestObject('DocPro_Module/Documents_Page/DeleteDocument'), 25)

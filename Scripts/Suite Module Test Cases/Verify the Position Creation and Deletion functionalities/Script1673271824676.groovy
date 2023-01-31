@@ -18,20 +18,20 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the positon page'
-CustomKeywords.'ewqims.HomePage.NavigateToPositionsPage'()
+CustomKeywords.'docPro.HomePage.NavigateToPositionsPage'()
 
 'Create new position'
-CustomKeywords.'ewqims.PositionPage.CreatePosition'(Site, Position)
+CustomKeywords.'docPro.PositionPage.CreatePosition'(Site, Position)
 
 'Navigating back to the Position page'
-CustomKeywords.'ewqims.HomePage.NavigateToPositionsPage'()
+CustomKeywords.'docPro.HomePage.NavigateToPositionsPage'()
 
 'Validate the newely created position'
-CustomKeywords.'ewqims.PositionPage.validatePositionCreation'(Site, Position)
+CustomKeywords.'docPro.PositionPage.validatePositionCreation'(Site, Position)
 
 'Delete the position'
-CustomKeywords.'ewqims.PositionPage.deletePosition'()
+CustomKeywords.'docPro.PositionPage.deletePosition'()
 

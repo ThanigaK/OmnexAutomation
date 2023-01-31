@@ -18,16 +18,16 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the user page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigateToUsersPage'()
+CustomKeywords.'docPro.HomePage.NavigateToUsersPage'()
 
 'Create new user'
-NewUser = CustomKeywords.'ewqims.UserPage.createUser'(Code, FirstName, LastName, Email, UserName, Password, ITAR, ChangePassword)
+NewUser = CustomKeywords.'docPro.UserPage.createUser'(Code, FirstName, LastName, Email, UserName, Password, ITAR, ChangePassword)
 
 'Logout from the application'
-CustomKeywords.'ewqims.KeyWord.Logout'()
+CustomKeywords.'docPro.KeyWord.Logout'()
 
 'Enter new user name'
 WebUI.setText(findTestObject('Login_Page/userName_Input'), NewUser)
@@ -39,14 +39,14 @@ WebUI.setEncryptedText(findTestObject('Login_Page/password_Input'), Password)
 WebUI.click(findTestObject('Login_Page/login_Button'))
 
 'Navigating to the preference page'
-CustomKeywords.'ewqims.HomePage.NavigateToPreferencesPage'()
+CustomKeywords.'docPro.HomePage.NavigateToPreferencesPage'()
 
 'Update preference based on the excel data\r\n'
-CustomKeywords.'ewqims.PreferencePage.updateThePreferencesSettingsBasedOnExcelData'(SessionTimeout, PageSize, DefaultLanguage, 
+CustomKeywords.'docPro.PreferencePage.updateThePreferencesSettingsBasedOnExcelData'(SessionTimeout, PageSize, DefaultLanguage, 
     DateFormat)
 
 'Validate timezone under the profile icon'
-CustomKeywords.'ewqims.PreferencePage.validateTimezoneUnderProfileIcon'(DateFormat)
+CustomKeywords.'docPro.PreferencePage.validateTimezoneUnderProfileIcon'(DateFormat)
 
 'Logout button'
 WebUI.click(findTestObject('Home_Page/logout_Button'))
@@ -55,14 +55,14 @@ WebUI.click(findTestObject('Home_Page/logout_Button'))
 WebUI.click(findTestObject('Home_Page/popupOk_Button'))
 
 'Login back to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating back to the user page'
-CustomKeywords.'ewqims.HomePage.NavigateToUsersPage'()
+CustomKeywords.'docPro.HomePage.NavigateToUsersPage'()
 
 'Validate the modified user'
-CustomKeywords.'ewqims.UserPage.searchAndValidateUser'()
+CustomKeywords.'docPro.UserPage.searchAndValidateUser'()
 
 'Delete the user'
-CustomKeywords.'ewqims.UserPage.deleteUser'()
+CustomKeywords.'docPro.UserPage.deleteUser'()
 

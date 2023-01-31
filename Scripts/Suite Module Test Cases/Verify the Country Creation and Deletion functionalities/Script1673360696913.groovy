@@ -19,10 +19,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application\r\n'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the country page\r\n'
-CustomKeywords.'ewqims.KeyWord.NavigateToCountryPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCountryPage'()
 
 'Wait for add button to exist'
 WebUI.waitForElementClickable(findTestObject('Suite_Module/UsersDetailsHome_Page/add_Button'), 10)
@@ -42,11 +42,11 @@ WebUI.verifyElementVisible(findTestObject('Suite_Module/UserCreation_Page/succes
 KeywordUtil.logInfo('Country creation is successful.. ! Success message verified..!')
 
 'Navigating back to the country page'
-CustomKeywords.'ewqims.KeyWord.NavigateToCountryPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCountryPage'()
 
 'Validate the newely created country'
-CustomKeywords.'ewqims.HomePage.validateCountryCreation'(Country)
+CustomKeywords.'docPro.HomePage.validateCountryCreation'(Country)
 
 'Delete the country'
-CustomKeywords.'ewqims.HomePage.DeleteCountry'()
+CustomKeywords.'docPro.HomePage.DeleteCountry'()
 

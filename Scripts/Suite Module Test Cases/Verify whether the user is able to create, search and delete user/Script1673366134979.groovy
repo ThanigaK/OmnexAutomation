@@ -18,20 +18,20 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the user page'
-CustomKeywords.'ewqims.HomePage.NavigateToUsersPage'()
+CustomKeywords.'docPro.HomePage.NavigateToUsersPage'()
 
 'Create new user'
-NewUser = CustomKeywords.'ewqims.UserPage.createUser'(Code, FirstName, LastName, Email, UserName, Password, ITAR, ChangePassword)
+NewUser = CustomKeywords.'docPro.UserPage.createUser'(Code, FirstName, LastName, Email, UserName, Password, ITAR, ChangePassword)
 
 'Navigating back to the user page'
-CustomKeywords.'ewqims.HomePage.NavigateToUsersPage'()
+CustomKeywords.'docPro.HomePage.NavigateToUsersPage'()
 
 'Search and validate the user'
-CustomKeywords.'ewqims.UserPage.searchAndValidateUser'()
+CustomKeywords.'docPro.UserPage.searchAndValidateUser'()
 
 'Delete the user'
-CustomKeywords.'ewqims.UserPage.deleteUser'()
+CustomKeywords.'docPro.UserPage.deleteUser'()
 

@@ -1,0 +1,40 @@
+{
+  "keywordFileContentHash": "F49C4273FB6DA25BBD3D8FAF62423CDF",
+  "keywordClasses": [
+    {
+      "name": "docPro.TagsPage",
+      "keywordMethods": [
+        {
+          "name": "CreateTag",
+          "parameters": [
+            {
+              "name": "TagName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "modifyTag",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "deleteTag",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

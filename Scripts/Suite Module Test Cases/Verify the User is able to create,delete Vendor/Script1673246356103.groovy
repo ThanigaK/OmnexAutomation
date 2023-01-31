@@ -18,28 +18,28 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the vendor page'
-CustomKeywords.'ewqims.HomePage.NavigateToVendorPage'()
+CustomKeywords.'docPro.HomePage.NavigateToVendorPage'()
 
 'Create new vendor'
-CustomKeywords.'ewqims.VendorPage.createVendor'(Name, Code)
+CustomKeywords.'docPro.VendorPage.createVendor'(Name, Code)
 
 'Add address for the vendor'
-CustomKeywords.'ewqims.KeyWord.AddAddress'('', '', '')
+CustomKeywords.'docPro.KeyWord.AddAddress'('', '', '')
 
 'Add contact for the same'
-CustomKeywords.'ewqims.VendorPage.addContact'()
+CustomKeywords.'docPro.VendorPage.addContact'()
 
 'Naviating back to the vendor page'
-CustomKeywords.'ewqims.HomePage.NavigateToVendorPage'()
+CustomKeywords.'docPro.HomePage.NavigateToVendorPage'()
 
 'Change the page record count to 100'
-CustomKeywords.'ewqims.KeyWord.pageRecordSizeChange'()
+CustomKeywords.'docPro.KeyWord.pageRecordSizeChange'()
 
 'Delete the vendor'
-CustomKeywords.'ewqims.VendorPage.DeleteVendor'()
+CustomKeywords.'docPro.VendorPage.DeleteVendor'()
 
 WebUI.closeBrowser()
 

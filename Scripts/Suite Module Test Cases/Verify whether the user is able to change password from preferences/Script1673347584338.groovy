@@ -18,16 +18,16 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigate to the user page'
-CustomKeywords.'ewqims.HomePage.NavigateToUsersPage'()
+CustomKeywords.'docPro.HomePage.NavigateToUsersPage'()
 
 'Create new user'
-NewUser = CustomKeywords.'ewqims.UserPage.createUser'(Code, FirstName, LastName, Email, UserName, Password, ITAR, ChangePassword)
+NewUser = CustomKeywords.'docPro.UserPage.createUser'(Code, FirstName, LastName, Email, UserName, Password, ITAR, ChangePassword)
 
 'Logout from the application'
-CustomKeywords.'ewqims.KeyWord.Logout'()
+CustomKeywords.'docPro.KeyWord.Logout'()
 
 'Enter New username'
 WebUI.setText(findTestObject('Login_Page/userName_Input'), NewUser)
@@ -39,7 +39,7 @@ WebUI.setEncryptedText(findTestObject('Login_Page/password_Input'), Password)
 WebUI.click(findTestObject('Login_Page/login_Button'))
 
 'Navigating to the preference page'
-CustomKeywords.'ewqims.HomePage.NavigateToPreferencesPage'()
+CustomKeywords.'docPro.HomePage.NavigateToPreferencesPage'()
 
 'Select the change password tab'
 WebUI.click(findTestObject('Suite_Module/UserPreferences_Page/changePasswordT_Tab'))
@@ -60,17 +60,17 @@ WebUI.click(findTestObject('Suite_Module/UserPreferences_Page/saveInChangePass_B
 WebUI.verifyElementPresent(findTestObject('Suite_Module/UserPreferences_Page/successMessageInChangePassword'), 10)
 
 'Logout from the application'
-CustomKeywords.'ewqims.KeyWord.Logout'()
+CustomKeywords.'docPro.KeyWord.Logout'()
 
 'Login back to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigate back to the user page'
-CustomKeywords.'ewqims.HomePage.NavigateToUsersPage'()
+CustomKeywords.'docPro.HomePage.NavigateToUsersPage'()
 
 'Search and validate user'
-CustomKeywords.'ewqims.UserPage.searchAndValidateUser'()
+CustomKeywords.'docPro.UserPage.searchAndValidateUser'()
 
 'Delete the user'
-CustomKeywords.'ewqims.UserPage.deleteUser'()
+CustomKeywords.'docPro.UserPage.deleteUser'()
 

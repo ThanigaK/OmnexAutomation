@@ -18,17 +18,17 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the Modules page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigateToModulesPage'()
+CustomKeywords.'docPro.HomePage.NavigateToModulesPage'()
 
 'Add User for Module Page'
-CustomKeywords.'ewqims.HomePage.addUserForModule'(Module, Code)
+CustomKeywords.'docPro.HomePage.addUserForModule'(Module, Code)
 
 'Validate the newely added user in modules page'
-CustomKeywords.'ewqims.VendorPage.ValidateUser'(SearchOption, Code, pageName)
+CustomKeywords.'docPro.VendorPage.ValidateUser'(SearchOption, Code, pageName)
 
 'Remove the created user'
-CustomKeywords.'ewqims.VendorPage.RemoveUserFromDocPro'(Country, Module, Code)
+CustomKeywords.'docPro.VendorPage.RemoveUserFromDocPro'(Country, Module, Code)
 

@@ -18,17 +18,17 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the supplier page'
-CustomKeywords.'ewqims.HomePage.NavigateToSupplierPage'()
+CustomKeywords.'docPro.HomePage.NavigateToSupplierPage'()
 
 'Create new supplier'
-CustomKeywords.'ewqims.SupplierPage.CreateSupplier'(Name, Code, Engg)
+CustomKeywords.'docPro.SupplierPage.CreateSupplier'(Name, Code, Engg)
 
 'Navigatin back to the supplier page'
-CustomKeywords.'ewqims.HomePage.NavigateToSupplierPage'()
+CustomKeywords.'docPro.HomePage.NavigateToSupplierPage'()
 
 'Delete the supplier'
-CustomKeywords.'ewqims.SupplierPage.DeleteSupplier'()
+CustomKeywords.'docPro.SupplierPage.DeleteSupplier'()
 

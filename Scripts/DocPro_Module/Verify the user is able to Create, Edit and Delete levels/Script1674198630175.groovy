@@ -18,17 +18,17 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the Levels Page'
-CustomKeywords.'ewqims.KeyWord.NavigateToLevelsPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToLevelsPage'()
 
 'Create New Level'
-CustomKeywords.'ewqims.LevelsPage.createLevel'(LevelName)
+CustomKeywords.'docPro.LevelsPage.createLevel'(LevelName)
 
 'Modify the Created Level'
-CustomKeywords.'ewqims.LevelsPage.modifyLevelData'()
+CustomKeywords.'docPro.LevelsPage.modifyLevelData'()
 
 'Delete the level'
-CustomKeywords.'ewqims.LevelsPage.deleteModifiedLevel'()
+CustomKeywords.'docPro.LevelsPage.deleteModifiedLevel'()
 

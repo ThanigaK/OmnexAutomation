@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Launching Driver'
-CustomKeywords.'ewqims.KeyWord.newBrowser'('1')
+CustomKeywords.'docPro.KeyWord.newBrowser'('1')
 
 'Entering Username'
 WebUI.setText(findTestObject('Login_Page/userName_Input'), 'donotdelete')
@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
 WebUI.click(findTestObject('Login_Page/login_Button'))
 
 'Launch new browser'
-CustomKeywords.'ewqims.KeyWord.newBrowser'('2')
+CustomKeywords.'docPro.KeyWord.newBrowser'('2')
 
 'Enter username'
 WebUI.setText(findTestObject('Login_Page/userName_Input'), GlobalVariable.username)
@@ -48,11 +48,11 @@ WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
 WebUI.click(findTestObject('Login_Page/login_Button'))
 
 'Navigating to the unlock user page'
-CustomKeywords.'ewqims.HomePage.NavigateToUnlockUserPage'()
+CustomKeywords.'docPro.HomePage.NavigateToUnlockUserPage'()
 
 'Unlock the user'
-CustomKeywords.'ewqims.UserPage.unlockUser'()
+CustomKeywords.'docPro.UserPage.unlockUser'()
 
 'Validate the user unlocked'
-CustomKeywords.'ewqims.KeyWord.validateUserUnlocked'()
+CustomKeywords.'docPro.KeyWord.validateUserUnlocked'()
 

@@ -18,16 +18,16 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application\r\n'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the city page\r\n'
-CustomKeywords.'ewqims.KeyWord.NavigateToCityPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCityPage'()
 
 'Create new city'
-CustomKeywords.'ewqims.KeyWord.CreateCity'(City, Country, State)
+CustomKeywords.'docPro.KeyWord.CreateCity'(City, Country, State)
 
 'Navigating back to the city page'
-CustomKeywords.'ewqims.KeyWord.NavigateToCityPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCityPage'()
 
 'Select the input city\t\t'
 WebUI.setText(findTestObject('Suite_Module/UsersDetailsHome_Page/searchUser_Input'), City)

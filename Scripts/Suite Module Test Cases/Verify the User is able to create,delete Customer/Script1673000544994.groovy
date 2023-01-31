@@ -18,25 +18,25 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Navigating to the customer page'
-CustomKeywords.'ewqims.KeyWord.NavigateToCustomerPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCustomerPage'()
 
 'Create new customer'
-CustomKeywords.'ewqims.KeyWord.createCustomer'(Name, Code)
+CustomKeywords.'docPro.KeyWord.createCustomer'(Name, Code)
 
 'Add address to the customer'
-CustomKeywords.'ewqims.KeyWord.AddAddress'(Country, State, City)
+CustomKeywords.'docPro.KeyWord.AddAddress'(Country, State, City)
 
 'Navigating back to the customer page'
-CustomKeywords.'ewqims.KeyWord.NavigateToCustomerPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToCustomerPage'()
 
 'Change the page record size'
-CustomKeywords.'ewqims.KeyWord.pageRecordSizeChange'()
+CustomKeywords.'docPro.KeyWord.pageRecordSizeChange'()
 
 'Delete the customer'
-CustomKeywords.'ewqims.KeyWord.DeleteCustomer'()
+CustomKeywords.'docPro.KeyWord.DeleteCustomer'()
 
 'Close the browser'
 WebUI.closeBrowser()

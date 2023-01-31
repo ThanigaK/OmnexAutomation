@@ -18,13 +18,13 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application'
-CustomKeywords.'ewqims.KeyWord.Login'()
+CustomKeywords.'docPro.KeyWord.Login'()
 
 'Logout from the application'
-CustomKeywords.'ewqims.KeyWord.Logout'()
+CustomKeywords.'docPro.KeyWord.Logout'()
 
 'Validate the remember me option'
-CustomKeywords.'ewqims.KeyWord.validateRememberMeOption'(GlobalVariable.username)
+CustomKeywords.'docPro.KeyWord.validateRememberMeOption'(GlobalVariable.username)
 
 'Close the Browser'
 WebUI.closeBrowser()

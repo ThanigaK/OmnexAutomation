@@ -19,23 +19,23 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to application with the Credentials'
-CustomKeywords.'ewqims.KeyWord.LoginwithCredential'(GlobalVariable.url, GlobalVariable.username1, GlobalVariable.Password1)
+CustomKeywords.'docPro.KeyWord.LoginwithCredential'(GlobalVariable.url, GlobalVariable.username1, GlobalVariable.Password1)
 
-CustomKeywords.'ewqims.HomePage.goToDocumentRoutePage'()
+CustomKeywords.'docPro.HomePage.goToDocumentRoutePage'()
 
-CustomKeywords.'ewqims.RouteCreation.createNewRoute'(RouteName, RouteCode)
+CustomKeywords.'docPro.RouteCreation.createNewRoute'(RouteName, RouteCode)
 
-CustomKeywords.'ewqims.KeyWord.NavigateToLevelsPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToLevelsPage'()
 
-levName = CustomKeywords.'ewqims.LevelsPage.createLevel'(LevelName)
+levName = CustomKeywords.'docPro.LevelsPage.createLevel'(LevelName)
 
 'Going to Doc pro setup page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigateToDocProSetupPage'()
+CustomKeywords.'docPro.HomePage.NavigateToDocProSetupPage'()
 
 'Select the Required Level in the Folder management'
-CustomKeywords.'ewqims.DocPro.goToLevelInDocproSetup'('Folder management', levName)
+CustomKeywords.'docPro.DocPro.goToLevelInDocproSetup'('Folder management', levName)
 
-CustomKeywords.'ewqims.DocPro.MakeLevelInUse'()
+CustomKeywords.'docPro.DocPro.MakeLevelInUse'()
 
 'Setting Day/Month value for "Documents Reviewed After"'
 WebUI.selectOptionByValue(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/drpDocReviewUnitName_DropDown'), 
@@ -72,10 +72,10 @@ WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/s
     Keys.ENTER)
 
 'Adding Level Owner'
-CustomKeywords.'ewqims.DocPro.AddLevelOwner'('Empcode', LevelOwner)
+CustomKeywords.'docPro.DocPro.AddLevelOwner'('Empcode', LevelOwner)
 
 'Selecting tag'
-CustomKeywords.'ewqims.DocPro.tagSelection'('')
+CustomKeywords.'docPro.DocPro.tagSelection'('')
 
 'Select "Records" Checkbox if need'
 if (data.equals('yes')) {
@@ -86,21 +86,21 @@ if (data.equals('yes')) {
     KeywordUtil.logInfo('Records checkbox clicked.')
 }
 
-CustomKeywords.'ewqims.RouteCreation.AssignRoute'('No', 'No')
+CustomKeywords.'docPro.RouteCreation.AssignRoute'('No', 'No')
 
-CustomKeywords.'ewqims.DocPro.AssignAutoApprovalRoute'('No', 'No', 'Module Auto approval')
+CustomKeywords.'docPro.DocPro.AssignAutoApprovalRoute'('No', 'No', 'Module Auto approval')
 
 'Assigning Level PDF Preferences if need'
-CustomKeywords.'ewqims.DocPro.levelpdfPrefSelection'('Document Type', LevelPDFPreference)
+CustomKeywords.'docPro.DocPro.levelpdfPrefSelection'('Document Type', LevelPDFPreference)
 
-CustomKeywords.'ewqims.DocPro.setAutoPublish'('100', Module)
+CustomKeywords.'docPro.DocPro.setAutoPublish'('100', Module)
 
 WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/save_Button'))
 
 KeywordUtil.logInfo('Save button clicked..!')
 
 'Navigating to "New Doc Request" Page '
-CustomKeywords.'ewqims.HomePage.NavigateToNewDocRequestPage'()
+CustomKeywords.'docPro.HomePage.NavigateToNewDocRequestPage'()
 
 'Click the Site DropDown'
 WebUI.click(findTestObject('Object Repository/DocPro_Module/New Documnet Request/site_DropDown'))
@@ -111,19 +111,19 @@ WebUI.setText(findTestObject('Object Repository/Suite_Module/City_Page/searchCou
 KeywordUtil.logInfo('Site selected successfully --> ' + siteName)
 
 'Select "Documnet Level"'
-CustomKeywords.'ewqims.NewDocRequest.levelSelection'(levName)
+CustomKeywords.'docPro.NewDocRequest.levelSelection'(levName)
 
 'Enter Document Number'
-CustomKeywords.'ewqims.DocPro.EnterDocNumber'(DocNumber)
+CustomKeywords.'docPro.DocPro.EnterDocNumber'(DocNumber)
 
 'Entering Document Name'
-CustomKeywords.'ewqims.DocPro.EnterDocName'(DocName)
+CustomKeywords.'docPro.DocPro.EnterDocName'(DocName)
 
 'Enter Revision Number'
-CustomKeywords.'ewqims.DocPro.enterRevisionNum'(Revison)
+CustomKeywords.'docPro.DocPro.enterRevisionNum'(Revison)
 
 'Upload the New Document'
-CustomKeywords.'ewqims.DocPro.uploadFile'(FilePath)
+CustomKeywords.'docPro.DocPro.uploadFile'(FilePath)
 
 WebUI.click(findTestObject('Object Repository/DocPro_Module/New Documnet Request/addDocument_Button'))
 
@@ -137,28 +137,28 @@ if (FilePath.toString().isEmpty()) {
     KeywordUtil.logInfo('Proceeding without document')
 }
 
-CustomKeywords.'ewqims.Documents.NavigateToAdminActionsPage'()
+CustomKeywords.'docPro.Documents.NavigateToAdminActionsPage'()
 
-CustomKeywords.'ewqims.Documents.assignAuthorForCreatedRequest'('doNotDelete_2')
+CustomKeywords.'docPro.Documents.assignAuthorForCreatedRequest'('doNotDelete_2')
 
-CustomKeywords.'ewqims.KeyWord.Logout'()
+CustomKeywords.'docPro.KeyWord.Logout'()
 
 'Login to application with the Credentials'
-CustomKeywords.'ewqims.KeyWord.LoginwithCredential'(GlobalVariable.url, 'donotdelete2', 'TtfzLQ/s9dQ=')
+CustomKeywords.'docPro.KeyWord.LoginwithCredential'(GlobalVariable.url, 'donotdelete2', 'TtfzLQ/s9dQ=')
 
-CustomKeywords.'ewqims.Documents.NavigateToActionsPage'()
+CustomKeywords.'docPro.Documents.NavigateToActionsPage'()
 
-CustomKeywords.'ewqims.Documents.attachDocumentInDocumentNeedingRevision'('D:\\\\Omnex\\\\Project\\\\Latest\\\\EWQIMS\\\\Book1.xlsx')
+CustomKeywords.'docPro.Documents.attachDocumentInDocumentNeedingRevision'('D:\\\\Omnex\\\\Project\\\\Latest\\\\EWQIMS\\\\Book1.xlsx')
 
 'Going to Doc pro setup page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigateToDocProSetupPage'()
+CustomKeywords.'docPro.HomePage.NavigateToDocProSetupPage'()
 
 'Select the Required Level in the Folder management'
-CustomKeywords.'ewqims.DocPro.goToLevelInDocproSetup'('Document management', levName)
+CustomKeywords.'docPro.DocPro.goToLevelInDocproSetup'('Document management', levName)
 
-CustomKeywords.'ewqims.DocPro.moveAllAvailableFiles'('bin')
+CustomKeywords.'docPro.DocPro.moveAllAvailableFiles'('bin')
 
-CustomKeywords.'ewqims.KeyWord.NavigateToLevelsPage'()
+CustomKeywords.'docPro.KeyWord.NavigateToLevelsPage'()
 
-CustomKeywords.'ewqims.LevelsPage.levelDeletion'(levName)
+CustomKeywords.'docPro.LevelsPage.levelDeletion'(levName)
 
