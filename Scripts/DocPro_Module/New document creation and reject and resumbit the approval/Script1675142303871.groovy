@@ -137,7 +137,18 @@ CustomKeywords.'ewqims.KeyWord.LoginwithCredential'(GlobalVariable.url, 'donotde
 
 CustomKeywords.'ewqims.Documents.NavigateToActionsPage'()
 
-CustomKeywords.'ewqims.DocPro.approveOrrejectRequestInRequestNeedingApproval'('Approve', 'TtfzLQ/s9dQ=')
+CustomKeywords.'ewqims.DocPro.approveOrrejectRequestInRequestNeedingApproval'('Reject', 'TtfzLQ/s9dQ=')
+
+CustomKeywords.'ewqims.KeyWord.Logout'()
+
+'Login to application with the Credentials'
+CustomKeywords.'ewqims.KeyWord.LoginwithCredential'(GlobalVariable.url, GlobalVariable.username1, GlobalVariable.Password1)
+
+CustomKeywords.'ewqims.Documents.NavigateToActionsPage'()
+
+not_run: CustomKeywords.'ewqims.Documents.assignUserInReassignApproval'('doNotDelete_01', 'TtfzLQ/s9dQ=')
+
+not_run: CustomKeywords.'ewqims.DocPro.approveOrrejectRequestInRequestNeedingApproval'('Approve', 'TtfzLQ/s9dQ=')
 
 not_run: CustomKeywords.'ewqims.HomePage.goToDocumentsPage'()
 
@@ -153,18 +164,18 @@ not_run: if (FilePath.toString().isEmpty()) {
 not_run: CustomKeywords.'ewqims.DocPro.validateDocNum'(DocNumOption)
 
 'Going to Doc pro setup page\r\n'
-CustomKeywords.'ewqims.HomePage.NavigateToDocProSetupPage'()
+not_run: CustomKeywords.'ewqims.HomePage.NavigateToDocProSetupPage'()
 
 'Select the Required Level in the Folder management'
-CustomKeywords.'ewqims.DocPro.goToLevelInDocproSetup'('Document management', levName)
+not_run: CustomKeywords.'ewqims.DocPro.goToLevelInDocproSetup'('Document management', levName)
 
-CustomKeywords.'ewqims.DocPro.moveAllAvailableFiles'('bin')
+not_run: CustomKeywords.'ewqims.DocPro.moveAllAvailableFiles'('bin')
 
-CustomKeywords.'ewqims.KeyWord.NavigateToLevelsPage'()
+not_run: CustomKeywords.'ewqims.KeyWord.NavigateToLevelsPage'()
 
-CustomKeywords.'ewqims.LevelsPage.levelDeletion'(levName)
+not_run: CustomKeywords.'ewqims.LevelsPage.levelDeletion'(levName)
 
-CustomKeywords.'ewqims.HomePage.goToDocumentRoutePage'()
+not_run: CustomKeywords.'ewqims.HomePage.goToDocumentRoutePage'()
 
-CustomKeywords.'ewqims.RouteCreation.deleteRoute'()
+not_run: CustomKeywords.'ewqims.RouteCreation.deleteRoute'()
 

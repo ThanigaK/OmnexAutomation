@@ -21,9 +21,9 @@ import org.openqa.selenium.Keys as Keys
 'Login to application with the Credentials'
 CustomKeywords.'ewqims.KeyWord.LoginwithCredential'(GlobalVariable.url, GlobalVariable.username1, GlobalVariable.Password1)
 
-CustomKeywords.'ewqims.HomePage.goToDocumentRoutePage'()
+CustomKeywords.'ewqims.HomePage.goToFavouritesPage'()
 
-CustomKeywords.'ewqims.RouteCreation.createNewRoute'(RouteName, RouteCode)
+CustomKeywords.'ewqims.Documents.createFavouriteFolder'('random')
 
 CustomKeywords.'ewqims.KeyWord.NavigateToLevelsPage'()
 
@@ -86,8 +86,6 @@ if (data.equals('yes')) {
     KeywordUtil.logInfo('Records checkbox clicked.')
 }
 
-CustomKeywords.'ewqims.RouteCreation.AssignRoute'('No', 'No')
-
 'Assigning Level PDF Preferences if need'
 CustomKeywords.'ewqims.DocPro.levelpdfPrefSelection'('Document Type', LevelPDFPreference)
 
@@ -130,27 +128,9 @@ WebUI.click(findTestObject('Object Repository/DocPro_Module/New Documnet Request
 
 WebUI.delay(6)
 
-CustomKeywords.'ewqims.KeyWord.Logout'()
+CustomKeywords.'ewqims.HomePage.goToDocumentsPage'()
 
-'Login to application with the Credentials'
-CustomKeywords.'ewqims.KeyWord.LoginwithCredential'(GlobalVariable.url, 'donotdelete2', 'TtfzLQ/s9dQ=')
-
-CustomKeywords.'ewqims.Documents.NavigateToActionsPage'()
-
-CustomKeywords.'ewqims.DocPro.approveOrrejectRequestInRequestNeedingApproval'('Approve', 'TtfzLQ/s9dQ=')
-
-not_run: CustomKeywords.'ewqims.HomePage.goToDocumentsPage'()
-
-not_run: if (FilePath.toString().isEmpty()) {
-    WebUI.verifyElementVisible(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
-
-    WebUI.click(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
-
-    KeywordUtil.logInfo('Proceeding without document')
-}
-
-'Validate the Document added as per the Level setting\r\n'
-not_run: CustomKeywords.'ewqims.DocPro.validateDocNum'(DocNumOption)
+CustomKeywords.'ewqims.Documents.addCreatedDocumentAsFavouriteDocument'(levName)
 
 'Going to Doc pro setup page\r\n'
 CustomKeywords.'ewqims.HomePage.NavigateToDocProSetupPage'()
@@ -163,8 +143,4 @@ CustomKeywords.'ewqims.DocPro.moveAllAvailableFiles'('bin')
 CustomKeywords.'ewqims.KeyWord.NavigateToLevelsPage'()
 
 CustomKeywords.'ewqims.LevelsPage.levelDeletion'(levName)
-
-CustomKeywords.'ewqims.HomePage.goToDocumentRoutePage'()
-
-CustomKeywords.'ewqims.RouteCreation.deleteRoute'()
 

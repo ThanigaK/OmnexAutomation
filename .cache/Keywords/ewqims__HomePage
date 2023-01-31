@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "3D868B2D4B8D23339356D85588E766FD",
+  "keywordFileContentHash": "92F5F09E6763A452DE4454D97104B96D",
   "keywordClasses": [
     {
       "name": "ewqims.HomePage",
@@ -250,6 +250,11 @@
         },
         {
           "name": "goToDocumentRoutePage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "goToFavouritesPage",
           "parameters": [],
           "javadoc": ""
         }

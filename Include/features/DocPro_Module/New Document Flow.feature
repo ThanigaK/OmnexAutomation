@@ -22,37 +22,37 @@ Feature: DocPro Setup functionalities
     #And Go to Levels page
     #And Delete level
 
-  Scenario: New document creation with one approver
-    Given Launch browser
-    And Launch application
-    And Login to the application
-    And Go to Document Route page
-    And Create new Route
-    And Go to Levels page
-    And Create level
-    And Go to DocPro setup page
-    And Go to level in Folder management
-    And Make the created level in use
-    And Go to DocPro setup page
-    And Go to level in Folder management
-    When Update the level data in Folder Management
-    And Go to New Doc Request page
-    And Create new doc with details
-    And Logout to the application
-    And Login to the application with Username and Password
-    Then Go to Actions page
-    And Approve request in Request Needing Approval
-    And Go to Documents Page
-    Then Validate uploaded document in Documents TOC
-    And Go to DocPro setup page
-    And Go to level in Document management
-    And Move all available files to bin level
-    And Go to Levels page
-    And Delete level
-    And Go to Document Route page
-    And Delete Route
-
-  #Scenario: New document creation and reject and resumbit the approval
+  #Scenario: New document creation with one approver
+    #Given Launch browser
+    #And Launch application
+    #And Login to the application
+    #And Go to Document Route page
+    #And Create new Route
+    #And Go to Levels page
+    #And Create level
+    #And Go to DocPro setup page
+    #And Go to level in Folder management
+    #And Make the created level in use
+    #And Go to DocPro setup page
+    #And Go to level in Folder management
+    #When Update the level data in Folder Management
+    #And Go to New Doc Request page
+    #And Create new doc with details
+    #And Logout to the application
+    #And Login to the application with Username and Password
+    #Then Go to Actions page
+    #And Approve request in Request Needing Approval
+    #And Go to Documents Page
+    #Then Validate uploaded document in Documents TOC
+    #And Go to DocPro setup page
+    #And Go to level in Document management
+    #And Move all available files to bin level
+    #And Go to Levels page
+    #And Delete level
+    #And Go to Document Route page
+    #And Delete Route
+#
+  Scenario: New document creation and reject and resumbit the approval
     #Given Launch browser
     #And Launch application
     #And Login to the application
@@ -74,23 +74,23 @@ Feature: DocPro Setup functionalities
     #And Reject request in Request Needing Approval
     #And Logout to the application
     #And Login to the application
-    #Then Go to Actions page
-    #And Resubmit the Rejected request in Resubmit Rejected Request
-    #And Logout to the application
-    #And Login to the application with Username and Password
-    #Then Go to Actions page
-    #And Approve request in Request Needing Approval
-    #And Go to Documents Page
-    #Then Validate uploaded document in Documents TOC
-    #And Go to DocPro setup page
-    #And Go to level in Document management
-    #And Move all available files to bin level
-    #And Go to Levels page
-    #And Delete level
-    #And Go to Document Route page
-    #And Delete Route
+    Then Go to Actions page
+    And Resubmit the Rejected request in Resubmit Rejected Request
+    And Logout to the application
+    And Login to the application with Username and Password
+    Then Go to Actions page
+    And Approve request in Request Needing Approval
+    And Go to Documents Page
+    Then Validate uploaded document in Documents TOC
+    And Go to DocPro setup page
+    And Go to level in Document management
+    And Move all available files to bin level
+    And Go to Levels page
+    And Delete level
+    And Go to Document Route page
+    And Delete Route
 #
-  #Scenario: New document creation with Assign admin
+  Scenario: New document creation with Assign admin
     #Given Launch browser
     #And Launch application
     #And Login to the application
