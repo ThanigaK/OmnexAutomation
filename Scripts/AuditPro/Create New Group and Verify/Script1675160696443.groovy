@@ -29,7 +29,75 @@ WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
 WebUI.click(findTestObject('Home_Page/groups_Option'))
 
 'Click on Add Group Button'
-WebUI.click(findTestObject(null))
+WebUI.click(findTestObject('Groups_Page/addGroup_Button'))
 
-WebUI.setText(findTestObject(null), '')
+WebUI.verifyElementPresent(findTestObject('Groups_Page/addTitle_Text'), 10)
+
+AddHeading = WebUI.getText(findTestObject('Groups_Page/addTitle_Text'))
+
+WebUI.verifyMatch(AddHeading, 'Add', false)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/groupName_TextBox'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/saveGroup_Button'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/cancel_Button'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/close_Button'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/action_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/groupName_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/users_Header'), 10)
+
+CustomKeywords.'docPro.GroupPage.createNewGroup'('random', 'Audits')
+
+CustomKeywords.'docPro.GroupPage.searchGroup'('Test Automation')
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userSelection_Icon'), 10)
+
+WebUI.click(findTestObject('Groups_Page/userSelection_Icon'))
+
+WebUI.delay(10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/selectUsers_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/entityBasedSearch_Option'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userBasedSearch_Option'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userSearch_Icon'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userRefresh_Icon'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userSearch_Filter'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userName_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userCode_header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userEmail_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userPosition_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userAccessRights_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userAuditee_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userAuditor_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userReports_Header'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userAdmin_Checkbox'), 10)
+
+WebUI.click(findTestObject('Groups_Page/userAdmin_Checkbox'))
+
+WebUI.verifyElementPresent(findTestObject('Groups_Page/userSave_Button'), 10)
+
+WebUI.click(findTestObject('Groups_Page/userSave_Button'))
+
+WebUI.click(findTestObject('Groups_Page/userRightsClose_Button'))
+
+CustomKeywords.'docPro.GroupPage.deleteTheGroup'('Audits')
 

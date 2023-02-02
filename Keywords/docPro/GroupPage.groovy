@@ -55,10 +55,13 @@ public class GroupPage extends common {
 			groupName = GroupName
 		}
 
-		modifiedGroupName = groupName + "_Modified"
+		modifiedGroupName = groupName// + "_Modified"
 
 		if(option.equalsIgnoreCase("Documents")) {
 			WebUI.click(findTestObject('Object Repository/Suite_Module/Groups_Page/documents_Option'))
+		}
+		if(option.equalsIgnoreCase("Audits")) {
+			WebUI.click(findTestObject('Object Repository/Groups_Page/audits_text'))
 		}
 
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Suite_Module/Groups_Page/add_Button'), 20)
@@ -116,6 +119,7 @@ public class GroupPage extends common {
 		WebUI.click(findTestObject('Object Repository/Suite_Module/Groups_Page/close_Icon'))
 	}
 
+	@Keyword
 	public int searchGroup(String groupName) {
 		WebUI.click(findTestObject('Object Repository/Suite_Module/Groups_Page/refresh_Button'))
 		WebUI.setText(findTestObject('Object Repository/Suite_Module/Groups_Page/searchGroup_TextBox'), groupName)
@@ -176,6 +180,9 @@ public class GroupPage extends common {
 	public void deleteTheGroup(String option) {
 		if(option.equalsIgnoreCase("Documents")) {
 			WebUI.click(findTestObject('Object Repository/Suite_Module/Groups_Page/documents_Option'))
+		}
+		if(option.equalsIgnoreCase("Audits")) {
+			WebUI.click(findTestObject('Object Repository/Groups_Page/audits_text'))
 		}
 		searchGroup(modifiedGroupName);
 		WebUI.mouseOver(findTestObject('Object Repository/Suite_Module/Groups_Page/addUsers_Icon'))

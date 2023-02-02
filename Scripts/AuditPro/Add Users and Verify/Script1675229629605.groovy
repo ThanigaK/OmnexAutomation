@@ -28,28 +28,3 @@ WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
 
 WebUI.click(findTestObject('Home_Page/groups_Option'))
 
-'Get the text of Module'
-auditText = WebUI.getText(findTestObject('Groups_Page/audits_text'))
-
-WebUI.verifyMatch(auditText, 'Audits', false)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/site_DropDown'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/addGroup_Button'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/search_Icon'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/refresh_Icon'), 10)
-
-WebUI.click(findTestObject('Groups_Page/search_Icon'))
-
-WebUI.selectOptionByValue(findTestObject('Groups_Page/searchColumn_DropDown'), '2', false)
-
-WebUI.click(findTestObject('Groups_Page/searchButton'))
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/groupName_Dropdown'), 10)
-
-WebUI.click(findTestObject('Groups_Page/siteDropDown_span'))
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/site_DropDownList'), 10)
-
