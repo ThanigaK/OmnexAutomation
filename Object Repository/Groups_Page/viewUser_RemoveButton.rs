@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>userRefresh_Icon</name>
+   <name>viewUser_RemoveButton</name>
    <tag></tag>
-   <elementGuidId>83e2ac51-bc29-49ae-b076-6c29079cfcff</elementGuidId>
+   <elementGuidId>d9523002-9bb9-4f43-83c7-5bec5725f247</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='userListingGridControl_buttons']//li[@id='refresh']</value>
+         <value>//button[@id='btnDelete']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Groups_Page/ifrUsers_Iframe</value>
-      <webElementGuid>554251fc-341c-4223-b071-21fbf079c618</webElementGuid>
+      <value>Object Repository/Groups_Page/menuData_iFrame</value>
+      <webElementGuid>917e0dda-31e3-4355-885b-691ca12bb881</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>userRefresh_Icon</name>
+   <name>paginationLast_Button</name>
    <tag></tag>
-   <elementGuidId>83e2ac51-bc29-49ae-b076-6c29079cfcff</elementGuidId>
+   <elementGuidId>e964cff6-8e52-4b94-abb0-a95b86f55c47</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='userListingGridControl_buttons']//li[@id='refresh']</value>
+         <value>//span[@id='userListingGridControl_last']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +22,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/ifrUsers_Iframe</value>
-      <webElementGuid>554251fc-341c-4223-b071-21fbf079c618</webElementGuid>
+      <webElementGuid>fc684dc2-29df-4b25-be37-ffa1e6aeac76</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

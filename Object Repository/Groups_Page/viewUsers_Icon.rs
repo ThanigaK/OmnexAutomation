@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>userRefresh_Icon</name>
+   <name>viewUsers_Icon</name>
    <tag></tag>
-   <elementGuidId>83e2ac51-bc29-49ae-b076-6c29079cfcff</elementGuidId>
+   <elementGuidId>8c018407-fec6-4b02-a969-4ab2fbff1d68</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='userListingGridControl_buttons']//li[@id='refresh']</value>
+         <value>(//table//tbody/tr[1]/td[4]//*[name()='svg'])[1]//following-sibling::div</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Groups_Page/ifrUsers_Iframe</value>
-      <webElementGuid>554251fc-341c-4223-b071-21fbf079c618</webElementGuid>
+      <value>Object Repository/Groups_Page/menuData_iFrame</value>
+      <webElementGuid>0b9019f1-1a51-4d71-92d3-9a1283bb6e06</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

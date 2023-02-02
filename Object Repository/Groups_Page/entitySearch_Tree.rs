@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>userRefresh_Icon</name>
+   <name>entitySearch_Tree</name>
    <tag></tag>
-   <elementGuidId>83e2ac51-bc29-49ae-b076-6c29079cfcff</elementGuidId>
+   <elementGuidId>c19f9919-51e5-44df-8781-809fdbba177e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='userListingGridControl_buttons']//li[@id='refresh']</value>
+         <value>//ul[@id='Tree_Benchmark_Selection']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +22,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/ifrUsers_Iframe</value>
-      <webElementGuid>554251fc-341c-4223-b071-21fbf079c618</webElementGuid>
+      <webElementGuid>849eb71c-1f44-4cb5-9580-8d10c9f0c3cd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

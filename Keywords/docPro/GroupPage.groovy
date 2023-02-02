@@ -163,10 +163,14 @@ public class GroupPage extends common {
 
 	@Keyword
 	public void modifyTheGroupName(String option) {
+		
+		modifiedGroupName = groupName + "_Modified"
 		if(option.equalsIgnoreCase("Documents")) {
 			WebUI.click(findTestObject('Object Repository/Suite_Module/Groups_Page/documents_Option'))
 		}
-
+		if(option.equalsIgnoreCase("Audits")) {
+			WebUI.click(findTestObject('Object Repository/Groups_Page/audits_text'))
+		}
 		searchGroup(groupName);
 		WebUI.mouseOver(findTestObject('Object Repository/Suite_Module/Groups_Page/addUsers_Icon'))
 		WebUI.click(findTestObject('Object Repository/Suite_Module/Groups_Page/editGroups_Icon'))
@@ -190,5 +194,23 @@ public class GroupPage extends common {
 		WebUI.click(findTestObject('Object Repository/Suite_Module/Groups_Page/popUpOk_Button'))
 		WebUI.verifyElementVisible(findTestObject('Object Repository/Suite_Module/Groups_Page/deletedSuccess_Message'))
 		KeywordUtil.logInfo("Groupd Deleted successfully.. ! Success message verified..!")
+	}
+	@Keyword
+	public void verifyPagination()
+	{
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Groups_Page/paginationview_label'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Groups_Page/paginationShow_label'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Groups_Page/paginationfirst_Button'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Groups_Page/pagiantionprevious_Button'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Groups_Page/paginationNext_Button'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Groups_Page/paginationLast_Button'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Groups_Page/paginationShow_DropDown'), 10)
+
+		WebUI.click(findTestObject('Object Repository/Groups_Page/paginationShow_DropDown'))
+		WebUI.verifyOptionPresentByValue(findTestObject('Object Repository/Groups_Page/paginationShow_DropDown'), "10", false, 0, FailureHandling.STOP_ON_FAILURE)
+		WebUI.verifyOptionPresentByValue(findTestObject('Object Repository/Groups_Page/paginationShow_DropDown'), "20", false, 0, FailureHandling.STOP_ON_FAILURE)
+		WebUI.verifyOptionPresentByValue(findTestObject('Object Repository/Groups_Page/paginationShow_DropDown'), "50", false, 0, FailureHandling.STOP_ON_FAILURE)
+		WebUI.verifyOptionPresentByValue(findTestObject('Object Repository/Groups_Page/paginationShow_DropDown'), "100", false, 0, FailureHandling.STOP_ON_FAILURE)
+		WebUI.verifyOptionPresentByValue(findTestObject('Object Repository/Groups_Page/paginationShow_DropDown'), "200", false, 0, FailureHandling.STOP_ON_FAILURE)
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "8D3C79C3DB69A98252C8B0EDB937E9E8",
+  "keywordFileContentHash": "81F63EA495256699A4588A98ACBC9E8E",
   "keywordClasses": [
     {
       "name": "docPro.GroupPage",
@@ -33,8 +33,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "addUserInTheGroup",
@@ -52,8 +51,25 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
+        },
+        {
+          "name": "searchGroup",
+          "parameters": [
+            {
+              "name": "groupName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "removeUserInTheGroup",
@@ -71,8 +87,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "modifyTheGroupName",
@@ -90,8 +105,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "deleteTheGroup",
@@ -109,11 +123,14 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
+        },
+        {
+          "name": "verifyPagination",
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
