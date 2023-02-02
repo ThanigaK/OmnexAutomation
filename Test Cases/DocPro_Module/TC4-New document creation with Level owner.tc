@@ -1,319 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Add doc as favourite and validate</name>
+   <name>TC4-New document creation with Level owner</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e81ebe45-e1b7-4537-992b-64b7df79bf71</testCaseGuid>
+   <testCaseGuid>803cc158-3000-4635-a7e4-18ca0569e3d0</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9374e03b-919e-47f4-acb5-c60b1167dc86</variableId>
+      <variableId>24c0d2ed-8e59-450f-8fb1-1589996cb7cf</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c2188f17-81d9-4ff9-a73c-9eb4386de051</variableId>
+      <variableId>e548c06f-4994-42cc-acf8-09552a607ce1</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>411a5fe0-dad6-4625-97be-2c0d074768cb</variableId>
+      <variableId>4cba588b-f062-4917-9fcb-90d7f38ca8d8</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>07a323b9-3302-4f8f-8a2a-8e12a7ad0c02</variableId>
+      <variableId>75d12e38-5d2a-4ecf-bf97-846d73908018</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>4f6a9143-f8f2-4ec7-a9ba-a51756cca5dc</variableId>
+      <variableId>c5b7147c-f12d-4fd6-889c-23b612f21e15</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9f176ddf-dfc4-4250-b213-536e227acf80</variableId>
+      <variableId>0bd0b9ce-b246-4b9a-a053-b486bc4141aa</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f8cec0ef-12ab-4805-8b37-8a2942684e7c</variableId>
+      <variableId>fcba9c65-55c3-43ee-be9e-1cf682233a72</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f40beeef-8dfc-4d13-85e9-40575e02b715</variableId>
+      <variableId>3c319db4-1124-4f55-a31f-72b45de4a3f4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>e8a28acb-f708-4b26-a80f-3def653db1dd</variableId>
+      <variableId>dffe66b0-6798-407d-873b-18d6efe8d2a6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>cb2f26f6-2cd3-4626-9a95-3e39f6e322b5</variableId>
+      <variableId>254e16ab-c422-449c-aa12-a5e2076125d1</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>046b2feb-eac5-4962-a3bb-8b83e7e637bf</variableId>
+      <variableId>007f2de8-512a-476f-9e77-6b7108d99df4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>354e4f35-cafc-4fc4-bfae-4075a9b6280c</variableId>
+      <variableId>cfaf8fdd-25c5-40cf-ada2-08b5d1a0a26a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>bf354766-1b15-4f5b-8ccf-dfc7a18fe76f</variableId>
+      <variableId>bbe1da9b-5d82-4779-977b-82fe0da3ebbd</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>05af3607-c18b-4000-876f-193461ecd620</variableId>
+      <variableId>54ad1046-b984-49e2-ada4-eab8260ccebd</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9cd231dc-67aa-474c-a461-27e357443d58</variableId>
+      <variableId>a87d9cce-a3f8-4481-a7a1-eab73fbe9710</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0e609191-4736-438a-a5f6-e77877bae52a</variableId>
+      <variableId>8471cf2a-222e-475c-8332-29b259d15ebc</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f7f33b5c-7cef-4db8-aedd-b5cbbc77c16b</variableId>
+      <variableId>acbb95ab-e838-4446-a168-82029fb82c32</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>80a94952-42a1-4fb9-875d-d03a5bdfdc3a</variableId>
+      <variableId>6e7b7a40-cdf8-4d40-a688-4a1cba964a6b</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>1d759cb5-50dd-4e48-9895-7a42e7bc3e11</variableId>
+      <variableId>80e37ffe-81fc-40e4-a011-ee7e7f14a52e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6b1162be-f5ad-4146-9122-c5e5ac160561</variableId>
+      <variableId>5fdcfa33-1f28-419b-83dd-e390ec9b59e7</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>fe6f3784-0018-45e7-ab3d-6e74633abe24</variableId>
+      <variableId>a4d8db2b-d81e-46fd-a2a8-0d29c9111cca</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8e14eb3d-e068-4a35-8593-673120482544</variableId>
+      <variableId>c4795518-67a4-4ccf-a859-e1cdc5108251</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ee042021-6ea1-4956-81bc-072a153bd5a1</variableId>
+      <variableId>925d0b07-d7a9-4556-9c8c-3f8d6be973d8</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6eac56ea-9de7-47fd-b8a4-32411ddafa1d</variableId>
+      <variableId>76cfa349-ae67-4530-94fd-86fa72404088</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
-      <id>9374e03b-919e-47f4-acb5-c60b1167dc86</id>
+      <id>24c0d2ed-8e59-450f-8fb1-1589996cb7cf</id>
       <masked>false</masked>
       <name>Code</name>
    </variable>
    <variable>
       <defaultValue>'Route'</defaultValue>
       <description></description>
-      <id>c2188f17-81d9-4ff9-a73c-9eb4386de051</id>
+      <id>e548c06f-4994-42cc-acf8-09552a607ce1</id>
       <masked>false</masked>
       <name>FirsName</name>
    </variable>
    <variable>
       <defaultValue>'Automation'</defaultValue>
       <description></description>
-      <id>411a5fe0-dad6-4625-97be-2c0d074768cb</id>
+      <id>4cba588b-f062-4917-9fcb-90d7f38ca8d8</id>
       <masked>false</masked>
       <name>LastName</name>
    </variable>
    <variable>
       <defaultValue>'route'</defaultValue>
       <description></description>
-      <id>07a323b9-3302-4f8f-8a2a-8e12a7ad0c02</id>
+      <id>75d12e38-5d2a-4ecf-bf97-846d73908018</id>
       <masked>false</masked>
       <name>Email</name>
    </variable>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
-      <id>4f6a9143-f8f2-4ec7-a9ba-a51756cca5dc</id>
+      <id>c5b7147c-f12d-4fd6-889c-23b612f21e15</id>
       <masked>false</masked>
       <name>UserName</name>
    </variable>
    <variable>
       <defaultValue>'5xx1bkCcAlw='</defaultValue>
       <description></description>
-      <id>9f176ddf-dfc4-4250-b213-536e227acf80</id>
+      <id>0bd0b9ce-b246-4b9a-a053-b486bc4141aa</id>
       <masked>false</masked>
       <name>Password</name>
    </variable>
    <variable>
       <defaultValue>'no'</defaultValue>
       <description></description>
-      <id>f8cec0ef-12ab-4805-8b37-8a2942684e7c</id>
+      <id>fcba9c65-55c3-43ee-be9e-1cf682233a72</id>
       <masked>false</masked>
       <name>ChangePassword</name>
    </variable>
    <variable>
       <defaultValue>'yes'</defaultValue>
       <description></description>
-      <id>f40beeef-8dfc-4d13-85e9-40575e02b715</id>
+      <id>3c319db4-1124-4f55-a31f-72b45de4a3f4</id>
       <masked>false</masked>
       <name>ITAR</name>
    </variable>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
-      <id>e8a28acb-f708-4b26-a80f-3def653db1dd</id>
+      <id>dffe66b0-6798-407d-873b-18d6efe8d2a6</id>
       <masked>false</masked>
       <name>RouteName</name>
    </variable>
    <variable>
       <defaultValue>'doNotDelete_2'</defaultValue>
       <description></description>
-      <id>cb2f26f6-2cd3-4626-9a95-3e39f6e322b5</id>
+      <id>254e16ab-c422-449c-aa12-a5e2076125d1</id>
       <masked>false</masked>
       <name>RouteCode</name>
    </variable>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
-      <id>046b2feb-eac5-4962-a3bb-8b83e7e637bf</id>
+      <id>007f2de8-512a-476f-9e77-6b7108d99df4</id>
       <masked>false</masked>
       <name>LevelName</name>
    </variable>
    <variable>
       <defaultValue>'Users define revision'</defaultValue>
       <description></description>
-      <id>354e4f35-cafc-4fc4-bfae-4075a9b6280c</id>
+      <id>cfaf8fdd-25c5-40cf-ada2-08b5d1a0a26a</id>
       <masked>false</masked>
       <name>RevOption</name>
    </variable>
    <variable>
       <defaultValue>'User Defined Document Number'</defaultValue>
       <description></description>
-      <id>bf354766-1b15-4f5b-8ccf-dfc7a18fe76f</id>
+      <id>bbe1da9b-5d82-4779-977b-82fe0da3ebbd</id>
       <masked>false</masked>
       <name>DocNumOption</name>
    </variable>
    <variable>
       <defaultValue>'Last approval date'</defaultValue>
       <description></description>
-      <id>05af3607-c18b-4000-876f-193461ecd620</id>
+      <id>54ad1046-b984-49e2-ada4-eab8260ccebd</id>
       <masked>false</masked>
       <name>revDateOpt</name>
    </variable>
    <variable>
       <defaultValue>'yes'</defaultValue>
       <description></description>
-      <id>9cd231dc-67aa-474c-a461-27e357443d58</id>
+      <id>a87d9cce-a3f8-4481-a7a1-eab73fbe9710</id>
       <masked>false</masked>
       <name>data</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>0e609191-4736-438a-a5f6-e77877bae52a</id>
+      <id>8471cf2a-222e-475c-8332-29b259d15ebc</id>
       <masked>false</masked>
       <name>existing</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>f7f33b5c-7cef-4db8-aedd-b5cbbc77c16b</id>
+      <id>acbb95ab-e838-4446-a168-82029fb82c32</id>
       <masked>false</masked>
       <name>LevelPDFPreference</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>80a94952-42a1-4fb9-875d-d03a5bdfdc3a</id>
+      <id>6e7b7a40-cdf8-4d40-a688-4a1cba964a6b</id>
       <masked>false</masked>
       <name>Module</name>
    </variable>
    <variable>
       <defaultValue>'doNotDelete_2'</defaultValue>
       <description></description>
-      <id>1d759cb5-50dd-4e48-9895-7a42e7bc3e11</id>
+      <id>80e37ffe-81fc-40e4-a011-ee7e7f14a52e</id>
       <masked>false</masked>
       <name>LevelOwner</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6b1162be-f5ad-4146-9122-c5e5ac160561</id>
+      <id>5fdcfa33-1f28-419b-83dd-e390ec9b59e7</id>
       <masked>false</masked>
       <name>siteName</name>
    </variable>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
-      <id>fe6f3784-0018-45e7-ab3d-6e74633abe24</id>
+      <id>a4d8db2b-d81e-46fd-a2a8-0d29c9111cca</id>
       <masked>false</masked>
       <name>DocNumber</name>
    </variable>
    <variable>
       <defaultValue>'2'</defaultValue>
       <description></description>
-      <id>8e14eb3d-e068-4a35-8593-673120482544</id>
+      <id>c4795518-67a4-4ccf-a859-e1cdc5108251</id>
       <masked>false</masked>
       <name>Revison</name>
    </variable>
    <variable>
       <defaultValue>'D:\\\\Omnex\\\\Project\\\\Latest\\\\EWQIMS\\\\Book1.xlsx'</defaultValue>
       <description></description>
-      <id>ee042021-6ea1-4956-81bc-072a153bd5a1</id>
+      <id>925d0b07-d7a9-4556-9c8c-3f8d6be973d8</id>
       <masked>false</masked>
       <name>FilePath</name>
    </variable>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
-      <id>6eac56ea-9de7-47fd-b8a4-32411ddafa1d</id>
+      <id>76cfa349-ae67-4530-94fd-86fa72404088</id>
       <masked>false</masked>
       <name>DocName</name>
    </variable>

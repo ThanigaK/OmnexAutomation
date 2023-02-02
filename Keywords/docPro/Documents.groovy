@@ -387,10 +387,12 @@ public class Documents extends common {
 			}
 		}
 	}
-	
+
 	public void resubmitRejectedRequest(String path) {
 		WebUI.uploadFile(findTestObject('Object Repository/DocPro_Module/Actions_Page/attachDoc_Button'), path)
 		WebUI.click(findTestObject('Object Repository/DocPro_Module/Actions_Page/continue_Button'))
 		KeywordUtil.logInfo("Document uploaded and resubmitted the request. Doc path --> "+path)
 	}
+	
+	
 }

@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Update the Document number option and Validate</name>
+   <name>TC3-New document creation with one approver</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9bff4a64-fbe8-4846-9f79-9db89ab317b7</testCaseGuid>
+   <testCaseGuid>36005216-49db-4788-af2c-55b18a4ae438</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>13f9a789-284f-46fa-83b2-3ab9420881c4</variableId>
+      <variableId>c9b538b3-233f-401f-ad7f-39ec2ea540dc</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>58adbbf9-4da3-43f3-9d31-1a46a7d51f87</variableId>
+      <variableId>e548c06f-4994-42cc-acf8-09552a607ce1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4cba588b-f062-4917-9fcb-90d7f38ca8d8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>75d12e38-5d2a-4ecf-bf97-846d73908018</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c5b7147c-f12d-4fd6-889c-23b612f21e15</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0bd0b9ce-b246-4b9a-a053-b486bc4141aa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fcba9c65-55c3-43ee-be9e-1cf682233a72</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3c319db4-1124-4f55-a31f-72b45de4a3f4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dffe66b0-6798-407d-873b-18d6efe8d2a6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>254e16ab-c422-449c-aa12-a5e2076125d1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>007f2de8-512a-476f-9e77-6b7108d99df4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -93,12 +147,6 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7a7690d5-133e-4a8a-846f-1bf9125d8475</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>a4d8db2b-d81e-46fd-a2a8-0d29c9111cca</variableId>
    </variableLinks>
    <variableLinks>
@@ -120,18 +168,81 @@
       <variableId>76cfa349-ae67-4530-94fd-86fa72404088</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Folder management'</defaultValue>
+      <defaultValue>'random'</defaultValue>
       <description></description>
-      <id>13f9a789-284f-46fa-83b2-3ab9420881c4</id>
+      <id>c9b538b3-233f-401f-ad7f-39ec2ea540dc</id>
       <masked>false</masked>
-      <name>Page</name>
+      <name>Code</name>
    </variable>
    <variable>
-      <defaultValue>'Do Not Delete'</defaultValue>
+      <defaultValue>'Route'</defaultValue>
       <description></description>
-      <id>58adbbf9-4da3-43f3-9d31-1a46a7d51f87</id>
+      <id>e548c06f-4994-42cc-acf8-09552a607ce1</id>
       <masked>false</masked>
-      <name>Level</name>
+      <name>FirsName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation'</defaultValue>
+      <description></description>
+      <id>4cba588b-f062-4917-9fcb-90d7f38ca8d8</id>
+      <masked>false</masked>
+      <name>LastName</name>
+   </variable>
+   <variable>
+      <defaultValue>'route'</defaultValue>
+      <description></description>
+      <id>75d12e38-5d2a-4ecf-bf97-846d73908018</id>
+      <masked>false</masked>
+      <name>Email</name>
+   </variable>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>c5b7147c-f12d-4fd6-889c-23b612f21e15</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+   <variable>
+      <defaultValue>'5xx1bkCcAlw='</defaultValue>
+      <description></description>
+      <id>0bd0b9ce-b246-4b9a-a053-b486bc4141aa</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+   <variable>
+      <defaultValue>'no'</defaultValue>
+      <description></description>
+      <id>fcba9c65-55c3-43ee-be9e-1cf682233a72</id>
+      <masked>false</masked>
+      <name>ChangePassword</name>
+   </variable>
+   <variable>
+      <defaultValue>'yes'</defaultValue>
+      <description></description>
+      <id>3c319db4-1124-4f55-a31f-72b45de4a3f4</id>
+      <masked>false</masked>
+      <name>ITAR</name>
+   </variable>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>dffe66b0-6798-407d-873b-18d6efe8d2a6</id>
+      <masked>false</masked>
+      <name>RouteName</name>
+   </variable>
+   <variable>
+      <defaultValue>'doNotDelete_2'</defaultValue>
+      <description></description>
+      <id>254e16ab-c422-449c-aa12-a5e2076125d1</id>
+      <masked>false</masked>
+      <name>RouteCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>007f2de8-512a-476f-9e77-6b7108d99df4</id>
+      <masked>false</masked>
+      <name>LevelName</name>
    </variable>
    <variable>
       <defaultValue>'Users define revision'</defaultValue>
@@ -204,7 +315,7 @@
       <name>Module</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'doNotDelete_2'</defaultValue>
       <description></description>
       <id>80e37ffe-81fc-40e4-a011-ee7e7f14a52e</id>
       <masked>false</masked>
@@ -218,13 +329,6 @@
       <name>siteName</name>
    </variable>
    <variable>
-      <defaultValue>'Do Not Delete'</defaultValue>
-      <description></description>
-      <id>7a7690d5-133e-4a8a-846f-1bf9125d8475</id>
-      <masked>false</masked>
-      <name>LevelName</name>
-   </variable>
-   <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
       <id>a4d8db2b-d81e-46fd-a2a8-0d29c9111cca</id>
@@ -232,7 +336,7 @@
       <name>DocNumber</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'2'</defaultValue>
       <description></description>
       <id>c4795518-67a4-4ccf-a859-e1cdc5108251</id>
       <masked>false</masked>

@@ -18,23 +18,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Login to application with the Credentials'
+'Login to application with the Global Variables'
 CustomKeywords.'docPro.KeyWord.LoginwithCredential'(GlobalVariable.url, GlobalVariable.username1, GlobalVariable.Password1)
 
-CustomKeywords.'docPro.HomePage.goToDocumentRoutePage'()
-
-CustomKeywords.'docPro.RouteCreation.createNewRoute'(RouteName, RouteCode)
-
+'Navigating to levels page to create new level'
 CustomKeywords.'docPro.KeyWord.NavigateToLevelsPage'()
 
+'Create New leavel specific to this scenario\r\n'
 levName = CustomKeywords.'docPro.LevelsPage.createLevel'(LevelName)
 
-'Going to Doc pro setup page\r\n'
+'Going to Doc pro setup page to make the level IN Use and Update it\r\n'
 CustomKeywords.'docPro.HomePage.NavigateToDocProSetupPage'()
 
 'Select the Required Level in the Folder management'
 CustomKeywords.'docPro.DocPro.goToLevelInDocproSetup'('Folder management', levName)
 
+'Make the Level In Use'
 CustomKeywords.'docPro.DocPro.MakeLevelInUse'()
 
 'Setting Day/Month value for "Documents Reviewed After"'
@@ -86,15 +85,16 @@ if (data.equals('yes')) {
     KeywordUtil.logInfo('Records checkbox clicked.')
 }
 
-CustomKeywords.'docPro.RouteCreation.AssignRoute'('No', 'No')
-
-CustomKeywords.'docPro.DocPro.AssignAutoApprovalRoute'('No', 'No', 'Module Auto approval')
+'Assigning Assign By Admin Route option\r\n'
+CustomKeywords.'docPro.DocPro.AssignAutoApprovalRoute'('No', 'No', 'Assign by admin')
 
 'Assigning Level PDF Preferences if need'
 CustomKeywords.'docPro.DocPro.levelpdfPrefSelection'('Document Type', LevelPDFPreference)
 
+'Setting Auto Publish value as Required\r\n'
 CustomKeywords.'docPro.DocPro.setAutoPublish'('100', Module)
 
+'Hitting Save button to update the Level'
 WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/save_Button'))
 
 KeywordUtil.logInfo('Save button clicked..!')
@@ -113,8 +113,8 @@ KeywordUtil.logInfo('Site selected successfully --> ' + siteName)
 'Select "Documnet Level"'
 CustomKeywords.'docPro.NewDocRequest.levelSelection'(levName)
 
-'Enter Document Number'
-CustomKeywords.'docPro.DocPro.EnterDocNumber'(DocNumber)
+'Entering Document Number'
+String DocumentNum = CustomKeywords.'docPro.DocPro.EnterDocumentNumber'(DocNumber)
 
 'Entering Document Name'
 CustomKeywords.'docPro.DocPro.EnterDocName'(DocName)
@@ -125,40 +125,53 @@ CustomKeywords.'docPro.DocPro.enterRevisionNum'(Revison)
 'Upload the New Document'
 CustomKeywords.'docPro.DocPro.uploadFile'(FilePath)
 
+WebUI.delay(6)
+
+'Click the Add Button'
 WebUI.click(findTestObject('Object Repository/DocPro_Module/New Documnet Request/addDocument_Button'))
 
-Thread.sleep(4000)
+WebUI.delay(6)
 
-if (FilePath.toString().isEmpty()) {
-    WebUI.verifyElementVisible(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
-
-    WebUI.click(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
-
-    KeywordUtil.logInfo('Proceeding without document')
-}
-
+'Navigatin to administration Action Page'
 CustomKeywords.'docPro.Documents.NavigateToAdminActionsPage'()
 
-CustomKeywords.'docPro.Documents.assignAuthorForCreatedRequest'('doNotDelete_2')
-
-CustomKeywords.'docPro.KeyWord.Logout'()
-
-'Login to application with the Credentials'
-CustomKeywords.'docPro.KeyWord.LoginwithCredential'(GlobalVariable.url, 'donotdelete2', 'TtfzLQ/s9dQ=')
+'Assign Module Auto Approval Route'
+CustomKeywords.'docPro.Documents.assignRouteForCreatedRequest'('Module Auto approval')
 
 CustomKeywords.'docPro.Documents.NavigateToActionsPage'()
 
-CustomKeywords.'docPro.Documents.attachDocumentInDocumentNeedingRevision'('D:\\\\Omnex\\\\Project\\\\Latest\\\\EWQIMS\\\\Book1.xlsx')
+WebUI.click(findTestObject('DocPro_Module/Actions_Page/pending_Request_button'))
+
+WebUI.click(findTestObject('DocPro_Module/Actions_Page/searchInPendingRequest'), FailureHandling.STOP_ON_FAILURE)
+
+'Terminate the document wiht the help of Document Number to make the Test Scenario ready for next cycle'
+WebUI.setText(findTestObject('DocPro_Module/Actions_Page/searchInPendingRequest'), DocumentNum)
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('DocPro_Module/Actions_Page/InProcess'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('DocPro_Module/Actions_Page/Terminate'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('DocPro_Module/Actions_Page/YesButton'))
+
+WebUI.delay(3)
 
 'Going to Doc pro setup page\r\n'
-CustomKeywords.'docPro.HomePage.NavigateToDocProSetupPage'()
+not_run: CustomKeywords.'docPro.HomePage.NavigateToDocProSetupPage'()
 
 'Select the Required Level in the Folder management'
-CustomKeywords.'docPro.DocPro.goToLevelInDocproSetup'('Document management', levName)
+not_run: CustomKeywords.'docPro.DocPro.goToLevelInDocproSetup'('Document management', levName)
 
-CustomKeywords.'docPro.DocPro.moveAllAvailableFiles'('bin')
+not_run: CustomKeywords.'docPro.DocPro.moveAllAvailableFiles'('bin')
 
+'Navigating to the levels page'
 CustomKeywords.'docPro.KeyWord.NavigateToLevelsPage'()
 
+'Delete the Newely created level'
 CustomKeywords.'docPro.LevelsPage.levelDeletion'(levName)
 

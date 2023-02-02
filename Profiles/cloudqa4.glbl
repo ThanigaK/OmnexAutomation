@@ -25,7 +25,7 @@
       <name>username1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>d1</description>
       <initValue>'HUqOjK7L2kY='</initValue>
       <name>Password1</name>
    </GlobalVariableEntity>
@@ -48,5 +48,10 @@
       <description>test123</description>
       <initValue>'5xx1bkCcAlw='</initValue>
       <name>auditpropassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>d2</description>
+      <initValue>'TtfzLQ/s9dQ='</initValue>
+      <name>pass</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -35,10 +35,10 @@ CustomKeywords.'docPro.DocPro.MakeLevelInUse'()
 
 'Setting Day/Month value for "Documents Reviewed After"'
 WebUI.selectOptionByValue(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/drpDocReviewUnitName_DropDown'), 
-    'Month', false)
+    'Day', false)
 
 'Setting Count value for "Documents Reviewed After"'
-WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/txtDocReviewUnit_TextBox'), '2')
+WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/txtDocReviewUnit_TextBox'), '1')
 
 'Clicking Revision Option drop down'
 WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/revisionOption_DropDown'))
@@ -82,8 +82,6 @@ if (data.equals('yes')) {
     KeywordUtil.logInfo('Records checkbox clicked.')
 }
 
-CustomKeywords.'docPro.DocPro.AssignAutoApprovalRoute'('No', 'No', 'Assign by admin')
-
 'Assigning Level PDF Preferences if need'
 CustomKeywords.'docPro.DocPro.levelpdfPrefSelection'('Document Type', LevelPDFPreference)
 
@@ -126,9 +124,14 @@ WebUI.click(findTestObject('Object Repository/DocPro_Module/New Documnet Request
 
 WebUI.delay(6)
 
-CustomKeywords.'docPro.Documents.NavigateToAdminActionsPage'()
+CustomKeywords.'docPro.KeyWord.Logout'()
 
-CustomKeywords.'docPro.Documents.assignRouteForCreatedRequest'('Module Auto approval')
+'Login to application with the Credentials'
+CustomKeywords.'docPro.KeyWord.LoginwithCredential'(GlobalVariable.url, 'donotdelete2', 'TtfzLQ/s9dQ=')
+
+CustomKeywords.'docPro.Documents.NavigateToActionsPage'()
+
+CustomKeywords.'docPro.DocPro.approveOrrejectRequestInRequestNeedingApproval'('Approve', 'TtfzLQ/s9dQ=')
 
 'Going to Doc pro setup page\r\n'
 CustomKeywords.'docPro.HomePage.NavigateToDocProSetupPage'()
@@ -141,8 +144,4 @@ CustomKeywords.'docPro.DocPro.moveAllAvailableFiles'('bin')
 CustomKeywords.'docPro.KeyWord.NavigateToLevelsPage'()
 
 CustomKeywords.'docPro.LevelsPage.levelDeletion'(levName)
-
-CustomKeywords.'docPro.HomePage.goToDocumentRoutePage'()
-
-CustomKeywords.'docPro.RouteCreation.deleteRoute'()
 

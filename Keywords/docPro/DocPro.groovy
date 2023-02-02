@@ -400,7 +400,9 @@ public class DocPro extends common {
 			WebUI.click(findTestObject('Object Repository/DocPro_Module/Actions_Page/approve_RadioButton'))
 		} else {
 			WebUI.click(findTestObject('Object Repository/DocPro_Module/Actions_Page/reject_RadioButton'))
+			WebUI.delay(5)
 			WebUI.sendKeys(findTestObject('Object Repository/DocPro_Module/Actions_Page/richTextInReqNeedinApproval'), reason)
+			WebUI.delay(3)
 		}
 
 		if(!secondPassword.isEmpty()) {
@@ -436,7 +438,7 @@ public class DocPro extends common {
 		switchFrameAndDoActions('level', "//span[contains(@id,'tvDoc') and text()='"+levelName+"']", 'click', findTestObject('Object Repository/DocPro_Module/ifrpopuplevelTreeMenudata_IFarme'))
 		KeywordUtil.logInfo("Level selected succesfully..!")
 	}
-	
+
 	@Keyword
 	public void AssignAutoApprovalRoute(String resetLevel, String resetSubLevelRoute, String RouteName) {
 		'Scrolling to "Edit Route Option"'
@@ -481,7 +483,21 @@ public class DocPro extends common {
 					RouteName + Keys.ENTER)
 		}
 
+		WebUI.delay(3)
 		'Close the Route Option window'
 		WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/popupClose_Icon'))
+	}
+	
+	@Keyword
+	public String EnterDocumentNumber(String Doc) {
+		if (Doc.toString().equalsIgnoreCase("random")) {
+			DocNumber =  DateTimeStr;
+			if(!WebUI.getAttribute(findTestObject('Object Repository/DocPro_Module/New Documnet Request/docNumber_TextBox'), "readonly").equals("readonly")) {
+				WebUI.setText(findTestObject('Object Repository/DocPro_Module/New Documnet Request/docNumber_TextBox'), DocNumber)
+				KeywordUtil.logInfo("Document number is entered successfully --> "+DocNumber)
+			}
+		}
+		
+		return DocNumber;
 	}
 }

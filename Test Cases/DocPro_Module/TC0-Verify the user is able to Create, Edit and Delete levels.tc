@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify the user is able to Create, Edit and Delete levels</name>
+   <name>TC0-Verify the user is able to Create, Edit and Delete levels</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1df4e42f-b1bf-4356-8508-6263aa3c2b0f</testCaseGuid>
