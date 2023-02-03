@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "862E4B3910AB0F87B596EC1B18653F3F",
+  "keywordFileContentHash": "0D0F7763758A49494DE91F30E466EB0E",
   "keywordClasses": [
     {
       "name": "suite_module.Module_Page",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

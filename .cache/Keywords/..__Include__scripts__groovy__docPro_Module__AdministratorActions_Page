@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "E66197D2D816BC712D9B6FC4E1431685",
+  "keywordFileContentHash": "E739350734A676D6FCCEF2DFC01C7805",
   "keywordClasses": [
     {
       "name": "docPro_Module.AdministratorActions_Page",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

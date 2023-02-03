@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>viewNoUsers_Text</name>
+   <tag></tag>
+   <elementGuidId>bcb4fe68-f6d0-40aa-90e9-23d28158ee3a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//table//tbody/tr[1]/td[4]//*[name()='svg'])[1]//following-sibling::div//parent::td</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Groups_Page/ifrUsers_Iframe</value>
+      <webElementGuid>07952456-2ea1-4e19-9014-1b8ff52e15f2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='alert alert-success alert-dismissible']</value>
+         <value>//div[contains(@class,'alert alert-success alert-dismissible')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/ifrUsers_Iframe</value>
-      <webElementGuid>cd4f31ee-d41d-4d2e-b33e-2c60c3491d4f</webElementGuid>
+      <webElementGuid>a9ea23e0-4795-47f6-96ad-2ef83ea37cff</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

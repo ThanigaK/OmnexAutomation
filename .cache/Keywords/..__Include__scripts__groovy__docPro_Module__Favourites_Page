@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "CCA55E0DD7250AC73E3D844F78CCDA91",
+  "keywordFileContentHash": "6FDE95FA8CDD9F2464333B29E08289F9",
   "keywordClasses": [
     {
       "name": "docPro_Module.Favourites_Page",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

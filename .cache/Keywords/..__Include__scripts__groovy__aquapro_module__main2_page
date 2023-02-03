@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "3143BB648867461218FB80A0C5C98AB0",
+  "keywordFileContentHash": "F11E65B2A2673494B3AEC32EE4C5C4A9",
   "keywordClasses": [
     {
       "name": "aquapro_module.main2_page",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='alert alert-success alert-dismissible']/a[@id='alert_ok']</value>
+         <value>//div[contains(@class,'alert alert-success alert-dismissible')]/a[@id='alert_ok']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/ifrUsers_Iframe</value>
-      <webElementGuid>32d56e88-4be7-44bd-934d-d5eef1677b8d</webElementGuid>
+      <webElementGuid>362cf893-a1ac-43af-ba07-bc2c11b5cc66</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

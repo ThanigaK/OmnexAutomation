@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "8E7288C86287F41B07A204A8310BA7E6",
+  "keywordFileContentHash": "A8C77E854C07AACDE68A7D1A740DC3F6",
   "keywordClasses": [
     {
       "name": "suite_module.VendorOrRegistrar_Page",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
