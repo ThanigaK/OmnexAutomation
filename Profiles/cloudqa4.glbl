@@ -11,12 +11,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Administrator'</initValue>
+      <initValue>'administrator'</initValue>
       <name>username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>admin</description>
-      <initValue>'RAIVpflpDOg='</initValue>
+      <description>a1</description>
+      <initValue>'sFQ/sJkzszM='</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

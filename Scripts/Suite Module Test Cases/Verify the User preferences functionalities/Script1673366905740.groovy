@@ -24,7 +24,8 @@ CustomKeywords.'docPro.KeyWord.Login'()
 CustomKeywords.'docPro.HomePage.NavigateToUsersPage'()
 
 'Create new user'
-NewUser = CustomKeywords.'docPro.UserPage.createUser'(Code, FirstName, LastName, Email, UserName, Password, ITAR, ChangePassword)
+NewUser = CustomKeywords.'docPro.UserPage.createUserReturnUserName'(Code, FirstName, LastName, Email, UserName, Password, 
+    ITAR, ChangePassword)
 
 'Logout from the application'
 CustomKeywords.'docPro.KeyWord.Logout'()

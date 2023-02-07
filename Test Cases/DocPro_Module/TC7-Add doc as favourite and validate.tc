@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC6-Add doc as favourite and validate</name>
+   <name>TC7-Add doc as favourite and validate</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e81ebe45-e1b7-4537-992b-64b7df79bf71</testCaseGuid>
@@ -149,6 +149,12 @@
       <value></value>
       <variableId>6eac56ea-9de7-47fd-b8a4-32411ddafa1d</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5e6cfa0e-5eea-4c9f-8b17-eeac5a00acf3</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
@@ -276,7 +282,7 @@
       <name>Module</name>
    </variable>
    <variable>
-      <defaultValue>'doNotDelete_2'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>1d759cb5-50dd-4e48-9895-7a42e7bc3e11</id>
       <masked>false</masked>
@@ -304,7 +310,7 @@
       <name>Revison</name>
    </variable>
    <variable>
-      <defaultValue>'D:\\\\Omnex\\\\Project\\\\Latest\\\\EWQIMS\\\\Book1.xlsx'</defaultValue>
+      <defaultValue>'D:\\\\Omnex\\\\Repo\\\\OmnexAutomation\\\\Files\\\\Book1.xlsx'</defaultValue>
       <description></description>
       <id>ee042021-6ea1-4956-81bc-072a153bd5a1</id>
       <masked>false</masked>
@@ -316,5 +322,12 @@
       <id>6eac56ea-9de7-47fd-b8a4-32411ddafa1d</id>
       <masked>false</masked>
       <name>DocName</name>
+   </variable>
+   <variable>
+      <defaultValue>'doNotDelete_2'</defaultValue>
+      <description></description>
+      <id>5e6cfa0e-5eea-4c9f-8b17-eeac5a00acf3</id>
+      <masked>false</masked>
+      <name>variable</name>
    </variable>
 </TestCaseEntity>

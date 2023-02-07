@@ -5,16 +5,16 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
+   <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
-   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunFailedTestCasesOnly>true</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>a6213d2b-b09c-443f-9a99-e6e286838cc8</testSuiteGuid>
    <testCaseLink>
       <guid>4da2b6b8-74c1-429b-9542-065ddac18a43</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Create Country, State, and City functionalities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -39,7 +39,7 @@
    <testCaseLink>
       <guid>10b59a35-f237-47b1-9490-052853c7a6a1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Create entity, assign owner and delete entity</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -58,7 +58,7 @@
    <testCaseLink>
       <guid>4b49be9b-1a20-4927-910b-03a7f8bf803b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Create, Modify and delete tags</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -114,14 +114,14 @@
    <testCaseLink>
       <guid>b04460ce-8da7-41e2-a327-d1158fb66576</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Update data and Validate in Organization profile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>85e8915a-c088-45ff-bf3a-a534fbe5383d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the City Creation and Deletion functionalities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -146,7 +146,7 @@
    <testCaseLink>
       <guid>7e5ffa1a-ea53-4124-95f7-ca5c87a85395</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the Country Creation and Deletion functionalities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -159,7 +159,7 @@
    <testCaseLink>
       <guid>97ad51a6-6231-4fd6-a977-a7a9d3bbc332</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the Forgot password functionality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -220,7 +220,7 @@
    <testCaseLink>
       <guid>0ecfa13d-39ec-4384-ab86-a5bcbc23467e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the Position Creation and Deletion functionalities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -239,14 +239,14 @@
    <testCaseLink>
       <guid>c5ffbcb5-db37-4dd9-9d3e-2fa4af241b35</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the Remember me functionality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>827d5515-efc6-43ac-9ffa-46984fa70343</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the Shift Creation and Deletion functionalities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -283,7 +283,7 @@
    <testCaseLink>
       <guid>2b87dfdf-75bf-46e8-a597-35cdde6624c1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the State Creation and Deletion functionalities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -302,7 +302,7 @@
    <testCaseLink>
       <guid>47b160a8-403d-4fde-9d6a-3f4662976714</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the unlock user functionality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -315,7 +315,7 @@
    <testCaseLink>
       <guid>81f6ef4e-ef55-44a5-bece-e23d0b3f3062</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the User is able to Add and Remove Users for module</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -352,7 +352,7 @@
    <testCaseLink>
       <guid>e9a509d6-97ec-4841-9e1f-2938d5160112</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the User is able to create, delete meetings</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -395,7 +395,7 @@
    <testCaseLink>
       <guid>43a0e073-e8c2-4430-a7ab-c5a2326520c2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the User is able to create, delete Team</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -414,7 +414,7 @@
    <testCaseLink>
       <guid>f2884147-09e7-4147-9c2d-2bb09f83dffc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the User is able to create,delete Customer</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -451,7 +451,7 @@
    <testCaseLink>
       <guid>4b912249-88bf-4123-9455-2a8b99dfe4bf</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the User is able to create,delete manufacturer</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -470,7 +470,7 @@
    <testCaseLink>
       <guid>3400ccdf-b0fe-4f92-b5f2-81a74a59ec35</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the User is able to create,delete Supplier</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -495,7 +495,7 @@
    <testCaseLink>
       <guid>0af8b8a6-e618-493c-a560-7ec2c6783d79</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the User is able to create,delete Vendor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -514,7 +514,7 @@
    <testCaseLink>
       <guid>645e17ae-4854-4b39-8bc7-d44d68e79efd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the User is able to create,Modify,delete groups and add and remove users</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -533,7 +533,7 @@
    <testCaseLink>
       <guid>483ea542-3dbe-45ca-a59e-a66ddd451815</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify the User preferences functionalities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -618,7 +618,7 @@
    <testCaseLink>
       <guid>45011d1f-2d02-4f49-a1dc-66a3c08a76fb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify whether the user is able to change password from preferences</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -679,7 +679,7 @@
    <testCaseLink>
       <guid>8dc4595f-5a8f-4cc5-a09c-434ea83c4d5e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Suite Module Test Cases/Verify whether the user is able to create, search and delete user</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>

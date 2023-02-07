@@ -81,6 +81,9 @@ public class KeyWord extends common {
 			}
 			'If not click the setup Icon'
 			WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
+
+			waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
+
 			'Scroll to the admin setting option \r\n'
 			WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/adminSettings_Option'), 15)
 			'Click on Admin setting\r\n'
@@ -151,13 +154,15 @@ public class KeyWord extends common {
 	}
 
 	@Keyword
-	public static void CreateCity(String City, String Country, String state) {
+	public static void CreateCity(String Country, String state, String City) {
 		Thread.sleep(3000)
 
 		if(Country.equals("India")) {
 			WebUI.click(findTestObject('Suite_Module/City_Page/country_DropDown'))
-			WebUI.sendKeys(findTestObject('Suite_Module/City_Page/searchCountryState_TextBox'), Country +Keys.ENTER);
+			WebUI.sendKeys(findTestObject('Suite_Module/City_Page/searchCountryState_TextBox'), "India" +Keys.ENTER);
 		} else {
+			WebUI.click(findTestObject('Suite_Module/City_Page/country_DropDown'))
+			WebUI.sendKeys(findTestObject('Suite_Module/City_Page/searchCountryState_TextBox'), Country +Keys.ENTER);
 			KeywordUtil.logInfo("Continue with the default Country..!")
 		}
 
@@ -438,6 +443,7 @@ public class KeyWord extends common {
 			WebUI.click(findTestObject('Home_Page/menu_Icon'))
 		}
 		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
+		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
 		WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/levels_Page'), 15)
 		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/levels_Page'), 15)
 	}

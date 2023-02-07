@@ -47,6 +47,7 @@ public class Documents extends common {
 	public static String DocNumber;
 	public static String docName;
 	public static String favFolderName;
+	int place =0;
 
 	@Keyword
 	public void openLevel(String levelName) {
@@ -241,7 +242,8 @@ public class Documents extends common {
 	public void addCreatedDocumentAsFavouriteDocument(String levelName) {
 		WebUI.setText(findTestObject('Object Repository/DocPro_Module/Documents_Page/folderSearch_TextBox'), levelName+Keys.ENTER)
 		switchFrameAndDoActions("lev", "//*[text()='"+levelName+"']", "jsclick", findTestObject('Object Repository/Home_Page/detailView_iFrame'))
-		searchAndSelectDoc("Document Number",DocPro.DocNumber)
+		int place = searchDocWithValidation("Document Number",DocPro.DocNumber);
+		switchFrameAndDoActions('chkbox', "(//*[@name='DPTOCgrid_selectCheck'])["+String.valueOf(place)+"]", "jsclick", findTestObject('Object Repository/DocPro_Module/tree_Iframe'))
 		WebUI.click(findTestObject('Object Repository/DocPro_Module/Documents_Page/selectFavFolder_Icon'))
 		switchToNextWindow();
 		WebUI.setText(findTestObject('Object Repository/DocPro_Module/Documents_Page/searchFav_TextBox'), favFolderName +Keys.ENTER)

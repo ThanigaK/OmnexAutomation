@@ -32,8 +32,16 @@ CustomKeywords.'docPro.HomePage.NavigateToEntityOwnerPage'()
 'Assign Enitity Owner\r\n'
 CustomKeywords.'docPro.HomePage.assignEntityOwner'(Code)
 
+if(WebUI.getAttribute(findTestObject('Object Repository/Home_Page/sideMiniBar'), "class").contains("mini-sidebar")) {
+	WebUI.click(findTestObject('Home_Page/menu_Icon'))
+}
+
 'Navigating back to the Entity Page'
-CustomKeywords.'docPro.HomePage.NavigateToEntityPage'()
+WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
+
+WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/entity_Option'),15)
+
+WebUI.click(findTestObject('Object Repository/Home_Page/entity_Option'))
 
 'Delete the Entity'
 CustomKeywords.'docPro.HomePage.DeleteEntity'()

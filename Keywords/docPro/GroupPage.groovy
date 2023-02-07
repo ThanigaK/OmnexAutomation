@@ -163,7 +163,7 @@ public class GroupPage extends common {
 
 	@Keyword
 	public void modifyTheGroupName(String option) {
-		
+
 		modifiedGroupName = groupName + "_Modified"
 		if(option.equalsIgnoreCase("Documents")) {
 			WebUI.click(findTestObject('Object Repository/Suite_Module/Groups_Page/documents_Option'))

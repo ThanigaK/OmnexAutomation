@@ -162,10 +162,10 @@ public class common {
 		WebUI.maximizeWindow()
 		WebUI.click(findTestObject('Object Repository/Suite_Module/Meetings_Page/existingTeam_CheckBox'))
 		WebUI.click(findTestObject('Object Repository/Suite_Module/Meetings_Page/employeeSelect_CheckBox'))
-//		int size = DriverFactory.getWebDriver().findElements(By.xpath("//table[@id='TeamLeader']//tbody//tr")).size()		
-//		for(int i =1; i<=size;i++) {
-//			DriverFactory.getWebDriver().findElement(By.xpath("//table[@id='TeamLeader']//tbody//tr["+i+"]/td/input[@name='TeamLeader_selectCheck']")).click()
-//		}
+		//		int size = DriverFactory.getWebDriver().findElements(By.xpath("//table[@id='TeamLeader']//tbody//tr")).size()
+		//		for(int i =1; i<=size;i++) {
+		//			DriverFactory.getWebDriver().findElement(By.xpath("//table[@id='TeamLeader']//tbody//tr["+i+"]/td/input[@name='TeamLeader_selectCheck']")).click()
+		//		}
 		WebUI.click(findTestObject('Object Repository/Suite_Module/Meetings_Page/teamSave_Button'))
 		WebUI.switchToWindowIndex(0)
 	}
@@ -282,7 +282,7 @@ public class common {
 		String DateTimeStr = sdf1.format(timestamp);
 		return DateTimeStr;
 	}
-	
+
 	public static boolean isElementPresent(String objectName , String dynamicXpath) {
 		TestObject to = new TestObject(objectName)
 		to.addProperty("xpath", ConditionType.EQUALS, dynamicXpath)
@@ -295,13 +295,13 @@ public class common {
 		WebUI.switchToDefaultContent();
 		return flag;
 	}
-	
+
 	public void pageRecordSizeChangeInAddUser(String size) {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/DocPro_Module/DocumentRoute_Page/tableRecordSizeInAddUser_DropDown'), 20)
 		WebUI.selectOptionByValue(findTestObject('Object Repository/DocPro_Module/DocumentRoute_Page/tableRecordSizeInAddUser_DropDown'),
 				size, true)
 	}
-	
+
 	public static void switchToNextWindow() {
 		String wid = DriverFactory.getWebDriver().getWindowHandle()
 		Set<String> allWid = DriverFactory.getWebDriver().getWindowHandles()

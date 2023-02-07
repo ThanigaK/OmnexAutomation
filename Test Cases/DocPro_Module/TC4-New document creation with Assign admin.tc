@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC5-New document creation with Assign admin</name>
+   <name>TC4-New document creation with Assign admin</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c0958b77-f9ee-46a0-8681-598cd64a5699</testCaseGuid>

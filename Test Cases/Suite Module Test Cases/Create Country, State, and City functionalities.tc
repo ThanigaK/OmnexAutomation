@@ -24,24 +24,24 @@
       <variableId>ef4efeb2-2628-43b4-bb88-e8972dc7f858</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Test Automation City'</defaultValue>
+      <defaultValue>'Test Automation Country'</defaultValue>
       <description></description>
       <id>136f9155-3fc5-4086-b495-e3036a6e81e8</id>
       <masked>false</masked>
-      <name>City</name>
-   </variable>
-   <variable>
-      <defaultValue>'Finland'</defaultValue>
-      <description></description>
-      <id>165af512-bb5f-4cfd-8bee-302238f00bd7</id>
-      <masked>false</masked>
-      <name>Country</name>
+      <name>NewCountry</name>
    </variable>
    <variable>
       <defaultValue>'TamilNadu'</defaultValue>
       <description></description>
-      <id>ef4efeb2-2628-43b4-bb88-e8972dc7f858</id>
+      <id>165af512-bb5f-4cfd-8bee-302238f00bd7</id>
       <masked>false</masked>
       <name>State</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation City'</defaultValue>
+      <description></description>
+      <id>ef4efeb2-2628-43b4-bb88-e8972dc7f858</id>
+      <masked>false</masked>
+      <name>City</name>
    </variable>
 </TestCaseEntity>

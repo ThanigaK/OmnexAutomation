@@ -110,6 +110,9 @@ public class SupplierPage extends common {
 		addSQIEngineer(user)
 
 		WebUI.setText(findTestObject('Object Repository/Suite_Module/Supplier_Page/manufacturingLocation_TextBox'), "Test Automation Location")
+		WebUI.delay(4)
+		WebUI.click(findTestObject('Object Repository/Suite_Module/Supplier_Page/SupplierTypeDropDown'))
+		WebUI.setText(findTestObject('Object Repository/Suite_Module/Supplier_Page/SupplierTypeSearch'), "Other"+Keys.ENTER)
 
 		WebUI.click(findTestObject('Object Repository/Suite_Module/EntityAndEntityOwner_Page/saveEntityOwner_Button'))
 		WebUI.verifyElementVisible(findTestObject('Object Repository/Suite_Module/UserPreferences_Page/successMessageInChangePassword'))

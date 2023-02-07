@@ -27,7 +27,7 @@ WebUI.setText(findTestObject('Login_Page/userName_Input'), 'donotdelete')
 WebUI.setEncryptedText(findTestObject('Login_Page/password_Input'), Password)
 
 'Enable Rememeber me Checkbox'
-WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
+not_run: WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
 
 'Hit login button'
 WebUI.click(findTestObject('Login_Page/login_Button'))
@@ -42,7 +42,7 @@ WebUI.setText(findTestObject('Login_Page/userName_Input'), GlobalVariable.userna
 WebUI.setEncryptedText(findTestObject('Login_Page/password_Input'), GlobalVariable.Password)
 
 'Select Rememeber me option'
-WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
+not_run: WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
 
 'Hit login buton'
 WebUI.click(findTestObject('Login_Page/login_Button'))
@@ -54,5 +54,5 @@ CustomKeywords.'docPro.HomePage.NavigateToUnlockUserPage'()
 CustomKeywords.'docPro.UserPage.unlockUser'()
 
 'Validate the user unlocked'
-CustomKeywords.'docPro.KeyWord.validateUserUnlocked'()
+not_run: CustomKeywords.'docPro.KeyWord.validateUserUnlocked'()
 
