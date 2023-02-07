@@ -1,81 +1,14 @@
 {
-  "keywordFileContentHash": "69973A843DB6590F76A884AA87BA375F",
+  "keywordFileContentHash": "2E35CDB1446DC40727B7B662C639EDAB",
   "keywordClasses": [
     {
-      "name": "docPro.Documents",
+      "name": "suiteModule.GroupPage",
       "keywordMethods": [
         {
-          "name": "openLevel",
+          "name": "createNewGroup",
           "parameters": [
             {
-              "name": "levelName",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "NavigateToActionsPage",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "NavigateToAdminActionsPage",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "assignAuthorForCreatedRequest",
-          "parameters": [
-            {
-              "name": "author",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "attachDocumentInDocumentNeedingRevision",
-          "parameters": [
-            {
-              "name": "RevisionDocPath",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "assignUserInReassignApproval",
-          "parameters": [
-            {
-              "name": "ReApprover",
+              "name": "GroupName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -88,7 +21,7 @@
               }
             },
             {
-              "name": "Password",
+              "name": "option",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -104,10 +37,10 @@
           "javadoc": ""
         },
         {
-          "name": "addCreatedDocumentAsFavouriteDocument",
+          "name": "addUserInTheGroup",
           "parameters": [
             {
-              "name": "levelName",
+              "name": "option",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -123,10 +56,10 @@
           "javadoc": ""
         },
         {
-          "name": "createFavouriteFolder",
+          "name": "searchGroup",
           "parameters": [
             {
-              "name": "FolderName",
+              "name": "groupName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -142,10 +75,10 @@
           "javadoc": ""
         },
         {
-          "name": "assignRouteForCreatedRequest",
+          "name": "removeUserInTheGroup",
           "parameters": [
             {
-              "name": "AssignRoute",
+              "name": "option",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -161,10 +94,10 @@
           "javadoc": ""
         },
         {
-          "name": "resubmitTheRejectedRequestInResubmitRejectedRequest",
+          "name": "modifyTheGroupName",
           "parameters": [
             {
-              "name": "RevisedPath",
+              "name": "option",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -177,6 +110,30 @@
               }
             }
           ],
+          "javadoc": ""
+        },
+        {
+          "name": "deleteTheGroup",
+          "parameters": [
+            {
+              "name": "option",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "verifyPagination",
+          "parameters": [],
           "javadoc": ""
         }
       ]

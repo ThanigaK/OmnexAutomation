@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "69973A843DB6590F76A884AA87BA375F",
+  "keywordFileContentHash": "88AD7544AF5288542E8D82AA19FA6861",
   "keywordClasses": [
     {
-      "name": "docPro.Documents",
+      "name": "suiteModule.Documents",
       "keywordMethods": [
         {
           "name": "openLevel",

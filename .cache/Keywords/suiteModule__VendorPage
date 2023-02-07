@@ -1,81 +1,14 @@
 {
-  "keywordFileContentHash": "69973A843DB6590F76A884AA87BA375F",
+  "keywordFileContentHash": "7EC00D9924857842B542569DAE5F334D",
   "keywordClasses": [
     {
-      "name": "docPro.Documents",
+      "name": "suiteModule.VendorPage",
       "keywordMethods": [
         {
-          "name": "openLevel",
+          "name": "createVendor",
           "parameters": [
             {
-              "name": "levelName",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "NavigateToActionsPage",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "NavigateToAdminActionsPage",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "assignAuthorForCreatedRequest",
-          "parameters": [
-            {
-              "name": "author",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "attachDocumentInDocumentNeedingRevision",
-          "parameters": [
-            {
-              "name": "RevisionDocPath",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "assignUserInReassignApproval",
-          "parameters": [
-            {
-              "name": "ReApprover",
+              "name": "Name",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -88,7 +21,7 @@
               }
             },
             {
-              "name": "Password",
+              "name": "Code",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -104,10 +37,46 @@
           "javadoc": ""
         },
         {
-          "name": "addCreatedDocumentAsFavouriteDocument",
+          "name": "addContact",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "DeleteVendor",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "ValidateUser",
           "parameters": [
             {
-              "name": "levelName",
+              "name": "SearchOption",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "Code",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "PageName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -123,10 +92,10 @@
           "javadoc": ""
         },
         {
-          "name": "createFavouriteFolder",
+          "name": "RemoveUserFromDocPro",
           "parameters": [
             {
-              "name": "FolderName",
+              "name": "Country",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -137,15 +106,9 @@
                 "genericsTypes": [],
                 "errorOnParsing": false
               }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "assignRouteForCreatedRequest",
-          "parameters": [
+            },
             {
-              "name": "AssignRoute",
+              "name": "Module",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -156,15 +119,9 @@
                 "genericsTypes": [],
                 "errorOnParsing": false
               }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "resubmitTheRejectedRequestInResubmitRejectedRequest",
-          "parameters": [
+            },
             {
-              "name": "RevisedPath",
+              "name": "Code",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

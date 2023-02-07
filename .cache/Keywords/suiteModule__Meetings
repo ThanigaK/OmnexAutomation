@@ -1,81 +1,14 @@
 {
-  "keywordFileContentHash": "69973A843DB6590F76A884AA87BA375F",
+  "keywordFileContentHash": "4E8A89CAB47F4FD5A30E7793567416DB",
   "keywordClasses": [
     {
-      "name": "docPro.Documents",
+      "name": "suiteModule.Meetings",
       "keywordMethods": [
         {
-          "name": "openLevel",
+          "name": "createNewMeeting",
           "parameters": [
             {
-              "name": "levelName",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "NavigateToActionsPage",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "NavigateToAdminActionsPage",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "assignAuthorForCreatedRequest",
-          "parameters": [
-            {
-              "name": "author",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "attachDocumentInDocumentNeedingRevision",
-          "parameters": [
-            {
-              "name": "RevisionDocPath",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "assignUserInReassignApproval",
-          "parameters": [
-            {
-              "name": "ReApprover",
+              "name": "City",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -88,7 +21,46 @@
               }
             },
             {
-              "name": "Password",
+              "name": "Subject",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "recurringMeeting",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "FromTime",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "ToTime",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -104,67 +76,20 @@
           "javadoc": ""
         },
         {
-          "name": "addCreatedDocumentAsFavouriteDocument",
-          "parameters": [
-            {
-              "name": "levelName",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
+          "name": "duplicateMeetingCreation",
+          "parameters": [],
           "javadoc": ""
         },
         {
-          "name": "createFavouriteFolder",
-          "parameters": [
-            {
-              "name": "FolderName",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
+          "name": "DeleteMeeting",
+          "parameters": [],
           "javadoc": ""
         },
         {
-          "name": "assignRouteForCreatedRequest",
+          "name": "createTag",
           "parameters": [
             {
-              "name": "AssignRoute",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "resubmitTheRejectedRequestInResubmitRejectedRequest",
-          "parameters": [
-            {
-              "name": "RevisedPath",
+              "name": "TagName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

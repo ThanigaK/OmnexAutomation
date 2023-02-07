@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "AA6DA67F0390B6C00973D0520F8C8C86",
+  "keywordFileContentHash": "F8DC08B9F7FF9A6001A649B57C6E24EB",
   "keywordClasses": [
     {
-      "name": "docPro.KeyWord",
+      "name": "suiteModule.KeyWord",
       "keywordMethods": [
         {
           "name": "Login",
