@@ -6,12 +6,11 @@
    <elementGuidId>bce56ea0-b382-48d6-8bc9-cf1a6c5f8bbb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[text()='Process Scope']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[text()='Process Scope']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Home_Page/detailView_iFrame</value>
-      <webElementGuid>d51b8525-8e48-4b32-aac2-7a2de9530c92</webElementGuid>
+      <webElementGuid>b4b71e2f-fd61-49c9-9578-774911bc281d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

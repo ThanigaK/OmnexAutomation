@@ -29,6 +29,7 @@ WebUI.click(findTestObject('Home_Page/platform_Option1'))
 'Click on the Setup option in the left pane'
 WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
 
+'Click on the Suite Setup option in the left pane'
 WebUI.click(findTestObject('Home_Page/suiteSetup_Option'))
 
 'Click on the Groups option'

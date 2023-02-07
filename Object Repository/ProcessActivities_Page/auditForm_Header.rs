@@ -6,12 +6,11 @@
    <elementGuidId>743ad104-e186-47db-8bc7-187d061cb0ce</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='tblProcess']/thead/tr/th[2][contains(text(),'Process Name')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//table[@id='tblProcess']/thead/tr/th[11][contains(text(),'Audit Form')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Home_Page/detailView_iFrame</value>
-      <webElementGuid>00d2c878-6794-4e97-a3e5-5a435d28f620</webElementGuid>
+      <webElementGuid>253500ec-be73-4f2b-b13b-fb1f17e0c96a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

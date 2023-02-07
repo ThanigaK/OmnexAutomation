@@ -1,16 +1,18 @@
 {
-  "keywordFileContentHash": "6636AC5259DD14BAE16F0F9E1EE985DD",
+  "keywordFileContentHash": "815538E7BC8F3B2DB20E52004E424948",
   "keywordClasses": [
     {
       "name": "docPro.KeyWord",
       "keywordMethods": [
         {
           "name": "Login",
-          "parameters": []
+          "parameters": [],
+          "javadoc": "/**\r\n\t * Login to the application\r\n\t */"
         },
         {
           "name": "NavigateToAdminSettingPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": "/**\r\n\t * Navigate to the Administrator setting page from the setup menu\r\n\t */"
         },
         {
           "name": "updateAdminSettingPage",
@@ -80,15 +82,18 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Modify the fields in the administration page\r\n\t * @param PasswordLength\r\n\t * @param First\r\n\t * @param Middle\r\n\t * @param Last\r\n\t * @param Symbol\r\n\t */"
         },
         {
           "name": "Logout",
-          "parameters": []
+          "parameters": [],
+          "javadoc": "/**\r\n\t * Logout from the application\r\n\t */"
         },
         {
           "name": "NavigateToCityPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "CreateCity",
@@ -132,11 +137,13 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "NavigateToCustomerPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "createCustomer",
@@ -167,7 +174,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "AddAddress",
@@ -211,15 +219,18 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "pageRecordSizeChange",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "DeleteCustomer",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "validateRememberMeOption",
@@ -237,15 +248,18 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "NavigateToMeetingsPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "NavigateToCountryPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "validateCountryCreation",
@@ -263,11 +277,13 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "deleteCountry",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "newBrowser",
@@ -285,11 +301,13 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "validateUserUnlocked",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "LoginwithCredential",
@@ -333,14 +351,16 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "NavigateToLevelsPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

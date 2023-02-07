@@ -6,12 +6,11 @@
    <elementGuidId>88b78e08-1242-40cb-a5e3-1f4ddb97b0a7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='tblProcess']/thead/tr/th[2][contains(text(),'Process Name')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//table[@id='tblProcess']/thead/tr/th[10][contains(text(),'Clauses')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Home_Page/detailView_iFrame</value>
-      <webElementGuid>04f58200-e302-4672-8d7a-3d6e86c53a27</webElementGuid>
+      <webElementGuid>7ab712ee-298c-4065-93a4-969ad07366f9</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -6,12 +6,11 @@
    <elementGuidId>5aad31c7-635f-4d7b-91a6-a68339f90bc9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='alert alert-warning alert-dismissible']/a</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='alert alert-warning alert-dismissible border-bottom']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>5761f3f4-bbf6-4eef-b4b5-867e7c654cab</webElementGuid>
+      <webElementGuid>374cbd6e-c566-497f-a303-67cb6b963ea3</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -15,104 +15,92 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import junit.framework.Assert as Assert
+import static org.junit.Assert.assertTrue
+import static org.junit.Assert.fail
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application as module admin user'
 CustomKeywords.'docPro.KeyWord.LoginwithCredential'(GlobalVariable.url, GlobalVariable.auditprouser, GlobalVariable.auditpropassword)
 
+'Click on the Home logo to select the platform\r\n'
 WebUI.click(findTestObject('Home_Page/homelogo'))
 
+'Select the Integrated Management System /QHSE Platform\r\n'
 WebUI.click(findTestObject('Home_Page/platform_Option1'))
 
+'Click on the Setup option in the left pane\r\n'
 WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
 
+'Click on the Suite Setup option in the left pane\r\n'
 WebUI.click(findTestObject('Home_Page/suiteSetup_Option'))
 
-WebUI.click(findTestObject('Home_Page/groups_Option'))
+'Click on Create Department Option'
+WebUI.click(findTestObject('Home_Page/createDepartment_Option'))
 
-CustomKeywords.'docPro.GroupPage.createNewGroup'('random', 'Audits')
+'Wait for the Add Department Button to be present'
+WebUI.waitForElementPresent(findTestObject('Department_Page/addDepartment_Button'), 10)
 
-CustomKeywords.'docPro.GroupPage.searchGroup'('Test Automation')
+'Click on the Add Department Button'
+WebUI.click(findTestObject('Department_Page/addDepartment_Button'))
 
-WebUI.click(findTestObject('Groups_Page/userSelection_Icon'))
+'Wait for the Department Text box to be present'
+WebUI.waitForElementPresent(findTestObject('Department_Page/department_TextBox'), 10)
 
-WebUI.waitForElementPresent(findTestObject('Groups_Page/userSearch_Icon'), 10)
+'Enter the input in Department Name text box'
+WebUI.setText(findTestObject('Department_Page/department_TextBox'), 'SCB_Auto')
 
-WebUI.verifyElementPresent(findTestObject('Groups_Page/selectUsers_Header'), 10)
+'Enter the input in Department Code text box'
+WebUI.setText(findTestObject('Department_Page/departmentCode_TextBox'), 'QA2000')
 
-WebUI.verifyElementPresent(findTestObject('Groups_Page/entityBasedSearch_Option'), 10)
+'Enter the input in Department Description text box'
+WebUI.setText(findTestObject('Department_Page/departmentDesription_TextBox'), 'QA Test')
 
-WebUI.verifyElementPresent(findTestObject('Groups_Page/userBasedSearch_Option'), 10)
+'Click on the Save button'
+WebUI.click(findTestObject('Department_Page/saveDepartment_Button'))
 
-WebUI.verifyElementPresent(findTestObject('Groups_Page/userSearch_Icon'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/userRefresh_Icon'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/userSearch_Filter'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/userName_Header'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/userCode_header'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/userEmail_Header'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/userPosition_Header'), 10)
-
-CustomKeywords.'docPro.GroupPage.verifyPagination'()
-
-WebUI.setText(findTestObject('Groups_Page/userSearch_Input'), 'SCB')
-
+'Wait for 3 seconds for the page to load\r\n'
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Groups_Page/userSelection_Checkbox'))
+'Verify the alert success message element is displayed'
+WebUI.verifyElementPresent(findTestObject('Department_Page/successMessage_Text'), 5)
 
-WebUI.click(findTestObject('Groups_Page/entityBasedSearch_RadioButton'))
+'Get the text of alert success message'
+String successMessage = WebUI.getText(findTestObject('Department_Page/successMessage_Text'))
 
-WebUI.waitForElementPresent(findTestObject('Groups_Page/entitySearch_Tree'), 5)
+'Verify the alert success message text captured'
+assertTrue(successMessage.contains('Saved successfully'))
 
-WebUI.verifyElementPresent(findTestObject('Groups_Page/entitySearch_Tree'), 5)
+'Close the alert success message'
+WebUI.click(findTestObject('Department_Page/successMessage_Close'))
 
-WebUI.verifyElementPresent(findTestObject('Groups_Page/entitySearch_TreeList'), 5)
+'Wait for 2 seconds for the page to load\r\n'
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Groups_Page/entitySearchCorporate_Option'))
+'Verify the Department Name Created is displayed properly'
+WebUI.verifyElementPresent(findTestObject('Department_Page/departmentName_Text'), 5)
 
-CustomKeywords.'docPro.GroupPage.verifyPagination'()
+'Verify the Department Code Created is displayed properly'
+WebUI.verifyElementPresent(findTestObject('Department_Page/departmentCode_Text'), 5)
 
-WebUI.setText(findTestObject('Groups_Page/userSearch_Input'), 'SCB')
+'Verify the Department Description Created is displayed properly'
+WebUI.verifyElementPresent(findTestObject('Department_Page/departmentDescription_Text'), 5)
 
-WebUI.delay(3)
+'Mouse over the Department checkbox'
+WebUI.mouseOver(findTestObject('Department_Page/SCBDepartment_Checkbox'))
 
-WebUI.click(findTestObject('Groups_Page/userSelection_Checkbox'))
+'Click on the Department checkbox '
+WebUI.click(findTestObject('Department_Page/SCBDepartment_Checkbox'))
 
-WebUI.click(findTestObject('Groups_Page/userSave_Button'))
+'Click on the delete button of the Department'
+WebUI.click(findTestObject('Object Repository/Department_Page/deleteDepartment_Button'))
 
-WebUI.verifyElementPresent(findTestObject('Groups_Page/alertSuccess_Message'), 0)
+'Click Ok to the Confirmation popup shown'
+WebUI.click(findTestObject('Object Repository/Department_Page/deleteConfirmaton_Popup'))
 
-WebUI.click(findTestObject('Groups_Page/alertMessage_Close'))
+'Get the text of the Delete message alert'
+String deleteMessage = WebUI.getText(findTestObject('Department_Page/successMessage_Text'))
 
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Groups_Page/viewUsers_Icon'))
-
-WebUI.delay(3)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/viewUser_Code'), 5)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/viewUser_Entity'), 5)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/viewUser_Name'), 5)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/viewUser_SearchIcon'), 5)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/viewUser_RefreshIcon'), 5)
-
-WebUI.verifyElementPresent(findTestObject('Groups_Page/viewUser_RemoveButton'), 5)
-
-String Name = WebUI.getText(findTestObject('Object Repository/Groups_Page/viewUserFirstRow_Name'))
-
-WebUI.verifyMatch(Name, 'SCB AutoUser', false)
-
-WebUI.click(findTestObject('Groups_Page/viewUsers_CloseButton'))
-
-CustomKeywords.'docPro.GroupPage.deleteTheGroup'('Audits')
+'Verify the delete message text captured'
+assertTrue(deleteMessage.contains('Deleted successfully'))
 

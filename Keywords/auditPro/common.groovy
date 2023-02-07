@@ -17,10 +17,17 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.concurrent.TimeUnit
 
 import internal.GlobalVariable
 
-public class common 
-{
-
+public class common {
+	public String RandomNumber() {
+		SimpleDateFormat sdf1 = new SimpleDateFormat("ddMMyyyyHHmmss");
+		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+		String DateTimeStr = sdf1.format(timestamp);
+		return DateTimeStr;
+	}
 }

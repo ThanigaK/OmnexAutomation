@@ -393,6 +393,4 @@ public class Documents extends common {
 		WebUI.click(findTestObject('Object Repository/DocPro_Module/Actions_Page/continue_Button'))
 		KeywordUtil.logInfo("Document uploaded and resubmitted the request. Doc path --> "+path)
 	}
-	
-	
 }
