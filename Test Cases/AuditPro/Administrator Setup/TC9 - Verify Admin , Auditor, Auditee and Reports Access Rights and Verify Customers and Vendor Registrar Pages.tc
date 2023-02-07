@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC9 - Verify Admin , Auditor, Auditee and Reports Access Rights and Verify Customers and Vendor Registrar Pages</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b8018115-9f19-4cde-8baf-0f5d4c4342ce</testCaseGuid>
+</TestCaseEntity>

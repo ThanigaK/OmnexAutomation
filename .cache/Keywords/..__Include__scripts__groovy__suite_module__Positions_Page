@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "5FCC38F1E934A7B0B968F3B2E85D922A",
+  "keywordFileContentHash": "DD7C6335AEB4605DD82C1C7505DB6789",
   "keywordClasses": [
     {
       "name": "suite_module.Positions_Page",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

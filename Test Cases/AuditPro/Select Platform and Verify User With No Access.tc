@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Select Platform and Verify User With No Access</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>05f78bc1-a42e-4c6f-9cd2-1c1a09dc043a</testCaseGuid>
-</TestCaseEntity>

@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "7A89DB080C5AE466BE370F3D9ADC1995",
+  "keywordFileContentHash": "90FF1C9F5975803F63EEC6B8E5CD27C4",
   "keywordClasses": [
     {
       "name": "suite_module.Shift_Page",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

@@ -428,7 +428,7 @@ public class KeyWord extends common {
 			WebUI.navigateToUrl(Url)
 			WebUI.setText(findTestObject('Login_Page/userName_Input'), UserName)
 			WebUI.setEncryptedText(findTestObject('Login_Page/password_Input'), Password)
-			WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
+			//WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
 			WebUI.click(findTestObject('Login_Page/login_Button'))
 		}
 		catch(Exception e) {

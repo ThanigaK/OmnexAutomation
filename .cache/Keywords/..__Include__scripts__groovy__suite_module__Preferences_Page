@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "86EF0F8174F24286D093317611A4B0BE",
+  "keywordFileContentHash": "20F78F045D060D351CF2555B82F83CCF",
   "keywordClasses": [
     {
       "name": "suite_module.Preferences_Page",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
