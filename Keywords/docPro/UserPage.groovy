@@ -201,7 +201,7 @@ public class UserPage extends common {
 	public void unlockUser() {
 		//pageRecordSizeChange("100")
 		userUnlock("doNotDelete_01")
-		WebUI.closeBrowser()
+		//WebUI.closeBrowser()
 	}
 
 	public void userUnlock(String user) {
@@ -235,5 +235,54 @@ public class UserPage extends common {
 	}
 
 
+	@Keyword
+	public String createUserReturnUserName(String Code, String FirstName, String LastName, String Email, String UserName, String Password, String ITAR, String ChangePassword) {
+		User = UserName;
+		Pass = Password
+		if(Code.equalsIgnoreCase("random")) {
+			String Random = RandomNumber();
+			Cod = 	Random;
+			User = "User"+ Random;
+			email = "DarkAuto" + Random + "@Gmail.com";
+		}
+		WebUI.waitForElementClickable(findTestObject('Suite_Module/UsersDetailsHome_Page/add_Button'), 30)
+		Thread.sleep(3000);
+		WebUI.click(findTestObject('Suite_Module/UsersDetailsHome_Page/add_Button'))
+		WebUI.setText(findTestObject('Suite_Module/UserCreation_Page/code_Inuput'), Cod)
+		WebUI.setText(findTestObject('Suite_Module/UserCreation_Page/firstName_Input'), FirstName)
+		WebUI.setText(findTestObject('Suite_Module/UserCreation_Page/lastName_Input'), LastName)
+		WebUI.setText(findTestObject('Suite_Module/UserCreation_Page/email_Input'), email)
+		WebUI.setText(findTestObject('Suite_Module/UserCreation_Page/username_Input'), User)
+		WebUI.setEncryptedText(findTestObject('Suite_Module/UserCreation_Page/password_Input'), Password)
+		WebUI.setEncryptedText(findTestObject('Suite_Module/UserCreation_Page/confirmPassword_Input'), Password)
+
+		if(ITAR.equalsIgnoreCase("yes")) {
+			WebUI.scrollToElement(findTestObject('Suite_Module/UserCreation_Page/ITAR_CheckBox'), 10)
+			switchFrameAndDoActions("ITARCheckBox", "//div/div/input[@id='ChangeItar']", "jsClick",findTestObject('Home_Page/detailView_iFrame'))
+		} else {
+			KeywordUtil.logInfo("ITAR is not required..!")
+		}
+
+		if(ChangePassword.equalsIgnoreCase("no")) {
+			WebUI.scrollToElement(findTestObject('Suite_Module/UserCreation_Page/changePassword_Checkbox'), 10)
+			switchFrameAndDoActions("ITARCheckBox", "//div/div/input[@id='Changelogin']", "jsClick",findTestObject('Home_Page/detailView_iFrame'))
+		} else {
+			KeywordUtil.logInfo("Change password on next logon checkbox is already checked..!")
+		}
+
+		WebUI.click(findTestObject('Suite_Module/UserCreation_Page/save_Button'))
+
+		try {
+			WebUI.scrollToPosition(0, 0)
+			WebUI.verifyElementVisible(findTestObject('Suite_Module/UserCreation_Page/successMessage'))
+			KeywordUtil.logInfo("User creation is successful.. ! Success message verified..!")
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			throw new Exception("User creation is failed.. ! Success message is not displayed.. !")
+		}
+
+		return User;
+	}
 
 }

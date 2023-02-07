@@ -15,7 +15,7 @@
       <guid>fb145715-fc8d-4d7a-9a98-5e6f84a36ef9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro_Module/TC1-Update the Document number option and Validate</testCaseId>
+      <testCaseId>Test Cases/DocPro_Module/TC2-Update the Document number option and Validate</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -136,7 +136,7 @@
       <guid>cf933853-df45-4e51-acaf-aea12b240324</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro_Module/TC6-Add doc as favourite and validate</testCaseId>
+      <testCaseId>Test Cases/DocPro_Module/TC7-Add doc as favourite and validate</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -282,12 +282,18 @@
          <value></value>
          <variableId>6eac56ea-9de7-47fd-b8a4-32411ddafa1d</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5e6cfa0e-5eea-4c9f-8b17-eeac5a00acf3</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>a17599af-3ac8-474f-97b5-be840c444726</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro_Module/TC0-Verify the user is able to Create, Edit and Delete levels</testCaseId>
+      <testCaseId>Test Cases/DocPro_Module/TC1-Verify the user is able to Create, Edit and Delete levels</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -300,7 +306,7 @@
       <guid>e789f1fc-4b60-4843-adad-0c87b9a1147d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro_Module/TC5-New document creation with Assign admin</testCaseId>
+      <testCaseId>Test Cases/DocPro_Module/TC4-New document creation with Assign admin</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -469,7 +475,7 @@
       <guid>77d04508-6226-438c-9682-c21122da34af</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro_Module/TC4-New document creation with Level owner</testCaseId>
+      <testCaseId>Test Cases/DocPro_Module/TC5-New document creation with Level owner</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -619,7 +625,7 @@
    <testCaseLink>
       <guid>59a5f787-d9d1-408f-8a25-58e5dfee181b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/DocPro_Module/TC3-New document creation with one approver</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -789,7 +795,7 @@
       <guid>201efcb9-d56b-4994-8632-092ec05363f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro_Module/TC2-New document creation without document</testCaseId>
+      <testCaseId>Test Cases/DocPro_Module/TC6-New document creation without document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -952,175 +958,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>76cfa349-ae67-4530-94fd-86fa72404088</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>743052da-ca62-4bd6-82ef-b04e555a2a17</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro_Module/TC7-Assign user in Reassign Approval</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>a84bf0e1-7777-40f4-a6e1-e9f0bf4bec78</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>d837c300-7908-4574-a714-18ec409ca368</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>123da37e-9c76-4bc9-8a02-0191eeee6912</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>51680400-46f2-4f0f-86af-b6aab42c976b</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>400cc2b3-b7c1-491b-9a7b-cfbb8815807b</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>3bb6f829-a2e6-4513-b390-0ea12b4c2fee</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>cb1a83c6-3b46-42a7-8cb3-9360562dadec</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>cc1708d0-6d75-4b0c-97e5-33ae924b2cfc</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>59424746-5e90-49e6-9c0b-26467f3d66cc</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>017c7f52-2a68-4482-89e5-b0f7672de9d6</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>cea289f6-dc84-41d8-94ae-a88c407b5000</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b2d9f482-5d3a-44fe-ab58-cf596706b6fc</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>bce5a5f6-1c9c-46e5-b453-e83fd85afe92</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ebbf77b3-f4fc-4f27-907c-76328d2966ab</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9af0f251-37e5-423d-ab84-a09cb2f1abcf</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>09a1892e-0fa2-49cd-9932-07659ea132f1</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>670660a4-8b77-42d4-9c15-fdf7caabd3d5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>0696a1ca-497f-4fba-a49d-d288882feccd</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>62a2ae61-84e1-42d2-8b23-6865bf54ac39</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e55a4d3c-488b-457c-b586-5ce3214af266</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>40a4f5d3-219d-4e6e-a243-c46e387cbab3</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e60b2ba7-991f-4e1b-94dd-dec8bafb9424</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>45974b8f-2b3a-4090-9a63-57180eebedd3</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>3bca5c74-9ca3-4d18-a0b7-fee724340659</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>0fb7fc7a-b462-4518-b686-93b427a1e1a7</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>0bb8bf81-11aa-4954-84e8-b5ff01314f68</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>70c8b3d4-98e6-4d31-84f2-3c9a97d67dd5</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

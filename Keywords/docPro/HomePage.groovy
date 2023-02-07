@@ -64,6 +64,7 @@ public class HomePage extends common {
 			waitForClickableAndClick(findTestObject('Home_Page/menu_Icon'), 15)
 		}
 		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
+		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
 		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/tags_Option'), 15)
 	}
 
@@ -141,11 +142,11 @@ public class HomePage extends common {
 	@Keyword
 	public void organizationProfileDatilsUpdate() {
 		WebUI.click(findTestObject('Object Repository/Suite_Module/OrganizationProfile_Page/attachCompanyLogoLarge_Button'))
-		addImage("D:\\Work\\Omnex\\EWQIMS (3)\\EWQIMS\\Files\\Big_ClientLogo_Omnex.png")
+		addImage("D:\\Omnex\\Repo\\OmnexAutomation\\Files\\Big_ClientLogo_Omnex.png")
 		WebUI.click(findTestObject('Object Repository/Suite_Module/OrganizationProfile_Page/attachCompanyLogoMedium_Button'))
-		addImage("D:\\Work\\Omnex\\EWQIMS (3)\\EWQIMS\\Files\\small_ClientLogo_Omnex.png")
+		addImage("D:\\Omnex\\Repo\\OmnexAutomation\\Files\\small_ClientLogo_Omnex.png")
 		WebUI.click(findTestObject('Object Repository/Suite_Module/OrganizationProfile_Page/attachProductLogo_Button'))
-		addImage("D:\\Work\\Omnex\\EWQIMS (3)\\EWQIMS\\Files\\EWQIMS-Logo.png")
+		addImage("D:\\Omnex\\Repo\\OmnexAutomation\\Files\\EWQIMS-Logo.png")
 		WebUI.click(findTestObject('Object Repository/Suite_Module/EntityAndEntityOwner_Page/saveEntityOwner_Button'))
 		WebUI.verifyElementVisible(findTestObject('Object Repository/Suite_Module/UserPreferences_Page/successMessageInChangePassword'))
 		KeywordUtil.logInfo("Organization profile updated successfully..! Success message verified..!")
@@ -195,6 +196,7 @@ public class HomePage extends common {
 			WebUI.click(findTestObject('Home_Page/menu_Icon'))
 		}
 		WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
+		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
 		WebUI.scrollToElement(findTestObject('Home_Page/Modules_Option'), 15)
 		WebUI.click(findTestObject('Home_Page/Modules_Option'))
 	}
@@ -321,6 +323,7 @@ public class HomePage extends common {
 			WebUI.click(findTestObject('Home_Page/menu_Icon'))
 		}
 		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
+		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
 		WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/entity_Option'), 15)
 		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/entity_Option'), 15)
 	}
@@ -396,6 +399,7 @@ public class HomePage extends common {
 			WebUI.click(findTestObject('Home_Page/menu_Icon'))
 		}
 		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
+		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
 		WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/groups_Option'), 15)
 		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/groups_Option'), 15)
 	}
@@ -406,6 +410,7 @@ public class HomePage extends common {
 			waitForClickableAndClick(findTestObject('Home_Page/menu_Icon'), 15)
 		}
 		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
+		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
 		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/docProSetup_Option'), 15)
 	}
 
@@ -436,6 +441,7 @@ public class HomePage extends common {
 			WebUI.click(findTestObject('Home_Page/menu_Icon'))
 		}
 		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
+		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
 		WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/documentRoute_Option'), 15)
 		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/documentRoute_Option'), 15)
 	}

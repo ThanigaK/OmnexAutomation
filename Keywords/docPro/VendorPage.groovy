@@ -59,7 +59,9 @@ public class VendorPage extends common {
 			VendorCode = "T12345"
 		}
 
+		WebUI.delay(3)
 		WebUI.click(findTestObject('Object Repository/Suite_Module/UsersDetailsHome_Page/add_Button'))
+		WebUI.delay(3)
 		WebUI.setText(findTestObject('Object Repository/Suite_Module/Manufacturer_Page/manufacturerName_TextBox'), VendorName)
 		WebUI.setText(findTestObject('Object Repository/Suite_Module/Manufacturer_Page/manufacturerCode_TextBox'), VendorCode+Keys.TAB)
 		WebUI.waitForElementClickable(findTestObject('Object Repository/Suite_Module/Manufacturer_Page/addAddress_Button'), 30)

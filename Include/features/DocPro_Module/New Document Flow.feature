@@ -198,29 +198,29 @@ Feature: DocPro Setup functionalities
     #And Go to Document Route page
     #And Delete Route
 #
-  #Scenario: Add doc as favourite and validate
-    #Given Launch browser
-    #And Launch application
-    #And Login to the application
-    #And Go to Favourites page
-    #And Create Favourite folder
-    #And Go to Levels page
-    #And Create level
-    #And Go to DocPro setup page
-    #And Go to level in Folder management
-    #And Make the created level in use
-    #And Go to DocPro setup page
-    #And Go to level in Folder management
-    #When Update the level data in Folder Management
-    #And Go to New Doc Request page
-    #And Create new doc with details
-    #And Go to Documents Page
-    #Then Add created document as favourite document
-    #And Go to Favourites page
-    #And Validate the document in favourite folder
-    #And Delete Favourite folder
-    #And Go to DocPro setup page
-    #And Go to level in Document management
-    #And Move all available files to bin level
-    #And Go to Levels page
-    #And Delete level
+  Scenario: Add doc as favourite and validate
+    Given Launch browser
+    And Launch application
+    And Login to the application
+    And Go to Favourites page
+    And Create Favourite folder
+    And Go to Levels page
+    And Create level
+    And Go to DocPro setup page
+    And Go to level in Folder management
+    And Make the created level in use
+    And Go to DocPro setup page
+    And Go to level in Folder management
+    When Update the level data in Folder Management
+    And Go to New Doc Request page
+    And Create new doc with details
+    And Go to Documents Page
+    Then Add created document as favourite document
+    And Go to Favourites page
+    And Validate the document in favourite folder
+    And Delete Favourite folder
+    And Go to DocPro setup page
+    And Go to level in Document management
+    And Move all available files to bin level
+    And Go to Levels page
+    And Delete level

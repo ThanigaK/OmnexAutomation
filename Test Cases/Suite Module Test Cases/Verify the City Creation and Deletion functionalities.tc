@@ -24,7 +24,7 @@
       <variableId>6fb642be-b465-493f-8098-74c2536576f2</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Test Automation City'</defaultValue>
+      <defaultValue>'City Automation'</defaultValue>
       <description></description>
       <id>ef2e59a8-56ab-413b-a0d0-17a2c8c93276</id>
       <masked>false</masked>

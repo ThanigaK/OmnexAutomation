@@ -24,7 +24,7 @@ CustomKeywords.'docPro.KeyWord.Login'()
 CustomKeywords.'docPro.KeyWord.NavigateToCityPage'()
 
 'Create new city'
-CustomKeywords.'docPro.KeyWord.CreateCity'(City, Country, State)
+CustomKeywords.'docPro.KeyWord.CreateCity'(Country, State, City)
 
 'Navigating back to the city page'
 CustomKeywords.'docPro.KeyWord.NavigateToCityPage'()

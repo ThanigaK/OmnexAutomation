@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Object Repository/Home_Page/userProfile_Icon'))
 String txt = WebUI.getText(findTestObject('Object Repository/Home_Page/userName_Text'))
 
 'Validate the name updated as per the above modification made in admin setting'
-if (txt.equals('Automation-Test')) {
+if (txt.equals('Test-Automation')) {
     WebUI.click(findTestObject('Home_Page/logout_Button'))
 
     WebUI.click(findTestObject('Home_Page/popupOk_Button'))

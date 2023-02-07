@@ -25,12 +25,27 @@ CustomKeywords.'docPro.HomePage.goToDocumentRoutePage'()
 
 CustomKeywords.'docPro.RouteCreation.createNewRoute'(RouteName, RouteCode)
 
-CustomKeywords.'docPro.KeyWord.NavigateToLevelsPage'()
+if (WebUI.getAttribute(findTestObject('Object Repository/Home_Page/sideMiniBar'), 'class').contains('mini-sidebar')) {
+    WebUI.click(findTestObject('Home_Page/menu_Icon'))
+}
+
+WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
+
+WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/levels_Page'), 15)
+
+WebUI.click(findTestObject('Object Repository/Home_Page/levels_Page'))
 
 levName = CustomKeywords.'docPro.LevelsPage.createLevel'(LevelName)
 
-'Going to Doc pro setup page\r\n'
-CustomKeywords.'docPro.HomePage.NavigateToDocProSetupPage'()
+if (WebUI.getAttribute(findTestObject('Object Repository/Home_Page/sideMiniBar'), 'class').contains('mini-sidebar')) {
+    WebUI.click(findTestObject('Home_Page/menu_Icon'))
+}
+
+WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
+
+WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/docProSetup_Option'), 0)
+
+WebUI.click(findTestObject('Object Repository/Home_Page/docProSetup_Option'))
 
 'Select the Required Level in the Folder management'
 CustomKeywords.'docPro.DocPro.goToLevelInDocproSetup'('Folder management', levName)
@@ -138,19 +153,6 @@ CustomKeywords.'docPro.KeyWord.LoginwithCredential'(GlobalVariable.url, 'donotde
 CustomKeywords.'docPro.Documents.NavigateToActionsPage'()
 
 CustomKeywords.'docPro.DocPro.approveOrrejectRequestInRequestNeedingApproval'('Approve', 'TtfzLQ/s9dQ=')
-
-not_run: CustomKeywords.'docPro.HomePage.goToDocumentsPage'()
-
-not_run: if (FilePath.toString().isEmpty()) {
-    WebUI.verifyElementVisible(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
-
-    WebUI.click(findTestObject('Object Repository/Suite_Module/Module_Page/popUpOk_Button'))
-
-    KeywordUtil.logInfo('Proceeding without document')
-}
-
-'Validate the Document added as per the Level setting\r\n'
-not_run: CustomKeywords.'docPro.DocPro.validateDocNum'(DocNumOption)
 
 'Going to Doc pro setup page\r\n'
 CustomKeywords.'docPro.HomePage.NavigateToDocProSetupPage'()

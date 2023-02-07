@@ -30,7 +30,7 @@ WebUI.waitForElementClickable(findTestObject('Suite_Module/UsersDetailsHome_Page
 WebUI.click(findTestObject('Suite_Module/UsersDetailsHome_Page/add_Button'))
 
 'Enter Country Name\r\n'
-WebUI.setText(findTestObject('Suite_Module/Country_Page/country_TextBox'), City)
+WebUI.setText(findTestObject('Suite_Module/Country_Page/country_TextBox'), NewCountry)
 
 'Click Save Button\r\n'
 WebUI.click(findTestObject('Suite_Module/Country_Page/save_Button'))
@@ -44,18 +44,19 @@ KeywordUtil.logInfo('Country creation is successful.. ! Success message verified
 CustomKeywords.'docPro.HomePage.NavigatetoStatepage'()
 
 'Create New state\r\n'
-CustomKeywords.'docPro.StatePage.createNewState'(Country, City)
+CustomKeywords.'docPro.StatePage.createNewState'(NewCountry, State)
 
 CustomKeywords.'docPro.KeyWord.NavigateToCityPage'()
 
 'Create New City\r\n'
-CustomKeywords.'docPro.KeyWord.CreateCity'(City, Country, State)
+CustomKeywords.'docPro.KeyWord.CreateCity'(NewCountry, State, City)
 
 'Navigate to city page'
 CustomKeywords.'docPro.KeyWord.NavigateToCityPage'()
 
-'Enter City name'
-WebUI.setText(findTestObject('Suite_Module/UsersDetailsHome_Page/searchUser_Input'), City)
+WebUI.click(findTestObject('Suite_Module/City_Page/country_DropDown'))
+
+WebUI.sendKeys(findTestObject('Suite_Module/City_Page/searchCountryState_TextBox'), NewCountry + Keys.ENTER)
 
 WebUI.delay(5)
 
@@ -81,7 +82,7 @@ WebUI.verifyElementVisible(findTestObject('Suite_Module/City_Page/cityDeletionSu
 CustomKeywords.'docPro.HomePage.NavigatetoStatepage'()
 
 'Validate City Create\r\n'
-CustomKeywords.'docPro.StatePage.validateCityCreation'(Country, City)
+CustomKeywords.'docPro.StatePage.validateCityCreation'(NewCountry, State)
 
 'Delete the newely created state\r\n'
 CustomKeywords.'docPro.StatePage.deleteState'()
@@ -90,7 +91,7 @@ CustomKeywords.'docPro.StatePage.deleteState'()
 CustomKeywords.'docPro.KeyWord.NavigateToCountryPage'()
 
 'Validate County '
-CustomKeywords.'docPro.KeyWord.validateCountryCreation'(City)
+CustomKeywords.'docPro.KeyWord.validateCountryCreation'(NewCountry)
 
 'Delete the Country'
 CustomKeywords.'docPro.KeyWord.deleteCountry'()
