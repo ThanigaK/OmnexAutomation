@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator 
+2.Navigate to Docpro module
+3.Click on DocPro Setup→Folder management(10.6.X)
+4.Click on setup->suit setup->DocPro Setup->Folder management 
+5.Expand the levels tree 
+6.Click on the levels to view the details</description>
+   <name>TC-21854 Validate user can view levels created by suite administrator</name>
+   <tag>DocPro_FolderManagement</tag>
+   <comment></comment>
+   <testCaseGuid>1f54b630-155f-413c-a5ee-5c2b5d64e117</testCaseGuid>
+</TestCaseEntity>

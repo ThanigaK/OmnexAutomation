@@ -445,7 +445,7 @@ public class HomePage extends common {
 		WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/documentRoute_Option'), 15)
 		waitForClickableAndClick(findTestObject('Object Repository/Home_Page/documentRoute_Option'), 15)
 	}
-	
+
 	@Keyword
 	public void goToFavouritesPage() {
 		WebUI.waitForPageLoad(30)

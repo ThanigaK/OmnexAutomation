@@ -1,0 +1,19 @@
+{
+  "keywordFileContentHash": "C2D6674D16A8D0C81C55A2FC76268779",
+  "keywordClasses": [
+    {
+      "name": "docProModule.HomePage",
+      "keywordMethods": [
+        {
+          "name": "NavigateToDocProSetup",
+          "parameters": []
+        },
+        {
+          "name": "goToLevelPage",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

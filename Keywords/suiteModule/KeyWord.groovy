@@ -431,7 +431,7 @@ public class KeyWord extends common {
 			WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
 			WebUI.click(findTestObject('Login_Page/login_Button'))
 			if(WebUI.verifyElementPresent(findTestObject('Object Repository/Home_Page/popupOk_Button'), 5 , FailureHandling.CONTINUE_ON_FAILURE))
-				WebUI.click(findTestObject('Object Repository/Home_Page/popupOk_Button'))				
+				WebUI.click(findTestObject('Object Repository/Home_Page/popupOk_Button'))
 		}
 		catch(Exception e) {
 			e.printStackTrace();
