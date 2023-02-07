@@ -11,12 +11,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Administrator'</initValue>
+      <initValue>'administrator'</initValue>
       <name>username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>admin</description>
-      <initValue>'RAIVpflpDOg='</initValue>
+      <description>a1</description>
+      <initValue>'sFQ/sJkzszM='</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -25,7 +25,7 @@
       <name>username1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>d1</description>
       <initValue>'HUqOjK7L2kY='</initValue>
       <name>Password1</name>
    </GlobalVariableEntity>
@@ -38,5 +38,20 @@
       <description></description>
       <initValue>'5xx1bkCcAlw='</initValue>
       <name>RoutePassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'audit'</initValue>
+      <name>auditprouser</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>test123</description>
+      <initValue>'5xx1bkCcAlw='</initValue>
+      <name>auditpropassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>d2</description>
+      <initValue>'TtfzLQ/s9dQ='</initValue>
+      <name>pass</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

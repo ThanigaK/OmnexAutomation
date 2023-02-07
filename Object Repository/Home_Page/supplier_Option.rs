@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@title = 'Supplier'])[2]</value>
+         <value>(//*[@title = 'Supplier Information'])[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -22,6 +22,6 @@
       <name>title</name>
       <type>Main</type>
       <value>Supplier</value>
-      <webElementGuid>3cf851e0-2138-4504-89bd-410005838a55</webElementGuid>
+      <webElementGuid>ae1e6d6f-0fe8-4443-a2bf-efe4941bd6bd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -62,7 +62,7 @@ class Department_Page extends CommonClass {
 			WebUI.click(findTestObject('Home_Page/menu_Icon'))
 		}
 		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
-		WebUI.click(findTestObject('Dashboard/createDepartment_Button'))
+		WebUI.click(findTestObject('Dashboard_Page/createDepartment_Button'))
 	}
 
 
