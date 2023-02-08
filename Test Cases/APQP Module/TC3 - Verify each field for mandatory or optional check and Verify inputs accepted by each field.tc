@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3 - Verify each field for mandatory or optional check and Verify inputs accepted by each field</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0fcf432d-ddae-4066-94d3-926aac05d9f2</testCaseGuid>
+</TestCaseEntity>

@@ -18,26 +18,33 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the application as module admin user'
-CustomKeywords.'suiteModule.KeyWord.LoginwithCredential'(GlobalVariable.url, 'auditDummy', '5xx1bkCcAlw=')
+CustomKeywords.'suiteModule.KeyWord.LoginwithCredential'(GlobalVariable.url, 'apqp', '5xx1bkCcAlw=')
 
 'Click on the Home logo to select the platform'
 WebUI.click(findTestObject('Home_Page/homelogo'))
 
-'Select the Integrated Management System /QHSE Platform'
-WebUI.click(findTestObject('Home_Page/platform_Option1'))
+'Select the EVAV NPD/APQP Platform Platform'
+WebUI.click(findTestObject('Home_Page/EVAV_Platform'))
 
 'Click on the Setup option in the left menu'
 WebUI.click(findTestObject('Home_Page/setup_OptionIcon'), FailureHandling.STOP_ON_FAILURE)
 
 'Click on the Suite Setup option in the left pane'
-WebUI.click(findTestObject('Home_Page/suiteSetup_Option'))
+WebUI.click(findTestObject('Home_Page/projectsSetup_Option'))
 
-'Verify Audit Pro module is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu_Option'), 10)
+WebUI.waitForPageLoad(5)
 
-'Verify Customers link is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu_Option'), 10)
+WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/RolesOption'), 10)
 
-'Verify Vendor/Registrar link is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu_Option'), 10)
+WebUI.click(findTestObject('ProjectSetup_Page/RolesOption'))
+
+WebUI.click(findTestObject('ProjectSetup_Page/AddButton'))
+
+WebUI.setText(findTestObject('ProjectSetup_Page/RoleName_TextBox'), 'AutoRole')
+
+WebUI.setText(findTestObject('ProjectSetup_Page/RoleDescription_TextBox'), 'new')
+
+WebUI.setText(findTestObject('ProjectSetup_Page/RoleLevel_TextBox'), '1')
+
+WebUI.click(findTestObject('ProjectSetup_Page/SaveRole_Button'))
 

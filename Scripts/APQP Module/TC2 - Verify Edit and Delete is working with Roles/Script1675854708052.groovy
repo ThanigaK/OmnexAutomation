@@ -17,27 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Login to the application as module admin user'
-CustomKeywords.'suiteModule.KeyWord.LoginwithCredential'(GlobalVariable.url, 'auditDummy', '5xx1bkCcAlw=')
-
-'Click on the Home logo to select the platform'
-WebUI.click(findTestObject('Home_Page/homelogo'))
-
-'Select the Integrated Management System /QHSE Platform'
-WebUI.click(findTestObject('Home_Page/platform_Option1'))
-
-'Click on the Setup option in the left menu'
-WebUI.click(findTestObject('Home_Page/setup_OptionIcon'), FailureHandling.STOP_ON_FAILURE)
-
-'Click on the Suite Setup option in the left pane'
-WebUI.click(findTestObject('Home_Page/suiteSetup_Option'))
-
-'Verify Audit Pro module is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu_Option'), 10)
-
-'Verify Customers link is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu_Option'), 10)
-
-'Verify Vendor/Registrar link is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu_Option'), 10)
-

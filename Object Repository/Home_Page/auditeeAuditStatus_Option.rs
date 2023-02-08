@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>actions_Option</name>
+   <name>auditeeAuditStatus_Option</name>
    <tag></tag>
-   <elementGuidId>66bd3c61-ecab-4d6a-acb6-be1a0e4d3242</elementGuidId>
+   <elementGuidId>f793820d-0bb5-4e38-b4c1-6685ddec21a9</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//div[@class='sub-menu']//span[text()='Audit Status'])[3]</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@class='sub-menu']//span[text()='Actions']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

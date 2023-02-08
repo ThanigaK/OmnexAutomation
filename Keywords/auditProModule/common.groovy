@@ -24,10 +24,32 @@ import java.util.concurrent.TimeUnit
 import internal.GlobalVariable
 
 public class common {
+
+	public static String VendorName
+	public static String VendorCode
+
 	public String RandomNumber() {
 		SimpleDateFormat sdf1 = new SimpleDateFormat("ddMMyyyyHHmmss");
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 		String DateTimeStr = sdf1.format(timestamp);
 		return DateTimeStr;
 	}
+
+	@Keyword
+	public void createVendorandVerify() {
+		VendorName = "AutoVendor"+RandomNumber()
+		VendorCode = "AutoCode"+RandomNumber()
+		WebUI.click(findTestObject('Object Repository/Vendor_Page/add_Button'))
+		WebUI.waitForPageLoad(5)
+		WebUI.setText(findTestObject('Object Repository/Vendor_Page/vendorName_TextBox'),VendorName)
+		WebUI.setText(findTestObject('Object Repository/Vendor_Page/vendorCode_TextBox'),VendorCode)
+		WebUI.setText(findTestObject('Object Repository/Vendor_Page/vendorPhone_TextBox'),VendorCode)
+		WebUI.setText(findTestObject('Object Repository/Vendor_Page/vendorEmail_TextBox'),VendorCode)
+		WebUI.click(findTestObject('Object Repository/Vendor_Page/html_Element'))
+	}
+
+	@Keyword
+	public void deleteVendor() {
+	}
 }
+

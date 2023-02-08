@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>actions_Option</name>
+   <name>LPASchedule_Option</name>
    <tag></tag>
-   <elementGuidId>66bd3c61-ecab-4d6a-acb6-be1a0e4d3242</elementGuidId>
+   <elementGuidId>6e9e4290-ee0a-4baf-a836-4c260c36aa05</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='sub-menu']//span[text()='Actions']</value>
+         <value>//div[@class='sub-menu']//span[text()='LPA Schedule']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
