@@ -6,14 +6,16 @@
       "keywordMethods": [
         {
           "name": "NavigateToDocProSetup",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "goToLevelPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

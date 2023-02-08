@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "4E6DAB9A6CAC18B58FD2C47060D168F7",
+  "keywordFileContentHash": "F6725DBA7ABC04B7DFE83781B1AA6B25",
   "keywordClasses": [
     {
       "name": "docProModule.DocPro_Setup",
@@ -22,6 +22,25 @@
             },
             {
               "name": "Level",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "RightClickOntheLevel",
+          "parameters": [
+            {
+              "name": "levelName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

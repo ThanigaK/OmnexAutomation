@@ -39,20 +39,18 @@ import internal.GlobalVariable
 public class Base {
 
 	@Keyword
-	public static void Login() 
-	{
-			WebUI.openBrowser('')
-			WebUI.maximizeWindow()
-			WebUI.deleteAllCookies();
-			WebUI.navigateToUrl(GlobalVariable.url)
-			WebUI.setText(findTestObject('Login_Page/userName_Input'), GlobalVariable.username)
-			WebUI.setEncryptedText(findTestObject('Login_Page/password_Input'), GlobalVariable.Password)
-			WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
-			WebUI.click(findTestObject('Login_Page/login_Button'))
-			if(WebUI.verifyElementPresent(findTestObject('Object Repository/Home_Page/popupOk_Button'), 5 , FailureHandling.OPTIONAL))
-			{
-				WebUI.click(findTestObject('Object Repository/Home_Page/popupOk_Button'))
-			}
+	public static void Login() {
+		WebUI.openBrowser('')
+		WebUI.maximizeWindow()
+		WebUI.deleteAllCookies();
+		WebUI.navigateToUrl(GlobalVariable.url)
+		WebUI.setText(findTestObject('Login_Page/userName_Input'), GlobalVariable.username)
+		WebUI.setEncryptedText(findTestObject('Login_Page/password_Input'), GlobalVariable.Password)
+		WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
+		WebUI.click(findTestObject('Login_Page/login_Button'))
+		if(WebUI.verifyElementPresent(findTestObject('Object Repository/Home_Page/popupOk_Button'), 5 , FailureHandling.OPTIONAL)) {
+			WebUI.click(findTestObject('Object Repository/Home_Page/popupOk_Button'))
+		}
 	}
 
 	@Keyword
@@ -74,7 +72,7 @@ public class Base {
 			throw new Exception("Error Login");
 		}
 	}
-	
+
 	public static void waitForClickableAndClick(TestObject to, int timeOut) {
 		try {
 			WebUI.waitForElementClickable(to, timeOut);
@@ -85,7 +83,7 @@ public class Base {
 			throw new Exception("Error while waiting and clicking the element");
 		}
 	}
-	
+
 	public static void switchFrameAndDoActions(String objectName, String dynamicXpath,String actionType,TestObject frame) {
 		WebUI.switchToFrame(frame, 20)
 		TestObject to = new TestObject(objectName)
@@ -108,5 +106,4 @@ public class Base {
 		}
 		WebUI.switchToDefaultContent();
 	}
-
 }

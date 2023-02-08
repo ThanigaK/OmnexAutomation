@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login into EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on  DocPro Setup→Folder management/Setup→Suite Setup→Docpro Setup→Folder management
+4.Expand the levels tree 
+5.Right click the levels</description>
+   <name>TC-21858 validate Delete should be Disabled</name>
+   <tag>DocPro_FolderManagement</tag>
+   <comment></comment>
+   <testCaseGuid>2257db12-905b-497d-91a2-403b50986e1f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>827a5f5a-9a7f-4ee2-b71e-fd7a20468767</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>827a5f5a-9a7f-4ee2-b71e-fd7a20468767</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+</TestCaseEntity>

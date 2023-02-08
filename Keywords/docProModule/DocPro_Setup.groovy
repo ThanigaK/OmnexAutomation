@@ -17,11 +17,11 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import org.openqa.selenium.Keys
 
 import internal.GlobalVariable
 
-public class DocPro_Setup extends Base
-{
+public class DocPro_Setup extends Base {
 
 	@Keyword
 	public void goToLevelInDocproSetup(String page, String Level) {
@@ -31,5 +31,12 @@ public class DocPro_Setup extends Base
 			WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/documentManagement_Option'))
 		}
 		switchFrameAndDoActions("level", "//*[text()='"+Level+"']", "jsclick", findTestObject('Object Repository/Suite_Module/Groups_Page/groupPage_Frame'))
+	}
+	
+	@Keyword
+	public void RightClickOntheLevel(String levelName)
+	{
+		WebUI.setText(findTestObject('Object Repository/DocPro_Module/Levels_Page/searchLevel_TextBox'), levelName+Keys.ENTER)
+		switchFrameAndDoActions("level", "//li/a/span[text()='"+levelName+"']", "rightClick",findTestObject('Object Repository/Home_Page/detailView_iFrame'))
 	}
 }

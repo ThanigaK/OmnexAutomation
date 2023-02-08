@@ -2,26 +2,24 @@
 <TestCaseEntity>
    <description>1.Login to EwQIMS as a module administrator
 2.Navigate to Docpro module for SiteA
-3.Click on DocPro Setup→Folder management(10.6.X)
-4.Click on setup->suit setup->DocPro Setup->Folder management
-5.Expand the levels tree 
-6.Click on the levels to view the details
-7.Check the  In use checkbox 
-8.Click on save</description>
-   <name>TC-21856 Validate the user can activate the levels for the specific site</name>
+3.Click on DocPro Setup→Folder management
+4.Expand the levels tree 
+5.Right click on the level
+6.Validate &quot;New Option&quot; was disabled</description>
+   <name>TC-21860 validate New Option should be Disabled</name>
    <tag>DocPro_FolderManagement</tag>
    <comment></comment>
-   <testCaseGuid>74d0f990-b75d-466e-b502-8fdd8eb66d16</testCaseGuid>
+   <testCaseGuid>c6d20ddf-701d-49ab-a8bf-2a3dadfa1327</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>aa2ca396-0ac5-4d67-9c7a-3479d291a819</variableId>
+      <variableId>b5010b8c-8575-4351-b149-10b42c1f588a</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
-      <id>aa2ca396-0ac5-4d67-9c7a-3479d291a819</id>
+      <id>b5010b8c-8575-4351-b149-10b42c1f588a</id>
       <masked>false</masked>
       <name>LevelName</name>
    </variable>

@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "160C976A5FA7BDDD4E0647441F3D72CB",
+  "keywordFileContentHash": "AF21D3DD1C9B52658CE1B8AA3D3651EE",
   "keywordClasses": [
     {
       "name": "suiteModule.LevelsPage",
@@ -20,18 +20,15 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "modifyLevelData",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "deleteModifiedLevel",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "levelDeletion",
@@ -49,11 +46,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

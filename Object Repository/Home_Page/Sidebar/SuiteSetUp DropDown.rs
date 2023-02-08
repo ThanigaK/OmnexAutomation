@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SuiteSetup Dropdown close</name>
+   <name>SuiteSetUp DropDown</name>
    <tag></tag>
-   <elementGuidId>84713574-36d2-4d05-b190-460c3c913baa</elementGuidId>
+   <elementGuidId>de55168b-ae30-40fe-8c95-6f5f88acc057</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,6 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
