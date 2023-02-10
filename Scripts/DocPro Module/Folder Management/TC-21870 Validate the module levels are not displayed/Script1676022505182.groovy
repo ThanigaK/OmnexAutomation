@@ -18,13 +18,36 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the EWQIMS application\r\n'
-CustomKeywords.'docProModule.Base.Login'()
+CustomKeywords.'docProModule.Base.LoginwithCredential'(GlobalVariable.url, GlobalVariable.username1, GlobalVariable.Password1)
 
 'Navigating to levels page'
 CustomKeywords.'docProModule.HomePage.goToLevelPage'()
 
 'Create New leavel specific to this scenario\r\n'
-levName = CustomKeywords.'suiteModule.LevelsPage.createLevel'(LevelName)
+levName = CustomKeywords.'suiteModule.LevelsPage.createLevelwithSubLevelAccess'(LevelName)
+
+'Logging out from the application'
+CustomKeywords.'suiteModule.KeyWord.Logout'()
+
+'Login to the EWQIMS application with user without any access\r\n\r\n\r\n'
+CustomKeywords.'docProModule.Base.LoginwithCredential'(GlobalVariable.url, 'dummyUser', 'QJblfja5Cso=')
+
+'Navigating to the DocPro Setup page'
+CustomKeywords.'docProModule.HomePage.NavigateToDocProSetup'()
+
+'Enter Newly created level name in the folder management search box\r\n'
+WebUI.setText(findTestObject('DocPro_Module/Folder Management/SearchByFolder Input'), levName + Keys.ENTER)
+
+WebUI.delay(3)
+
+'Validate the level is displaying or not\r\n'
+WebUI.verifyElementNotPresent(findTestObject('DocPro_Module/Folder Management/SearchedFolder_1'), 5)
+
+'Again logging out from the application'
+CustomKeywords.'suiteModule.KeyWord.Logout'()
+
+'Login to the EWQIMS application\r\n'
+CustomKeywords.'docProModule.Base.LoginwithCredential'(GlobalVariable.url, GlobalVariable.username1, GlobalVariable.Password1)
 
 'Navigating to the DocPro Setup page'
 CustomKeywords.'docProModule.HomePage.NavigateToDocProSetup'()
@@ -35,12 +58,7 @@ WebUI.setText(findTestObject('DocPro_Module/Folder Management/SearchByFolder Inp
 WebUI.delay(3)
 
 'Right Click on the newly created Level'
-WebUI.rightClick(findTestObject('DocPro_Module/Folder Management/SearchedFolder_1'))
-
-WebUI.delay(3)
-
-'Validate the New Option is Disabled'
-WebUI.verifyElementPresent(findTestObject('DocPro_Module/Folder Management/New_RightClick Disabled'), 5)
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/Folder Management/SearchedFolder_1'), 5)
 
 'Navigating to levels page'
 CustomKeywords.'docProModule.HomePage.goToLevelPage'()
