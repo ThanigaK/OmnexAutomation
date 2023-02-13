@@ -6,20 +6,20 @@
 4.Expand the levels tree 
 5.Right click on the active level 
 6.Click on rights for sites</description>
-   <name>TC-21871 Validate Default Right access for the sites</name>
+   <name>TC-21872 Validate Inherit Option should not selected by default</name>
    <tag>LevelRights</tag>
    <comment></comment>
-   <testCaseGuid>84e8b74b-1b57-4941-bd62-61fa1cd103db</testCaseGuid>
+   <testCaseGuid>15f4a938-5af4-4272-93dd-418f5c0ebb56</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6279c32c-e37d-45cc-86e2-732751387957</variableId>
+      <variableId>6c4ddb82-5e05-4199-b7a2-de13fc60a345</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
-      <id>6279c32c-e37d-45cc-86e2-732751387957</id>
+      <id>6c4ddb82-5e05-4199-b7a2-de13fc60a345</id>
       <masked>false</masked>
       <name>LevelName</name>
    </variable>

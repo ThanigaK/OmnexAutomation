@@ -10,15 +10,15 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.By as By
+import org.openqa.selenium.By
 
 CustomKeywords.'docProModule.Base.Login'()
 
@@ -53,18 +53,17 @@ WebUI.switchToFrame(findTestObject('Object Repository/IFrames/iframeTree'), 5)
 
 List Column = WebUI.findWebElements(findTestObject('Object Repository/DocPro_Module/Folder Management/Level Rights/Rights for sites Row'),10)
 
-for (int i = 1; i <= Column.size(); i++) {
-    String AttachRight = DriverFactory.getWebDriver().findElement(By.xpath(("(//table[@id='DPLevelgrid']//thead//tr[2]//th)["+i+"]"))).getText()
+for(int i=1; i<=Column.size(); i++)
+{
 
-    if (AttachRight.contains('Attach Right')) {
-        String CheckBox = DriverFactory.getWebDriver().findElement(By.xpath("(//table[@id='DPLevelgrid']//tbody//tr//td)["+i+"]//input")).getAttribute('value')
-
-        WebUI.verifyMatch(CheckBox, 'true', false)
-
-        KeywordUtil.logInfo('Attach to Right Checkbox Checked by default')
+	String AttachRight = DriverFactory.getWebDriver().findElement(By.xpath("(//table[@id='DPLevelgrid']//thead//tr[2]//th)["+i+"]")).getText()
+	if(AttachRight.contains("Inherit"))
+	{
+		String CheckBox = DriverFactory.getWebDriver().findElement(By.xpath("(//table[@id='DPLevelgrid']//tbody//tr//td)["+i+"]//input")).getAttribute("value")
+		WebUI.verifyMatch(CheckBox, "false", false)
+		KeywordUtil.logInfo("Attach to Right inherit Checkbox was not Checked by default")
 		break
-    }
-
+	}
 }
 
 WebUI.switchToDefaultContent()
