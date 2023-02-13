@@ -20,15 +20,18 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "modifyLevelData",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "deleteModifiedLevel",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "levelDeletion",
@@ -46,7 +49,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "createLevelwithSubLevelAccess",
@@ -64,10 +68,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

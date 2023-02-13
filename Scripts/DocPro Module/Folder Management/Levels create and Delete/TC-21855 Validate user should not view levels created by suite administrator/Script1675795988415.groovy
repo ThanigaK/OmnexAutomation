@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Login to the EWQIMS application\r\n'
-CustomKeywords.'docProModule.Base.LoginwithCredential'(GlobalVariable.url, 'dummyUser', 'QJblfja5Cso=')
+CustomKeywords.'docProModule.Base.LoginwithCredential'(GlobalVariable.url, 'DocAccess', 'QJblfja5Cso=')
 
 'Navigating to the DocPro Setup page'
 CustomKeywords.'docProModule.HomePage.NavigateToDocProSetup'()

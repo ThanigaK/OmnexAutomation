@@ -5,12 +5,6 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>52992088-425c-43bf-ad33-c6da5d050051</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>c70d9277-f642-4122-b305-2c3486b8c487</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>
