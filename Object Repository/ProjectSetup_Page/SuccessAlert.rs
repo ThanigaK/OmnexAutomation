@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SaveRole_Button</name>
+   <name>SuccessAlert</name>
    <tag></tag>
-   <elementGuidId>c6d4a539-d08c-48cc-8d73-d6db77e5dfc5</elementGuidId>
+   <elementGuidId>f2c66dc4-f18e-47da-bc66-2d5fe3b80b1f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;btnSaveDetails_RoleGridcontrol&quot;]</value>
+         <value>//div[@class='alert alert-success alert-dismissible border-bottom']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +22,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>1552bf48-7bd3-4a7a-ae17-9eeac5de3535</webElementGuid>
+      <webElementGuid>b70ca59f-0d2a-47e7-a50f-40932c7b80a8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SaveRole_Button</name>
+   <name>CloseRoleButton</name>
    <tag></tag>
-   <elementGuidId>c6d4a539-d08c-48cc-8d73-d6db77e5dfc5</elementGuidId>
+   <elementGuidId>48b70284-d4a0-4c3d-8fc9-35b7d7915959</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;btnSaveDetails_RoleGridcontrol&quot;]</value>
+         <value>//button[@class='close']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>1552bf48-7bd3-4a7a-ae17-9eeac5de3535</webElementGuid>
+      <value>Object Repository/IFrames/Iframe_MenuData</value>
+      <webElementGuid>abab1477-3730-4f15-9554-75367a5c08e5</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

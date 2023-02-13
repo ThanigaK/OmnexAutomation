@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SaveRole_Button</name>
+   <name>DoneButton</name>
    <tag></tag>
-   <elementGuidId>c6d4a539-d08c-48cc-8d73-d6db77e5dfc5</elementGuidId>
+   <elementGuidId>7482d70a-66b4-436c-82f6-62eb3897f0ef</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;btnSaveDetails_RoleGridcontrol&quot;]</value>
+         <value>//button[@title='Done']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +22,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>1552bf48-7bd3-4a7a-ae17-9eeac5de3535</webElementGuid>
+      <webElementGuid>b44626b0-6cd3-49f5-bfe0-1727b6b3351c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

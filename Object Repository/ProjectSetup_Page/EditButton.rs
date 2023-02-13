@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SaveRole_Button</name>
+   <name>EditButton</name>
    <tag></tag>
-   <elementGuidId>c6d4a539-d08c-48cc-8d73-d6db77e5dfc5</elementGuidId>
+   <elementGuidId>cd3ff16c-618b-422e-a211-1b1ff8c7fbb0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;btnSaveDetails_RoleGridcontrol&quot;]</value>
+         <value>//span[contains(@id,'bedit_RoleGridcontrol')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +22,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>1552bf48-7bd3-4a7a-ae17-9eeac5de3535</webElementGuid>
+      <webElementGuid>2a1691e6-786e-4267-a018-8de4fb13a5d8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

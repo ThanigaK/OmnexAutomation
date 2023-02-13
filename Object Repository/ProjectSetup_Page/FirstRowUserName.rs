@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SaveRole_Button</name>
+   <name>FirstRowUserName</name>
    <tag></tag>
-   <elementGuidId>c6d4a539-d08c-48cc-8d73-d6db77e5dfc5</elementGuidId>
+   <elementGuidId>1a5af9c5-9ade-48a9-95e9-462ae137453a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;btnSaveDetails_RoleGridcontrol&quot;]</value>
+         <value>//*[@id='userListingGridControl']/tbody/tr/td[1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>1552bf48-7bd3-4a7a-ae17-9eeac5de3535</webElementGuid>
+      <value>Object Repository/IFrames/Iframe_IfrUsers_MenuData</value>
+      <webElementGuid>a715a961-6ea2-4e1b-93b5-a2245a99152e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

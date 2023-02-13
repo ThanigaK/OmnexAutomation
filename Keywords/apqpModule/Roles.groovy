@@ -42,21 +42,20 @@ import java.util.concurrent.TimeUnit
 
 
 class Roles {
-	
+
+	@Keyword
 	public String RandomNumber() {
 		SimpleDateFormat sdf1 = new SimpleDateFormat("ddMMyyyyHHmmss");
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 		String DateTimeStr = sdf1.format(timestamp);
 		return DateTimeStr;
 	}
-	
+
 	@Keyword
 	def createRoles() {
 		try {
-			
-		
 		} catch (Exception e) {
 			KeywordUtil.markFailed("Element not found")
-		} 
-	}	
+		}
+	}
 }

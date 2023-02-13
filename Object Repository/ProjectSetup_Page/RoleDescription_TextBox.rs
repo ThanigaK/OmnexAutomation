@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;btnSaveDetails_RoleGridcontrol&quot;]</value>
+         <value>//*[@name=&quot;SSRole_Descriptions&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>ec565149-eb12-4a01-a19d-48a5c7e8b54f</webElementGuid>
+      <webElementGuid>5c4196d8-7ba6-4626-84ff-1f6818b54c27</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
