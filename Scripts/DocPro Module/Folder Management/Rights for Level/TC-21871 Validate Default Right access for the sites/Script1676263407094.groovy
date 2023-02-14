@@ -45,28 +45,36 @@ WebUI.delay(3)
 'Right click on the Level\r\n'
 WebUI.rightClick(findTestObject('DocPro_Module/Folder Management/SearchedFolder_1'))
 
-WebUI.click(findTestObject('DocPro_Module/Folder Management/Rights for Sites'))
+'Select Right for groups\r\n'
+WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Rights for Groups'))
 
 WebUI.delay(5)
 
+'Switching to I frame'
 WebUI.switchToFrame(findTestObject('Object Repository/IFrames/iframeTree'), 5)
 
-List Column = WebUI.findWebElements(findTestObject('Object Repository/DocPro_Module/Folder Management/Level Rights/Rights for sites Row'),10)
+'Get the total number of columns '
+List Column = WebUI.findWebElements(findTestObject('Object Repository/DocPro_Module/Folder Management/Level Rights/Rights for sites Row'), 
+    10)
 
+'Iterating to validate the Checkbox'
 for (int i = 1; i <= Column.size(); i++) {
-    String AttachRight = DriverFactory.getWebDriver().findElement(By.xpath(("(//table[@id='DPLevelgrid']//thead//tr[2]//th)["+i+"]"))).getText()
+    String AttachRight = DriverFactory.getWebDriver().findElement(By.xpath(('(//table[@id=\'DPLevelgrid\']//thead//tr[2]//th)[' + 
+            i) + ']')).getText()
 
     if (AttachRight.contains('Attach Right')) {
-        String CheckBox = DriverFactory.getWebDriver().findElement(By.xpath("(//table[@id='DPLevelgrid']//tbody//tr//td)["+i+"]//input")).getAttribute('value')
+        String CheckBox = DriverFactory.getWebDriver().findElement(By.xpath(('(//table[@id=\'DPLevelgrid\']//tbody//tr//td)[' + 
+                i) + ']//input')).getAttribute('value')
 
         WebUI.verifyMatch(CheckBox, 'true', false)
 
         KeywordUtil.logInfo('Attach to Right Checkbox Checked by default')
-		break
-    }
 
+        break
+    }
 }
 
+'Switching back to default frame\r\n'
 WebUI.switchToDefaultContent()
 
 WebUI.delay(5)

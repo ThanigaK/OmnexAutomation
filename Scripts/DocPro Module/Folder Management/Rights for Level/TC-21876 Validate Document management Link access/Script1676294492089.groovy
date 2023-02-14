@@ -33,22 +33,30 @@ WebUI.delay(3)
 'Right click on the Level\r\n'
 WebUI.rightClick(findTestObject('DocPro_Module/Folder Management/SearchedFolder_1'))
 
-WebUI.click(findTestObject('DocPro_Module/Folder Management/Rights for Sites'))
+'Select Right for sites\r\n'
+WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Rights for Sites'))
 
+'Select the Green Plus Icon'
 WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Plus icon'))
 
+'Click tthe Document managament link'
 WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Click Link'))
 
+'Ge the heading'
 Heading = WebUI.getText(findTestObject('DocPro_Module/Folder Management/Level Rights/Manage site document access header'))
 
+'Validate the Heading '
 WebUI.verifyMatch(Heading, 'Manage Site Document Access - LevelWithDocument', false)
 
+'Again select the Green Plus icon'
 WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Plus icon'))
 
+'Now select the full access checkbox'
 WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Full Access Checkbox'))
 
 WebUI.delay(3)
 
+'Ge the attrtiute of full acces checkbox'
 Status = WebUI.getAttribute(findTestObject('DocPro_Module/Folder Management/Level Rights/Full Access Checkbox'), 'value')
 
 WebUI.verifyMatch(Status, 'true', false)

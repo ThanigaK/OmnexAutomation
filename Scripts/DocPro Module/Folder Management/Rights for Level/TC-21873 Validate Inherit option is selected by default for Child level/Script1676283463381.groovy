@@ -76,27 +76,36 @@ WebUI.delay(2)
 'Right click on the new sub level'
 WebUI.rightClick(findTestObject('DocPro_Module/Folder Management/NewSubFolder'))
 
-WebUI.click(findTestObject('DocPro_Module/Folder Management/Rights for Sites'))
+'select right for groups'
+WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Rights for Sites'))
 
 WebUI.delay(2)
 
+'Switching to new iframe\r\n'
 WebUI.switchToFrame(findTestObject('Object Repository/IFrames/iframeTree'), 5)
 
-List Column = WebUI.findWebElements(findTestObject('Object Repository/DocPro_Module/Folder Management/Level Rights/Rights for sites Row'),10)
+'Find out the total number of columns'
+List Column = WebUI.findWebElements(findTestObject('Object Repository/DocPro_Module/Folder Management/Level Rights/Rights for sites Row'), 
+    10)
 
-for(int i=1; i<=Column.size(); i++)
-{
+'Iteratin to validate the checkbox\r\n'
+for (int i = 1; i <= Column.size(); i++) {
+    String AttachRight = DriverFactory.getWebDriver().findElement(By.xpath(('(//table[@id=\'DPLevelgrid\']//thead//tr[2]//th)[' + 
+            i) + ']')).getText()
 
-	String AttachRight = DriverFactory.getWebDriver().findElement(By.xpath("(//table[@id='DPLevelgrid']//thead//tr[2]//th)["+i+"]")).getText()
-	if(AttachRight.contains("Inherit"))
-	{
-		String CheckBox = DriverFactory.getWebDriver().findElement(By.xpath("(//table[@id='DPLevelgrid']//tbody//tr//td)["+i+"]//input")).getAttribute("value")
-		WebUI.verifyMatch(CheckBox, "true", false)
-		KeywordUtil.logInfo("Sub Level Attach to Right inherit Checkbox was Checked by default")
-		break
-	}
+    if (AttachRight.contains('Inherit')) {
+        String CheckBox = DriverFactory.getWebDriver().findElement(By.xpath(('(//table[@id=\'DPLevelgrid\']//tbody//tr//td)[' + 
+                i) + ']//input')).getAttribute('value')
+
+        WebUI.verifyMatch(CheckBox, 'true', false)
+
+        KeywordUtil.logInfo('Sub Level Attach to Right inherit Checkbox was Checked by default')
+
+        break
+    }
 }
 
+'Switching back to default content'
 WebUI.switchToDefaultContent()
 
 WebUI.delay(2)

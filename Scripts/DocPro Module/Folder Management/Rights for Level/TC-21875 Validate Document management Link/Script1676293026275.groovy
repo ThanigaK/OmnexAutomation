@@ -33,13 +33,18 @@ WebUI.delay(3)
 'Right click on the Level\r\n'
 WebUI.rightClick(findTestObject('DocPro_Module/Folder Management/SearchedFolder_1'))
 
-WebUI.click(findTestObject('DocPro_Module/Folder Management/Rights for Sites'))
+'Select Right for Groups'
+WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Rights for Sites'))
 
+'Select the Green Plus Icon\r\n'
 WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Plus icon'))
 
+'Select the Document Management Link'
 WebUI.click(findTestObject('DocPro_Module/Folder Management/Level Rights/Click Link'))
 
+'Get the Heading'
 Heading = WebUI.getText(findTestObject('DocPro_Module/Folder Management/Level Rights/Manage site document access header'))
 
+'Valide the user can able to access the Management Link'
 WebUI.verifyMatch(Heading, 'Manage Site Document Access - LevelWithDocument', false)
 

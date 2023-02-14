@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Rights for Sites</name>
+   <name>Rights for Groups</name>
    <tag></tag>
    <elementGuidId>f5459b62-3b17-4533-b812-2520539bae88</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='rMenu_TOCDoclvl']//span[contains(text(),'Rights for sites')]//parent::li</value>
+         <value>//div[@id='rMenu_TOCDoclvl']//span[contains(text(),'Rights for groups')]//parent::li</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/IFrames/Menudata</value>
-      <webElementGuid>b2c24ac4-85bb-4785-93ca-d3c1a9b4d4d3</webElementGuid>
+      <webElementGuid>330dcfdd-d9e5-4386-b400-eca13274835e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
