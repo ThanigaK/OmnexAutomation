@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3 - Verify Search functionality and Delete all in Project Groups</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>47357b3f-f109-4ae5-80d9-df7ca227ea74</testCaseGuid>
+</TestCaseEntity>

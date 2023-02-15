@@ -46,7 +46,7 @@ public class ProcessActivities extends common{
 		} else {
 			processName = ProcessName
 		}
-		processScopeName = "Scope_"+RandomNumber()		
+		processScopeName = "Scope_"+RandomNumber()
 
 		WebUI.waitForElementPresent(findTestObject('Object Repository/ProcessActivities_Page/processName_InputBox'), 20)
 		WebUI.sendKeys(findTestObject('Object Repository/ProcessActivities_Page/processName_InputBox'), processName)
@@ -56,15 +56,13 @@ public class ProcessActivities extends common{
 		WebUI.waitForPageLoad(5)
 		WebUI.back();
 		WebUI.waitForPageLoad(5)
-		
+
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Home_Page/detailView_iFrame'), 10)
 		WebUI.switchToFrame(findTestObject('Object Repository/Home_Page/detailView_iFrame'), 10)
 		List<WebElement> processScopeList = DriverFactory.getWebDriver().findElements(By.xpath("//table[@id='Grid_EditProcessScopeGrid']//tbody/tr/td/a"))
-		int count = processScopeList.size()		
-		for(int i=0;i<count;i++)
-		{			
-			if(processScopeList[i].getText().equals(processScopeName))
-			{				
+		int count = processScopeList.size()
+		for(int i=0;i<count;i++) {
+			if(processScopeList[i].getText().equals(processScopeName)) {
 				Assert.assertTrue(true)
 				KeywordUtil.logInfo("ProcessScope Name Verified !!!")
 				break;
@@ -75,69 +73,66 @@ public class ProcessActivities extends common{
 		WebUI.switchToDefaultContent()
 		KeywordUtil.logInfo("Switched out of Iframe")
 	}
-	
+
 	@Keyword
-	public void deleteProcessScope(String process = processScopeName)
-	{
+	public void deleteProcessScope(String process = processScopeName) {
 		KeywordUtil.logInfo("Starting Deletion of Process Scope !!!")
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Home_Page/detailView_iFrame'), 10)
 		WebUI.switchToFrame(findTestObject('Object Repository/Home_Page/detailView_iFrame'), 10)
 		List<WebElement> processScopeList = DriverFactory.getWebDriver().findElements(By.xpath("//table[@id='Grid_EditProcessScopeGrid']//tbody/tr/td/a"))
 		List<WebElement> inputProcessCheckBox = DriverFactory.getWebDriver().findElements(By.xpath("//table[@id='Grid_EditProcessScopeGrid']//tbody/tr/td/input"))
-		
+
 		int count = processScopeList.size()
-		for(int i=0;i<count;i++)
-		{			
-			if(processScopeList[i].getText().equals(processScopeName))
-			{
+		for(int i=0;i<count;i++) {
+			if(processScopeList[i].getText().equals(processScopeName)) {
 				inputProcessCheckBox[i].click()
-				processScopeList[i].click()				
+				processScopeList[i].click()
 				WebUI.waitForElementClickable(findTestObject('Object Repository/ProcessActivities_Page/processInput_Checkbox'), 10)
 				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/processInput_Checkbox'))
 				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/deleteProcessScope_Button'))
 				WebUI.waitForElementClickable(findTestObject('Object Repository/ProcessActivities_Page/deleteConfirmation_Button'),10)
 				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/deleteConfirmation_Button'))
-				
+
 				WebUI.waitForElementPresent(findTestObject('Object Repository/ProcessActivities_Page/scopeDeletedMessage'), 10)
 				Assert.assertTrue(WebUI.getText(findTestObject('Object Repository/ProcessActivities_Page/scopeDeletedMessage')).contains('Deleted Successfully'))
 				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/scopeDeletedMessage_CloseButton'))
-				
+
 				WebUI.waitForElementPresent(findTestObject('Object Repository/ProcessActivities_Page/noRecords_Table'),10)
 				Assert.assertTrue(WebUI.getText(findTestObject('Object Repository/ProcessActivities_Page/noRecords_Table')).contains('No Record Found'))
 				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/proccessScope_Link'))
-				
+
 				WebUI.delay(5)
-				
-//				WebUI.switchToFrame(findTestObject('Object Repository/Home_Page/detailView_iFrame'), 10)
-//				WebUI.mouseOver(DriverFactory.getWebDriver().findElement(By.xpath("//table[@id='Grid_EditProcessScopeGrid']//tbody/tr/td/a[contains(text(),'Scope_07022')]//preceding::td[2]")))
-//				
-//				WebUI.click(DriverFactory.getWebDriver().findElement(By.xpath("//table[@id='Grid_EditProcessScopeGrid']//tbody/tr/td/a[contains(text(),'Scope_07022')]//preceding::td[2]")))
-//			
-//				WebUI.waitForElementPresent(findTestObject('Object Repository/ProcessActivities_Page/deleteProcess_Button'),10)
-//				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/deleteProcess_Button'))
-//				WebUI.waitForElementPresent(findTestObject('Object Repository/ProcessActivities_Page/deleteConfirmation_Button'),10)
-//				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/deleteConfirmation_Button'))
-//
-//				WebUI.waitForElementPresent(findTestObject('Object Repository/ProcessActivities_Page/processDeletedMessage'), 10)
-//				Assert.assertTrue(WebUI.getText(findTestObject('Object Repository/ProcessActivities_Page/processDeletedMessage')).contains('Deleted successfully'))
-//				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/processDeletedMessage_CloseButton'))
-//				KeywordUtil.logInfo("Process Deleted Successfully !!!")
-//				break;
-//				
+
+				//				WebUI.switchToFrame(findTestObject('Object Repository/Home_Page/detailView_iFrame'), 10)
+				//				WebUI.mouseOver(DriverFactory.getWebDriver().findElement(By.xpath("//table[@id='Grid_EditProcessScopeGrid']//tbody/tr/td/a[contains(text(),'Scope_07022')]//preceding::td[2]")))
+				//
+				//				WebUI.click(DriverFactory.getWebDriver().findElement(By.xpath("//table[@id='Grid_EditProcessScopeGrid']//tbody/tr/td/a[contains(text(),'Scope_07022')]//preceding::td[2]")))
+				//
+				//				WebUI.waitForElementPresent(findTestObject('Object Repository/ProcessActivities_Page/deleteProcess_Button'),10)
+				//				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/deleteProcess_Button'))
+				//				WebUI.waitForElementPresent(findTestObject('Object Repository/ProcessActivities_Page/deleteConfirmation_Button'),10)
+				//				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/deleteConfirmation_Button'))
+				//
+				//				WebUI.waitForElementPresent(findTestObject('Object Repository/ProcessActivities_Page/processDeletedMessage'), 10)
+				//				Assert.assertTrue(WebUI.getText(findTestObject('Object Repository/ProcessActivities_Page/processDeletedMessage')).contains('Deleted successfully'))
+				//				WebUI.click(findTestObject('Object Repository/ProcessActivities_Page/processDeletedMessage_CloseButton'))
+				//				KeywordUtil.logInfo("Process Deleted Successfully !!!")
+				//				break;
+				//
 			}
-//			if(i==count)
-//				Assert.fail() 
-			} 
-//				
-//		
-//		//Verify Deleted Process is not listed in the Table
-//		for(int i=0;i<count;i++)
-//		{
-//			if(processScopeList[i].getText().equals(processScopeName))
-//				Assert.fail()
-//			else
-//				Assert.assertTrue(true)				
-//		}
+			//			if(i==count)
+			//				Assert.fail()
+		}
+		//
+		//
+		//		//Verify Deleted Process is not listed in the Table
+		//		for(int i=0;i<count;i++)
+		//		{
+		//			if(processScopeList[i].getText().equals(processScopeName))
+		//				Assert.fail()
+		//			else
+		//				Assert.assertTrue(true)
+		//		}
 		WebUI.switchToDefaultContent()
 	}
 }

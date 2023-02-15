@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC2</name>
+   <name>TC2 - Verify Edit and Delete functionality of Project Groups</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>a5b5565f-e36a-4a6f-9e05-d87b5dde425f</testCaseGuid>

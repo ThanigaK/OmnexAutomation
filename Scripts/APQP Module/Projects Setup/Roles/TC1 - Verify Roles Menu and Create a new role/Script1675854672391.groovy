@@ -45,7 +45,7 @@ WebUI.click(findTestObject('ProjectSetup_Page/RolesOption'))
 'Verify whether Add Button is present in Projects Setup page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/AddButton'), 10)
 
-'Verify whether Add Button is present in Projects Setup page'
+'Verify whether Refresh Button is present in Projects Setup page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/RefreshButton'), 10)
 
 'Click on Add button to add a new role'

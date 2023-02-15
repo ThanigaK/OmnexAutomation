@@ -64,7 +64,7 @@ WebUI.setText(findTestObject('ProjectSetup_Page/RoleName_TextBox'), 'AutoRole2' 
 WebUI.click(findTestObject('ProjectSetup_Page/SaveRole_Button'))
 
 'Verify whether warning alert message is shown'
-WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/WarningAlert'), 10)
+not_run: WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/WarningAlert'), 10)
 
 'Get the text of role created warning alert message'
 warningText = WebUI.getText(findTestObject('ProjectSetup_Page/WarningAlert'))

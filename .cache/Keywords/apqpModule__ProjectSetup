@@ -1,14 +1,14 @@
 {
-  "keywordFileContentHash": "7DD1B5F548219DFE85BEB728ECDC99E0",
+  "keywordFileContentHash": "5A503B3A6B474DAACE2D2BCC6FEB39A3",
   "keywordClasses": [
     {
-      "name": "auditProModule.ProcessActivities",
+      "name": "apqpModule.ProjectSetup",
       "keywordMethods": [
         {
-          "name": "createNewProcessScopeandVerify",
+          "name": "createNewProjectGroup",
           "parameters": [
             {
-              "name": "ProcessName",
+              "name": "GroupName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -24,10 +24,10 @@
           "javadoc": ""
         },
         {
-          "name": "deleteProcessScope",
+          "name": "editProjectGroup",
           "parameters": [
             {
-              "name": "process",
+              "name": "editName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -43,7 +43,27 @@
           "javadoc": ""
         },
         {
-          "name": "deleteProcessScope",
+          "name": "ResetAndSearchProjectGroup",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "searchProjectGroup",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "VerifySearchedProjectGroup",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "DeleteProjectGroup",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "DeleteAllProjectGroups",
           "parameters": [],
           "javadoc": ""
         }
