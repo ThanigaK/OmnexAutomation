@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>actions_Option</name>
+   <name>Rights for Sites</name>
    <tag></tag>
-   <elementGuidId>66bd3c61-ecab-4d6a-acb6-be1a0e4d3242</elementGuidId>
+   <elementGuidId>feb01f47-7dce-47c8-9a8c-27c8f2c050eb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//div[@id='rMenu_TOCDoclvl']//span[contains(text(),'Rights for sites')]//parent::li</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>ref_element</name>
       <type>Main</type>
-      <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
-      <webElementGuid>8a7276d7-9427-4b6e-9846-89d356a3d7fb</webElementGuid>
+      <value>Object Repository/IFrames/Menudata</value>
+      <webElementGuid>6d97c322-26ac-4c6f-85bf-0b6c07ca01ca</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

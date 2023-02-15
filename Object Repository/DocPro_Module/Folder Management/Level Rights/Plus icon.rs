@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>actions_Option</name>
+   <name>Plus icon</name>
    <tag></tag>
-   <elementGuidId>66bd3c61-ecab-4d6a-acb6-be1a0e4d3242</elementGuidId>
+   <elementGuidId>af960732-200b-435f-aff5-fc7565d72ace</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//td[@class=' dt-body-center clsselectchkbx']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>ref_element</name>
       <type>Main</type>
-      <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
-      <webElementGuid>8a7276d7-9427-4b6e-9846-89d356a3d7fb</webElementGuid>
+      <value>Object Repository/IFrames/iframeTree</value>
+      <webElementGuid>2f01364e-3e30-4d63-8ceb-6313e3173a2e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

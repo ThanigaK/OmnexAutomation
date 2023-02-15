@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>actions_Option</name>
+   <name>Delete_RightClick</name>
    <tag></tag>
-   <elementGuidId>66bd3c61-ecab-4d6a-acb6-be1a0e4d3242</elementGuidId>
+   <elementGuidId>f026addf-8179-45e2-b3c4-2201f9885382</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//div[@id='rMenu_TOCDoclvl']//span[contains(text(),'Delete')]//parent::li</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>ref_element</name>
       <type>Main</type>
-      <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
-      <webElementGuid>8a7276d7-9427-4b6e-9846-89d356a3d7fb</webElementGuid>
+      <value>Object Repository/IFrames/Menudata</value>
+      <webElementGuid>b08fb56a-3beb-4d4b-9081-f7cbf415a640</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,10 +1,13 @@
-package auditProModule
+package docProModule
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import java.sql.Timestamp
+import java.text.SimpleDateFormat
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
@@ -17,17 +20,14 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.concurrent.TimeUnit
 
 import internal.GlobalVariable
 
-public class common {
-	public String RandomNumber() {
-		SimpleDateFormat sdf1 = new SimpleDateFormat("ddMMyyyyHHmmss");
-		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-		String DateTimeStr = sdf1.format(timestamp);
-		return DateTimeStr;
-	}
+public class LevelsPage 
+{
+	static SimpleDateFormat sdf1 = new SimpleDateFormat("ddMMyyyyHHmmss");
+	static Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+	public static String DateTimeStr = sdf1.format(timestamp);
+	public static String levelname;
+	
 }

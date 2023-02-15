@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>actions_Option</name>
+   <name>Full Access Checkbox</name>
    <tag></tag>
-   <elementGuidId>66bd3c61-ecab-4d6a-acb6-be1a0e4d3242</elementGuidId>
+   <elementGuidId>ab7c6a70-553a-4f0b-b61c-c76b6c9ef994</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//input[@type='checkbox' and @id='fullaccess_0']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>ref_element</name>
       <type>Main</type>
-      <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
-      <webElementGuid>8a7276d7-9427-4b6e-9846-89d356a3d7fb</webElementGuid>
+      <value>Object Repository/IFrames/iframeTree</value>
+      <webElementGuid>3d54a042-640a-4c23-8bc2-9ca62d024379</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

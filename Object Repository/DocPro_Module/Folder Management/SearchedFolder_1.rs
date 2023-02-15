@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>actions_Option</name>
+   <name>SearchedFolder_1</name>
    <tag></tag>
-   <elementGuidId>66bd3c61-ecab-4d6a-acb6-be1a0e4d3242</elementGuidId>
+   <elementGuidId>62df26ff-e1ab-4acd-9722-79299a458f05</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//ul[@id='TOCDoclvl']//li//a</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>ref_element</name>
       <type>Main</type>
-      <value>(//a[@class='submenu_list_link']/span[text()='Actions'])[2]</value>
-      <webElementGuid>8a7276d7-9427-4b6e-9846-89d356a3d7fb</webElementGuid>
+      <value>Object Repository/IFrames/Menudata</value>
+      <webElementGuid>9e726108-6da8-49da-9606-2eb89e319458</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -17,27 +17,34 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Login to the application as module admin user'
-CustomKeywords.'suiteModule.KeyWord.LoginwithCredential'(GlobalVariable.url, 'auditDummy', '5xx1bkCcAlw=')
+'Login to the EWQIMS application\r\n'
+CustomKeywords.'docProModule.Base.Login'()
 
-'Click on the Home logo to select the platform'
-WebUI.click(findTestObject('Home_Page/homelogo'))
+'Navigating to levels page'
+CustomKeywords.'docProModule.HomePage.goToLevelPage'()
 
-'Select the Integrated Management System /QHSE Platform'
-WebUI.click(findTestObject('Home_Page/platform_Option1'))
+'Create New leavel specific to this scenario\r\n'
+levName = CustomKeywords.'suiteModule.LevelsPage.createLevel'(LevelName)
 
-'Click on the Setup option in the left menu'
-WebUI.click(findTestObject('Home_Page/setup_OptionIcon'), FailureHandling.STOP_ON_FAILURE)
+'Navigating to the DocPro Setup page'
+CustomKeywords.'docProModule.HomePage.NavigateToDocProSetup'()
 
-'Click on the Suite Setup option in the left pane'
-WebUI.click(findTestObject('Home_Page/suiteSetup_Option'))
+'Enter the newly created Level name in the Folder Management search field'
+WebUI.setText(findTestObject('DocPro_Module/Folder Management/SearchByFolder Input'), levName + Keys.ENTER)
 
-'Verify Audit Pro module is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu'), 10)
+WebUI.delay(3)
 
-'Verify Customers link is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu'), 10)
+'Right click on the Level\r\n'
+WebUI.rightClick(findTestObject('DocPro_Module/Folder Management/SearchedFolder_1'))
 
-'Verify Vendor/Registrar link is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu'), 10)
+'get the newly created level\'s  Delete option attribute to check the Delete option is disabled'
+DeleteAttribute = WebUI.getAttribute(findTestObject('DocPro_Module/Folder Management/Delete_RightClick'), 'cursor')
+
+WebUI.verifyMatch(DeleteAttribute, 'not-allowed !important', false)
+
+'Navigating to levels page'
+CustomKeywords.'docProModule.HomePage.goToLevelPage'()
+
+'Delete the newly created level'
+CustomKeywords.'suiteModule.LevelsPage.levelDeletion'(levName)
 

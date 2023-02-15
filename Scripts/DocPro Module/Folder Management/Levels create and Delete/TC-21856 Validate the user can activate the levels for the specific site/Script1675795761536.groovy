@@ -17,27 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Login to the application as module admin user'
-CustomKeywords.'suiteModule.KeyWord.LoginwithCredential'(GlobalVariable.url, 'auditDummy', '5xx1bkCcAlw=')
+'Login to the EWQIMS application\r\n'
+CustomKeywords.'docProModule.Base.Login'()
 
-'Click on the Home logo to select the platform'
-WebUI.click(findTestObject('Home_Page/homelogo'))
+'Navigating to levels page'
+CustomKeywords.'docProModule.HomePage.goToLevelPage'()
 
-'Select the Integrated Management System /QHSE Platform'
-WebUI.click(findTestObject('Home_Page/platform_Option1'))
+'Create New leavel specific to this scenario\r\n'
+levName = CustomKeywords.'suiteModule.LevelsPage.createLevel'(LevelName)
 
-'Click on the Setup option in the left menu'
-WebUI.click(findTestObject('Home_Page/setup_OptionIcon'), FailureHandling.STOP_ON_FAILURE)
+'Navigating to the DocPro Setup page'
+CustomKeywords.'docProModule.HomePage.NavigateToDocProSetup'()
 
-'Click on the Suite Setup option in the left pane'
-WebUI.click(findTestObject('Home_Page/suiteSetup_Option'))
+'Select newely created level in Folder Management'
+CustomKeywords.'docProModule.DocPro_Setup.goToLevelInDocproSetup'('Folder Management', levName)
 
-'Verify Audit Pro module is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu'), 10)
+'validate we can able to view level by validating the Level Heading '
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/Folder Management/Folger Management level Heading'), 5)
 
-'Verify Customers link is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu'), 10)
+'Making the Level In Use'
+CustomKeywords.'suiteModule.DocPro.MakeLevelInUse'()
 
-'Verify Vendor/Registrar link is not present in the application'
-WebUI.verifyElementNotPresent(findTestObject('Home_Page/auditsMenu'), 10)
+'Again going back to the Levels page\r\n'
+CustomKeywords.'docProModule.HomePage.goToLevelPage'()
+
+'Delete the newly created level'
+CustomKeywords.'suiteModule.LevelsPage.levelDeletion'(levName)
 
