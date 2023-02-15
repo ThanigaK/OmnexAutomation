@@ -1,20 +1,9 @@
 {
-  "keywordFileContentHash": "78A17CAA27DAB6FBC137ED8E58F38D0D",
+  "keywordFileContentHash": "C028DF676D6F0BBE7DEA545F8DA3F7F9",
   "keywordClasses": [
     {
       "name": "auditProModule.common",
-      "keywordMethods": [
-        {
-          "name": "createVendorandVerify",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "deleteVendor",
-          "parameters": [],
-          "javadoc": ""
-        }
-      ]
+      "keywordMethods": []
     }
   ],
   "javadocParsed": true

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2 - Verify Edit and Delete is working with Roles</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff1b69f0-8e06-4da3-b57a-5644445b77b3</testCaseGuid>
+</TestCaseEntity>
