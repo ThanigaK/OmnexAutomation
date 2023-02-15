@@ -15,7 +15,7 @@
       <guid>fb145715-fc8d-4d7a-9a98-5e6f84a36ef9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro Module/TC2-Update the Document number option and Validate</testCaseId>
+      <testCaseId>Test Cases/DocPro Module/smoke cases/TC2-Update the Document number option and Validate</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -136,7 +136,7 @@
       <guid>cf933853-df45-4e51-acaf-aea12b240324</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro Module/TC7-Add doc as favourite and validate</testCaseId>
+      <testCaseId>Test Cases/DocPro Module/smoke cases/TC7-Add doc as favourite and validate</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -293,7 +293,7 @@
       <guid>a17599af-3ac8-474f-97b5-be840c444726</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro Module/TC1-Verify the user is able to Create, Edit and Delete levels</testCaseId>
+      <testCaseId>Test Cases/DocPro Module/smoke cases/TC1-Verify the user is able to Create, Edit and Delete levels</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -306,7 +306,7 @@
       <guid>e789f1fc-4b60-4843-adad-0c87b9a1147d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro Module/TC4-New document creation with Assign admin</testCaseId>
+      <testCaseId>Test Cases/DocPro Module/smoke cases/TC4-New document creation with Assign admin</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -475,7 +475,7 @@
       <guid>77d04508-6226-438c-9682-c21122da34af</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro Module/TC5-New document creation with Level owner</testCaseId>
+      <testCaseId>Test Cases/DocPro Module/smoke cases/TC5-New document creation with Level owner</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -626,7 +626,7 @@
       <guid>59a5f787-d9d1-408f-8a25-58e5dfee181b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/DocPro Module/TC3-New document creation with one approver</testCaseId>
+      <testCaseId>Test Cases/DocPro Module/smoke cases/TC3-New document creation with one approver</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -795,7 +795,7 @@
       <guid>201efcb9-d56b-4994-8632-092ec05363f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DocPro Module/TC6-New document creation without document</testCaseId>
+      <testCaseId>Test Cases/DocPro Module/smoke cases/TC6-New document creation without document</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

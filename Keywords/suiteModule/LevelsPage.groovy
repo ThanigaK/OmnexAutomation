@@ -1,6 +1,6 @@
 package suiteModule
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint 
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -105,4 +105,31 @@ public class LevelsPage extends common {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/DocPro_Module/Levels_Page/levelDeletedMessage'), 20)
 		KeywordUtil.logInfo("Level deleted succesfully--> "+levelName)
 	}
+	
+	@Keyword
+	public String createLevelwithSubLevelAccess(String LevelName) {
+		if (LevelName.equalsIgnoreCase("random")) {
+			levelname = "Automation-" + DateTimeStr;
+		}
+		levelCreationwithSublevelAccess(DateTimeStr,levelname,"DOC-")
+		levelNameVerification(levelname)
+		return levelname;
+	}
+	
+	public void levelCreationwithSublevelAccess(String levelNum,String name,String prefix) {
+		if(!levelNum.isEmpty()) {
+			levelNumberUpdate(levelNum)
+		}
+		WebUI.setText(findTestObject('Object Repository/DocPro_Module/Levels_Page/levelName_TextBox'), name)
+
+		if(!prefix.isEmpty()) {
+			WebUI.setText(findTestObject('Object Repository/DocPro_Module/Levels_Page/prefix_TextBox'), prefix)
+		}
+		
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/Page_EwQIMS/label_Allow Site Sub-levels Creation'))
+		WebUI.click(findTestObject('Object Repository/DocPro_Module/Levels_Page/saveLevel_Button'))
+	}
+	
+	
 }
