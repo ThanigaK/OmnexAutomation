@@ -24,4 +24,30 @@
          <variableId>ce2fd8d8-3886-411f-8b93-ba14ae49967f</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>f02d6db2-f937-4c2c-8456-219b3e1e9fc5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Route Creation and assign to the Folder/TC-21879_80 Validate Default Route Selection</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fc2ae3a7-165d-413f-b9c5-0d3b90ce34d1</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>120fb128-db83-4d7e-a216-6a71e81069c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Route Creation and assign to the Folder/TC-21881 Validate the user can set Autopublish level for other modules</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8305befa-9fe1-4df6-b4bc-2f645a94b704</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

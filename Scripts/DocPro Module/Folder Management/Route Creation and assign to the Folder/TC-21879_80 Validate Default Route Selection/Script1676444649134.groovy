@@ -40,10 +40,13 @@ CustomKeywords.'suiteModule.DocPro.MakeLevelInUse'()
 
 WebUI.delay(3)
 
+'Scrolling to Route Link'
 WebUI.scrollToElement(findTestObject('DocPro_Module/DocProSetup_Page/route_Link'), 0)
 
+'Getting the Default text from Rout Option Link\r\n'
 RouteOption = WebUI.getText(findTestObject('DocPro_Module/DocProSetup_Page/route_Link'))
 
+'Validate Inherit From parent is the Default option set in Route Link\r\n'
 WebUI.verifyMatch(RouteOption, 'Inherit from parent', false)
 
 'Validate Route Link is available after make that level In Use'
@@ -92,6 +95,7 @@ WebUI.switchToDefaultContent()
 
 DefaultNewRoute = WebUI.getText(findTestObject('DocPro_Module/Folder Management/Route Option/Route New Drop Down'))
 
+'Validating both new and Existing has default value of Module Auto Approval\r\n'
 WebUI.verifyMatch(DefaultNewRoute, 'Inherit from parent', false)
 
 WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/popupClose_Icon'))
@@ -99,6 +103,7 @@ WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/pop
 'Assigning Assign By Admin Route option\r\n'
 CustomKeywords.'suiteModule.DocPro.AssignAutoApprovalRoute'('Yes', 'No', 'Assign by admin')
 
+'Validate Assign by admin set as Route option.\r\n\r\n'
 RouteOption = WebUI.getText(findTestObject('DocPro_Module/DocProSetup_Page/route_Link'))
 
 WebUI.verifyMatch(RouteOption, 'Assign by admin', false)
