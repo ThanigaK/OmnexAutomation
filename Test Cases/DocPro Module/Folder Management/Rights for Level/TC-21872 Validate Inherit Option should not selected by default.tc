@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator 
+2.Navigate to Docpro
+3.Click on Setup→Folder management 
+4.Expand the levels tree 
+5.Right click on the active level 
+6.Click on rights for sites</description>
+   <name>TC-21872 Validate Inherit Option should not selected by default</name>
+   <tag>LevelRights</tag>
+   <comment></comment>
+   <testCaseGuid>15f4a938-5af4-4272-93dd-418f5c0ebb56</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6c4ddb82-5e05-4199-b7a2-de13fc60a345</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>6c4ddb82-5e05-4199-b7a2-de13fc60a345</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+</TestCaseEntity>

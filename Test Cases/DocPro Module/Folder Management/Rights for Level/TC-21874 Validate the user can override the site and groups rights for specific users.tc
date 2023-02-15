@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Right click on the Parent/child level
+6. Click on rights for Groups
+7.Uncheck the inherit checkbox for the specific group
+8.Set rights for  new document creation for the specific group
+9.Uncheck the inherit checkbox for the specific group
+10.Set rights for  New document access for the specific group</description>
+   <name>TC-21874 Validate the user can override the site and groups rights for specific users</name>
+   <tag>LevelRights</tag>
+   <comment></comment>
+   <testCaseGuid>a849b05e-3101-41e8-9e6c-e25595c134f8</testCaseGuid>
+</TestCaseEntity>

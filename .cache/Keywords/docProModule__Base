@@ -1,14 +1,19 @@
 {
-  "keywordFileContentHash": "D75BB9340524BEB294DA5D28ED758332",
+  "keywordFileContentHash": "8D0DACAEA6B3B6F77EFAB22BFE7067BA",
   "keywordClasses": [
     {
-      "name": "suiteModule.LevelsPage",
+      "name": "docProModule.Base",
       "keywordMethods": [
         {
-          "name": "createLevel",
+          "name": "Login",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "LoginwithCredential",
           "parameters": [
             {
-              "name": "LevelName",
+              "name": "Url",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -19,25 +24,9 @@
                 "genericsTypes": [],
                 "errorOnParsing": false
               }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "modifyLevelData",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "deleteModifiedLevel",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "levelDeletion",
-          "parameters": [
+            },
             {
-              "name": "levelName",
+              "name": "UserName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -48,15 +37,9 @@
                 "genericsTypes": [],
                 "errorOnParsing": false
               }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "createLevelwithSubLevelAccess",
-          "parameters": [
+            },
             {
-              "name": "LevelName",
+              "name": "Password",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

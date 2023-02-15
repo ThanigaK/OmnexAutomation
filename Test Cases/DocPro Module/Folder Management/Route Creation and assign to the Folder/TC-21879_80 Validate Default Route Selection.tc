@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Click on The level 
+6.Check the In use option
+7.Click on save</description>
+   <name>TC-21879_80 Validate Default Route Selection</name>
+   <tag>RouteLevel</tag>
+   <comment></comment>
+   <testCaseGuid>0603a7e6-f6d6-4c81-b3ab-82219ee123b4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fc2ae3a7-165d-413f-b9c5-0d3b90ce34d1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>fc2ae3a7-165d-413f-b9c5-0d3b90ce34d1</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+</TestCaseEntity>

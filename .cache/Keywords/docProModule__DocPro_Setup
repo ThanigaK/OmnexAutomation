@@ -1,14 +1,27 @@
 {
-  "keywordFileContentHash": "D75BB9340524BEB294DA5D28ED758332",
+  "keywordFileContentHash": "5990109EF26F4346F91D8C0A1B029FBD",
   "keywordClasses": [
     {
-      "name": "suiteModule.LevelsPage",
+      "name": "docProModule.DocPro_Setup",
       "keywordMethods": [
         {
-          "name": "createLevel",
+          "name": "goToLevelInDocproSetup",
           "parameters": [
             {
-              "name": "LevelName",
+              "name": "page",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "Level",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -24,39 +37,10 @@
           "javadoc": ""
         },
         {
-          "name": "modifyLevelData",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "deleteModifiedLevel",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "levelDeletion",
+          "name": "RightClickOntheLevel",
           "parameters": [
             {
               "name": "levelName",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": ""
-        },
-        {
-          "name": "createLevelwithSubLevelAccess",
-          "parameters": [
-            {
-              "name": "LevelName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
