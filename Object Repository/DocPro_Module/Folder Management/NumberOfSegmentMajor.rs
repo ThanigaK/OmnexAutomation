@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>revisionOption_DropDown</name>
+   <name>NumberOfSegmentMajor</name>
    <tag></tag>
-   <elementGuidId>25edc948-c37f-4165-bc5a-7092c34cc1ce</elementGuidId>
+   <elementGuidId>064577a1-6f02-48f5-9d6f-e56766b7e0a1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(@id,'drpRevOpt')]</value>
+         <value>//select[@id='drpRevSegMajor']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/DocPro_Module/menuTree_IFrame</value>
-      <webElementGuid>6f2d6834-38be-4864-877c-c628abec5085</webElementGuid>
+      <value>Object Repository/IFrames/iframeTree</value>
+      <webElementGuid>881c372a-0d4d-4d8e-ad15-9a2222384f68</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

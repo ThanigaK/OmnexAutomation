@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Click on The level 
+6.Check the In use option
+7.Click on save</description>
    <name>TC-22974 Validate the user can define the revision option</name>
-   <tag></tag>
+   <tag>RouteLevel</tag>
    <comment></comment>
-   <testCaseGuid>b07864c4-f6dc-4b7d-a551-9c35435d9661</testCaseGuid>
+   <testCaseGuid>9060d85d-c941-4fc1-a839-dc8c02f461c9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a40d32af-f29c-4cd5-974b-74bbc38c40f9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>102c94b9-1c3d-4094-aa6b-f94de98626d5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1a386a97-b9b1-480a-9c1b-4dc27872aaf2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>a40d32af-f29c-4cd5-974b-74bbc38c40f9</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Document Number Auto Increment'</defaultValue>
+      <description></description>
+      <id>102c94b9-1c3d-4094-aa6b-f94de98626d5</id>
+      <masked>false</masked>
+      <name>DocNumOption</name>
+   </variable>
+   <variable>
+      <defaultValue>'DocPro automatically increments by 1'</defaultValue>
+      <description></description>
+      <id>1a386a97-b9b1-480a-9c1b-4dc27872aaf2</id>
+      <masked>false</masked>
+      <name>RevOption</name>
+   </variable>
 </TestCaseEntity>

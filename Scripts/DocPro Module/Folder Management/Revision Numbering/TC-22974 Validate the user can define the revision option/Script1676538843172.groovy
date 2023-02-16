@@ -38,27 +38,22 @@ CustomKeywords.'docProModule.DocPro_Setup.goToLevelInDocproSetup'('Folder Manage
 'Making the Level In Use'
 CustomKeywords.'suiteModule.DocPro.MakeLevelInUse'()
 
-'Scrolling to "Document Number Option" Filed\r\n'
-WebUI.scrollToElement(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/drpDocNumOpt_DropDown'), 15)
+'Clicking Revision Option drop down'
+WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/revisionOption_DropDown'))
 
-Result = WebUI.getText(findTestObject('DocPro_Module/DocProSetup_Page/drpDocNumOpt_DropDown'))
-
-'Validate User Defined Doc Number is the Default option set in Doc Number option\r\n\r\n'
-WebUI.verifyMatch(Result, 'User Defined Document Number', false)
+'assigning value for "Revision Option"'
+WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/searchBoxDropDown_TextBox'), RevOption + 
+    Keys.ENTER)
 
 'Navigating to "New Doc Request" Page '
 CustomKeywords.'suiteModule.HomePage.NavigateToNewDocRequestPage'()
 
-WebUI.delay(3)
-
 'Select "Documnet Level"'
 CustomKeywords.'suiteModule.NewDocRequest.levelSelection'(levName)
 
-'Getting Doc number inuput field value\r\n'
-DocNum = WebUI.getAttribute(findTestObject('DocPro_Module/New Documnet Request/Document Number Value'), 'value')
+InputValue = WebUI.getAttribute(findTestObject('DocPro_Module/Documents_Page/Revision Value'), 'value')
 
-'Doc Number input field is empty '
-WebUI.verifyMatch(DocNum, '', false)
+WebUI.verifyMatch(InputValue, '1', false)
 
 'Navigating to the DocPro Setup page'
 CustomKeywords.'docProModule.HomePage.NavigateToDocProSetup'()
@@ -66,14 +61,11 @@ CustomKeywords.'docProModule.HomePage.NavigateToDocProSetup'()
 'Select newely created level in Folder Management'
 CustomKeywords.'docProModule.DocPro_Setup.goToLevelInDocproSetup'('Folder Management', levName)
 
-'Scrolling to "Document Number Option" Filed\r\n'
-WebUI.scrollToElement(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/drpDocNumOpt_DropDown'), 15)
+'Clicking Revision Option drop down'
+WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/revisionOption_DropDown'))
 
-'Clicking the Doc Num Options drop down\r\n'
-WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/drpDocNumOpt_DropDown'))
-
-'Assigning value Document Number Auto Increment'
-WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/searchBoxDropDown_TextBox'), DocNumOption + 
+'assigning value for "Revision Option"'
+WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/searchBoxDropDown_TextBox'), 'Users define revision' + 
     Keys.ENTER)
 
 'Click Save button to save the new changes\r\n'
@@ -85,11 +77,9 @@ CustomKeywords.'suiteModule.HomePage.NavigateToNewDocRequestPage'()
 'Select "Documnet Level"'
 CustomKeywords.'suiteModule.NewDocRequest.levelSelection'(levName)
 
-'Getting Doc number inuput field value\r\n'
-DocNum = WebUI.getAttribute(findTestObject('DocPro_Module/New Documnet Request/Document Number Value'), 'value')
+Value = WebUI.getAttribute(findTestObject('DocPro_Module/Documents_Page/Revision Value'), 'value')
 
-'Validate Inherit From parent is the Default option set in Route Link\r\n'
-WebUI.verifyMatch(DocNum, '1', false)
+WebUI.verifyMatch(Value, '', false)
 
 'Navigating to the DocPro Setup page'
 CustomKeywords.'docProModule.HomePage.NavigateToDocProSetup'()
@@ -97,17 +87,21 @@ CustomKeywords.'docProModule.HomePage.NavigateToDocProSetup'()
 'Select newely created level in Folder Management'
 CustomKeywords.'docProModule.DocPro_Setup.goToLevelInDocproSetup'('Folder Management', levName)
 
-'Scrolling to "Document Number Option" Filed\r\n'
-WebUI.scrollToElement(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/drpDocNumOpt_DropDown'), 15)
+'Clicking Revision Option drop down'
+WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/revisionOption_DropDown'))
 
-'Clicking the Doc Num Options drop down\r\n'
-WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/drpDocNumOpt_DropDown'))
+'assigning value for "Revision Option"'
+WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/searchBoxDropDown_TextBox'), 'Custom' + Keys.ENTER)
 
-'Assigning value as Use Internal Document ID As Document Number'
-WebUI.setText(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/searchBoxDropDown_TextBox'), 'Use Internal Document ID As Document Number' + 
-    Keys.ENTER)
+WebUI.delay(3)
 
-'Enter Save Button'
+WebUI.selectOptionByIndex(findTestObject('DocPro_Module/Folder Management/NumberOfSegmentsDrpDwn'), '1', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.selectOptionByIndex(findTestObject('DocPro_Module/Folder Management/NumberOfSegmentMajor'), '1', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.selectOptionByIndex(findTestObject('DocPro_Module/Folder Management/NumberOfSegmentsMinor'), '2', FailureHandling.STOP_ON_FAILURE)
+
+'Click Save button to save the new changes\r\n'
 WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/save_Button'))
 
 'Navigating to "New Doc Request" Page '
@@ -116,11 +110,9 @@ CustomKeywords.'suiteModule.HomePage.NavigateToNewDocRequestPage'()
 'Select "Documnet Level"'
 CustomKeywords.'suiteModule.NewDocRequest.levelSelection'(levName)
 
-'Getting Doc number inuput field value\r\n'
-Status = WebUI.getAttribute(findTestObject('DocPro_Module/New Documnet Request/Document Number Value'), 'readonly')
+Value = WebUI.getAttribute(findTestObject('DocPro_Module/Documents_Page/Revision Value'), 'value')
 
-'Validate the number should be automatically generated and can\'t able to edit'
-WebUI.verifyMatch(Status, 'true', false)
+WebUI.verifyMatch(Value, 'A.a', false)
 
 'Navigating to levels page'
 CustomKeywords.'docProModule.HomePage.goToLevelPage'()

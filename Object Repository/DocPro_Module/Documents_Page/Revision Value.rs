@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>revisionOption_DropDown</name>
+   <name>Revision Value</name>
    <tag></tag>
-   <elementGuidId>25edc948-c37f-4165-bc5a-7092c34cc1ce</elementGuidId>
+   <elementGuidId>9b2b8a22-e32c-4c36-bf4b-65e350b5eea4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(@id,'drpRevOpt')]</value>
+         <value>//input[@id='txtCurrRevValue']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/DocPro_Module/menuTree_IFrame</value>
-      <webElementGuid>6f2d6834-38be-4864-877c-c628abec5085</webElementGuid>
+      <value>Object Repository/IFrames/Iframe_DetailViewIframe</value>
+      <webElementGuid>e93a08e6-b104-4a02-8904-8ec156614c07</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

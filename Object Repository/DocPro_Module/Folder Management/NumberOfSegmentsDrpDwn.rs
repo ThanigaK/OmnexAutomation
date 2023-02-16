@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>revisionOption_DropDown</name>
+   <name>NumberOfSegmentsDrpDwn</name>
    <tag></tag>
-   <elementGuidId>25edc948-c37f-4165-bc5a-7092c34cc1ce</elementGuidId>
+   <elementGuidId>04af0c48-175f-4ad1-8ed3-432b7dc361be</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(@id,'drpRevOpt')]</value>
+         <value>//select[@id='drpRevSegOptions']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/DocPro_Module/menuTree_IFrame</value>
-      <webElementGuid>6f2d6834-38be-4864-877c-c628abec5085</webElementGuid>
+      <value>Object Repository/IFrames/iframeTree</value>
+      <webElementGuid>da74e558-6cfe-4ed3-8039-8153ee7ed3df</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
