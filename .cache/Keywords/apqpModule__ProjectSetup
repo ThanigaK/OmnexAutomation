@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "5A503B3A6B474DAACE2D2BCC6FEB39A3",
+  "keywordFileContentHash": "5B2CFEBE73D8F102AFE8586B2E2DA1B7",
   "keywordClasses": [
     {
       "name": "apqpModule.ProjectSetup",
@@ -65,6 +65,87 @@
         {
           "name": "DeleteAllProjectGroups",
           "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "createNewDeliverablePriorities",
+          "parameters": [
+            {
+              "name": "name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "EditDeliverablePriorities",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "CreateMultipleDeliverablePriorities",
+          "parameters": [
+            {
+              "name": "count",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "DeleteDeliverablePriorities",
+          "parameters": [
+            {
+              "name": "name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "DeleteAllDeliverablePriorities",
+          "parameters": [
+            {
+              "name": "name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
           "javadoc": ""
         }
       ]

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1 - Verify Task Rating page and all the Deliverable Status is Displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2f17a59f-faaa-46dd-a1cf-26a8f8bc17e6</testCaseGuid>
+</TestCaseEntity>

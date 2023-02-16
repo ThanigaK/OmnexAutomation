@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SearchButton</name>
+   <name>CancelButton</name>
    <tag></tag>
-   <elementGuidId>5c9bb184-2506-4060-880c-a1e0ef72e248</elementGuidId>
+   <elementGuidId>5ab1f968-d239-4c47-bb65-c750f612e38f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[contains(@id,'dbtnsearch')]</value>
+         <value>//button[contains(@id,'closepopup')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +22,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>630979df-8f87-4b9c-aa6e-28d6eedce8ac</webElementGuid>
+      <webElementGuid>0b3ec952-5d18-4419-9c8c-999688d15f0f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

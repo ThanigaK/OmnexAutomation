@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SearchButton</name>
+   <name>Label_DeliverableStatus1</name>
    <tag></tag>
-   <elementGuidId>5c9bb184-2506-4060-880c-a1e0ef72e248</elementGuidId>
+   <elementGuidId>9c43a2ca-18f0-434e-8256-2896bca5ec26</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(@id,'dbtnsearch')]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//section//div[contains(@class,'card-body')]//div[@class='row']//label)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +22,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>630979df-8f87-4b9c-aa6e-28d6eedce8ac</webElementGuid>
+      <webElementGuid>7fad0d3b-a467-4e25-b044-3c3d2b797c9f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

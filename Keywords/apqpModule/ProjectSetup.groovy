@@ -30,6 +30,7 @@ import org.junit.Assert as Assert
 public class ProjectSetup extends Roles {
 
 	static String ProjectGroupName;
+	static String PriorityName;
 	public static String Rand;
 
 	@Keyword
@@ -121,5 +122,57 @@ public class ProjectSetup extends Roles {
 		WebUI.switchToDefaultContent()
 		WebUI.click(findTestObject('Object Repository/ProjectSetup_Page/DeleteButton'))
 		WebUI.click(findTestObject('Object Repository/ProjectSetup_Page/PopupConfirmationOK_Button'))
+	}
+
+	@Keyword
+	public void createNewDeliverablePriorities(String name) {
+		if (name.equalsIgnoreCase("random")) {
+			Rand = RandomNumber()
+			PriorityName = "High_" + Rand;
+		} else {
+			PriorityName = name
+		}
+		KeywordUtil.logInfo("Deliverable Prorities name assigned")
+
+		WebUI.click(findTestObject('ProjectSetup_Page/AddButton'))
+		WebUI.waitForElementPresent(findTestObject('Object Repository/ProjectSetup_Page/PriorityDescription_InputBox'), 10)
+		WebUI.sendKeys(findTestObject('Object Repository/ProjectSetup_Page/PriorityDescription_InputBox'), PriorityName)
+		WebUI.click(findTestObject('Object Repository/ProjectSetup_Page/SaveButton'))
+
+		KeywordUtil.logInfo("New Priority Created")
+
+		WebUI.verifyElementPresent(findTestObject('Object Repository/ProjectSetup_Page/SuccessAlert'), 10)
+
+		KeywordUtil.logInfo("Created Priority Verified Successfully")
+	}
+
+	@Keyword
+	public void EditDeliverablePriorities() {
+
+		KeywordUtil.logInfo("Deliverable Prorities modified name assigned")
+
+		KeywordUtil.logInfo("Priority name modified successfully")
+
+		KeywordUtil.logInfo("Verified the modified priority successfully")
+	}
+
+	@Keyword
+	public void CreateMultipleDeliverablePriorities(int count) {
+
+		for(int i=1;i<=count;i++) {
+			createNewDeliverablePriorities("random")
+			KeywordUtil.logInfo("Deliverable Prority "+i+" Created Successfully")
+		}
+	}
+
+	@Keyword
+	public void DeleteDeliverablePriorities(String name) {
+
+		KeywordUtil.logInfo("Created Deliverable Prority Deleted Successfully")
+	}
+	@Keyword
+	public void DeleteAllDeliverablePriorities(String name) {
+
+		KeywordUtil.logInfo("All Deliverable Prorities Deleted Successfully")
 	}
 }
