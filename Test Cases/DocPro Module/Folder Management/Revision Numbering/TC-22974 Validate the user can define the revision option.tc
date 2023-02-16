@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-22974 Validate the user can define the revision option</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b07864c4-f6dc-4b7d-a551-9c35435d9661</testCaseGuid>
+</TestCaseEntity>
