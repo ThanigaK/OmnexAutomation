@@ -9,24 +9,6 @@
    <tag>TagSelection</tag>
    <comment></comment>
    <testCaseGuid>a2d74543-f1b1-420d-91c9-589b092be4db</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>702c9674-c340-4fe4-a9b0-1d79a911fb52</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>2776506c-f63b-40c4-9713-047983722f4e</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>8f770293-a6c5-486b-a264-b149ba2d595b</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>'random'</defaultValue>
       <description></description>

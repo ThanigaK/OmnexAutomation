@@ -36,59 +36,59 @@ CustomKeywords.'docProModule.DocPro_Setup.goToLevelInDocproSetup'('Folder Manage
 'Making the Level In Use'
 CustomKeywords.'suiteModule.DocPro.MakeLevelInUse'()
 
-'Scrolling to Tag Selection Link\r\n'
-WebUI.scrollToElement(findTestObject('DocPro_Module/DocProSetup_Page/tagSelection_Link'), 10)
+'Scroll to get Level PDF Preference Link\r\n'
+WebUI.scrollToElement(findTestObject('DocPro_Module/DocProSetup_Page/levelPdfPrefernce_Link'), 10)
 
-'Verify Tag Selection Link is Present\r\n'
-WebUI.verifyElementPresent(findTestObject('DocPro_Module/DocProSetup_Page/tagSelection_Link'), 10)
+'Verify Level PDF preference present or not\r\n'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/DocProSetup_Page/levelPdfPrefernce_Link'), 5)
 
-'Mouse Hover over the Tag "Select" Link\r\n'
-WebUI.mouseOver(findTestObject('DocPro_Module/DocProSetup_Page/tagSelection_Link'))
-
-'Click the Tag Selection Link\r\n'
-WebUI.click(findTestObject('DocPro_Module/DocProSetup_Page/tagSelection_Link'))
+'Select the Level PDF Preference Link\r\n'
+WebUI.click(findTestObject('DocPro_Module/DocProSetup_Page/levelPdfPrefernce_Link'))
 
 'Get the Heading text in the newely opened window'
 Heading = WebUI.getText(findTestObject('DocPro_Module/Folder Management/Heading'))
 
-'Validate the Heading is "Tag Selection"'
-WebUI.verifyMatch(Heading, 'Tag Selection', false)
+'Validate the Heading is "Level PDF Preferences"'
+WebUI.verifyMatch(Heading, 'Level PDF Preferences', false)
 
-'Search for Tags'
-WebUI.setText(findTestObject('DocPro_Module/Folder Management/tagSelection/TagSearch'), 'DoNotDelete')
+'Verify Template DropDown Presence\r\n'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/TemplateDropDown'), 5)
 
-'Waiting for some sec to load '
-WebUI.delay(5)
+'Verify Restricted View Presence'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/RestrictedView'), 5)
 
-'Get the Firt value in the Searched List'
-FirstValue = WebUI.getText(findTestObject('DocPro_Module/Folder Management/tagSelection/TagSearchedText'))
+'Verify input template Presence'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/InputTemplate'), 5)
 
-'Validate the Searched value and the shown value are same\r\n'
-WebUI.verifyMatch(FirstValue, 'DoNotDelete', false)
+'Verify Enable Enhanced Pricing Presence'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/EnableEnhancedPrinting'), 5)
 
-'Get Attribute of the empty checkbox\r\n'
-Uncheck = WebUI.getAttribute(findTestObject('DocPro_Module/Folder Management/tagSelection/ValidateTagCheckBox'), 'class')
+'Verify Level Refresh button Presence'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/LevelPDFRestart'), 5)
 
-'Make Sure the Check box is empty'
-WebUI.verifyMatch(Uncheck, 'odd', false)
+'Verify Level Save Button Presence'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/LevelPDFSave'), 5)
 
-'Select the Checkbox\r\n'
-WebUI.click(findTestObject('DocPro_Module/Folder Management/tagSelection/TagCheckBox'))
+'Verify Use Site Default Button Presence'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/LevelPDFUseSiteDefault'), 5)
 
-'Again get the attribute of same checkbox'
-Check = WebUI.getAttribute(findTestObject('DocPro_Module/Folder Management/tagSelection/ValidateTagCheckBox'), 'class')
+'Verify Apply to All Sub Level Presence'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/LevelPDFApplyToAllSubLevels'), 5)
 
-'Now make sure the checkbox is selected'
-WebUI.verifyMatch(Check, 'odd selected', false)
+'Verify Show Sample PDF Presence'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/LevelPDFShowSamplePDF'), 5)
 
-'Now click the Done button'
-WebUI.click(findTestObject('DocPro_Module/Folder Management/tagSelection/DoneButton'))
+'Verify Search Dropdown Presence'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/LevelPDFSearch'), 5)
 
-'Get Text at the "Tag Selection" Link\r\n'
-SelectedTag = WebUI.getText(findTestObject('DocPro_Module/DocProSetup_Page/tagSelection_Link'))
+'Verify Module Name in search option'
+WebUI.verifyOptionPresentByValue(findTestObject('DocPro_Module/LevelPDF/LevelPDFSearch'), 'modname', false, 3)
 
-'Valifdate the Selected tag is shown in the Folder management Level page\r\n'
-WebUI.verifyMatch(SelectedTag, 'DoNotDelete', false)
+'Verify Document Type in Search DropDown'
+WebUI.verifyOptionPresentByValue(findTestObject('DocPro_Module/LevelPDF/LevelPDFSearch'), 'doctype', false, 3)
+
+'Verify Pagination in the bottom of the page'
+WebUI.verifyElementPresent(findTestObject('DocPro_Module/LevelPDF/LevelPDFpagination'), 5)
 
 'Navigating to levels page'
 CustomKeywords.'docProModule.HomePage.goToLevelPage'()
