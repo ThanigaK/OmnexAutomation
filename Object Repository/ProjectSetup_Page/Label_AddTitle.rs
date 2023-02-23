@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AddTitle</name>
+   <name>Label_AddTitle</name>
    <tag></tag>
    <elementGuidId>21e323b5-ffe4-4ba2-93b5-2b402cebea70</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>

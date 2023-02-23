@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AddButton</name>
+   <name>Button_Refresh</name>
    <tag></tag>
-   <elementGuidId>80de8f97-7a5e-40e5-8999-b2c97ea221ff</elementGuidId>
+   <elementGuidId>b6755073-b792-44c1-81da-2421d910bec8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;btn_add_hold&quot;]</value>
+         <value>//*[@id=&quot;refresh&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>1e06bda2-85ea-428b-acbf-1d4ee8bc5a00</webElementGuid>
+      <webElementGuid>d8060ad7-056f-4052-81a0-26a1227a3ff6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

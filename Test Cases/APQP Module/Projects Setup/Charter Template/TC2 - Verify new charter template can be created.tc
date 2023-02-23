@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2 - Verify new charter template can be created</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>befcc71a-7573-45f2-b78c-1a5d7fe29d10</testCaseGuid>
+</TestCaseEntity>

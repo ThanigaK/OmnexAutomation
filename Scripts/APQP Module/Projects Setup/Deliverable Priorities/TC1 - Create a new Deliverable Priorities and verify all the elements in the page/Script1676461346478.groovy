@@ -39,13 +39,13 @@ WebUI.click(findTestObject('ProjectSetup_Page/DeliverablePrioritiesOption'))
 WebUI.waitForPageLoad(5)
 
 'Verify the Add Button is present in the Deliverable Priorities page'
-WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/AddButton'), 5)
+WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Button_Add'), 5)
 
 'Verify the Search Button is present in the Deliverable Priorities page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/SearchButton'), 5)
 
 'Verify the Refresh Button is present in the Deliverable Priorities page'
-WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/RefreshButton'), 5)
+WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Button_Refresh'), 5)
 
 'Verify the Priority DropDown is present in the Deliverable Priorities page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PrioritySearchDropdown_Grid'), 5)
@@ -54,16 +54,16 @@ WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PrioritySearchDropd
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PrioritySearchInput_Grid'), 5)
 
 'Click on the Add Button '
-WebUI.click(findTestObject('ProjectSetup_Page/AddButton'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('ProjectSetup_Page/Button_Add'), FailureHandling.STOP_ON_FAILURE)
 
 'Verify the Add Title is Shown in the Add Priority pop up box'
-WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/AddTitle'), 5)
+WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Label_AddTitle'), 5)
 
 'Verify the Priority Description is Shown in the Add Priority pop up box'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PriorityDescription_InputBox'), 5)
 
 'Click on Cancel Button'
-WebUI.click(findTestObject('ProjectSetup_Page/CancelButton'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('ProjectSetup_Page/Button_Cancel'), FailureHandling.STOP_ON_FAILURE)
 
 'Create a new priority and verify the priority is added successfully'
 CustomKeywords.'apqpModule.ProjectSetup.createNewDeliverablePriorities'('random')

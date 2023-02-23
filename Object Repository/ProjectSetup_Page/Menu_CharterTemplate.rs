@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ClearAdvancedSearch</name>
+   <name>Menu_CharterTemplate</name>
    <tag></tag>
-   <elementGuidId>d23aa84c-b5c8-4b42-ac82-83a09473450e</elementGuidId>
+   <elementGuidId>d3c1cfc1-908c-4560-a8b6-1c3565b7476d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='dtsb-clearAll dtsb-button']</value>
+         <value>//*[@id='treePanel']//div[text()='Deliverable Priorities']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>81daf77e-26d1-4ebc-9b08-78f62c5fb01d</webElementGuid>
+      <value>Object Repository/Home_Page/detailView_iFrame</value>
+      <webElementGuid>79280592-f847-43ed-aff5-ff4d0971be2d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC9 - Verify approval route works when module level approvers are set</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8cf5e1a4-c049-4ee4-a8cd-e96849a5ef83</testCaseGuid>
+</TestCaseEntity>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CloseRoleButton</name>
+   <name>Menu_ProjectGroups</name>
    <tag></tag>
-   <elementGuidId>48b70284-d4a0-4c3d-8fc9-35b7d7915959</elementGuidId>
+   <elementGuidId>b7f537ee-6cf1-4d3f-ad81-b57aa4078735</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='close']</value>
+         <value>//div[text()='Project Groups']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/IFrames/Iframe_MenuData</value>
-      <webElementGuid>abab1477-3730-4f15-9554-75367a5c08e5</webElementGuid>
+      <value>Object Repository/Home_Page/detailView_iFrame</value>
+      <webElementGuid>913d0af0-3776-442e-b122-dc827a8832a4</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

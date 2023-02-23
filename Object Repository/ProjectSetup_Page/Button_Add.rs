@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>EditButton</name>
+   <name>Button_Add</name>
    <tag></tag>
-   <elementGuidId>cd3ff16c-618b-422e-a211-1b1ff8c7fbb0</elementGuidId>
+   <elementGuidId>80de8f97-7a5e-40e5-8999-b2c97ea221ff</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(@id,'bedit_RoleGridcontrol')]</value>
+         <value>//*[@id=&quot;btn_add_hold&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>2a1691e6-786e-4267-a018-8de4fb13a5d8</webElementGuid>
+      <webElementGuid>1e06bda2-85ea-428b-acbf-1d4ee8bc5a00</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

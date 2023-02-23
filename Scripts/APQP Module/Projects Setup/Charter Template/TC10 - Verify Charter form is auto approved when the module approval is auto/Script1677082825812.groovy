@@ -32,51 +32,48 @@ WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
 'Click on the Projects Setup option in the left pane'
 WebUI.click(findTestObject('Home_Page/projectsSetup_Option'))
 
-'Click on the Deliverable Priorities Option'
-WebUI.click(findTestObject('ProjectSetup_Page/DeliverablePrioritiesOption'))
+'Click on the Charter Template Option'
+WebUI.click(findTestObject('ProjectSetup_Page/Menu_CharterTemplate'))
 
 'Wait for the page to load for 5 seconds'
 WebUI.waitForPageLoad(5)
 
-'Verify the Add Button is present in the Deliverable Priorities page'
+'Verify the New Button is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Button_Add'), 5)
 
-'Verify the Search Button is present in the Deliverable Priorities page'
+'Verify the Search Button is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/SearchButton'), 5)
 
-'Verify the Refresh Button is present in the Deliverable Priorities page'
+'Verify the Refresh Button is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Button_Refresh'), 5)
 
-'Verify the Priority DropDown is present in the Deliverable Priorities page'
+'Verify the Delete Button is present in the Charter Template page'
+WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Button_Add'), 5)
+
+'Verify the Search Status Dropdown is present in the Charter Template page'
+WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/SearchButton'), 5)
+
+'Verify the Search Dropdown Option is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PrioritySearchDropdown_Grid'), 5)
 
-'Verify the Priority Search Input box is present in the Deliverable Priorities page'
+'Verify the Table with Titles of  is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PrioritySearchInput_Grid'), 5)
 
-'Click on the Add Button '
+'Click on the New Button '
 WebUI.click(findTestObject('ProjectSetup_Page/Button_Add'), FailureHandling.STOP_ON_FAILURE)
 
-'Verify the Add Title is Shown in the Add Priority pop up box'
+'Verify the New Charter creation page is displayed'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Label_AddTitle'), 5)
 
-'Verify the Priority Description is Shown in the Add Priority pop up box'
+'Verify the charter name input box for creating charter is displayed'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PriorityDescription_InputBox'), 5)
 
-'Click on Cancel Button'
-WebUI.click(findTestObject('ProjectSetup_Page/Button_Cancel'), FailureHandling.STOP_ON_FAILURE)
+'Set Auto Level Approval settings '
+CustomKeywords.'apqpModule.ProjectSetup.setAutoLevelApprovers'('random')
 
-'Create a new priority and verify the priority is added successfully'
-CustomKeywords.'apqpModule.ProjectSetup.createNewDeliverablePriorities'('random')
+'Create a Charter Template successfully by associating pillar'
+CustomKeywords.'apqpModule.ProjectSetup.createNewCharterTemplate'('random')
 
-'Modify the name of the newly created Priority'
-CustomKeywords.'apqpModule.ProjectSetup.EditDeliverablePriorities'()
-
-'Delete the created priority successfully'
-CustomKeywords.'apqpModule.ProjectSetup.DeleteDeliverablePriorities'('')
-
-'Create multiple Deliverable Priorities based on the count provided'
-CustomKeywords.'apqpModule.ProjectSetup.CreateMultipleDeliverablePriorities'(3)
-
-'Delete all the newly created Deliverable Priorities'
-CustomKeywords.'apqpModule.ProjectSetup.DeleteAllDeliverablePriorities'('random')
+'Verify Auto Level Approval works as expected'
+CustomKeywords.'apqpModule.ProjectSetup.verifyAutoLevelApprovers'('random')
 

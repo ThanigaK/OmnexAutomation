@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>RefreshButton</name>
+   <name>Button_New_CT</name>
    <tag></tag>
-   <elementGuidId>b6755073-b792-44c1-81da-2421d910bec8</elementGuidId>
+   <elementGuidId>9c02c845-ff6c-41a0-9213-52ab1c902cd1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,17 +11,25 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;refresh&quot;]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnNewTemplate</value>
+      <webElementGuid>d16a56d6-a5f9-4c57-8de1-ffa332a1776b</webElementGuid>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>d8060ad7-056f-4052-81a0-26a1227a3ff6</webElementGuid>
+      <webElementGuid>91ecf68f-baea-4434-9a03-84bd9be8f987</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

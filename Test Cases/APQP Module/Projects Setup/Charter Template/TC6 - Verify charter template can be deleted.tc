@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC6 - Verify charter template can be deleted</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e9aeb439-3728-44f3-9b9c-c19972fa12df</testCaseGuid>
+</TestCaseEntity>

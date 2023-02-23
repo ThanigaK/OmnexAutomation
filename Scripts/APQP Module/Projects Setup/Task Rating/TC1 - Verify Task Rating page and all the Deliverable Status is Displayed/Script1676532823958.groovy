@@ -95,5 +95,3 @@ DeliverableStatus = WebUI.getText(findTestObject('Object Repository/ProjectSetup
 'Verify the Deliverable Status 5 is displayed as - Completed Deadline Violated'
 WebUI.verifyMatch(DeliverableStatus, 'Completed Deadline Violated', false)
 
-findTestObject('Object Repository/Dashboard_Page/docPro_Setup_Button')
-findTestObject('Object Repository/Dashboard_Page/levels_Button')

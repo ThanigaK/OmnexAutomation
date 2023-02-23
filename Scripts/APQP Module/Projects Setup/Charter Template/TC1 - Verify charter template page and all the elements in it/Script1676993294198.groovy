@@ -1,8 +1,3 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -16,6 +11,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 'Login to the application as module admin user'
 CustomKeywords.'suiteModule.KeyWord.LoginwithCredential'(GlobalVariable.url, 'apqp', '5xx1bkCcAlw=')
@@ -32,51 +32,42 @@ WebUI.click(findTestObject('Home_Page/setup_OptionIcon'))
 'Click on the Projects Setup option in the left pane'
 WebUI.click(findTestObject('Home_Page/projectsSetup_Option'))
 
-'Click on the Deliverable Priorities Option'
-WebUI.click(findTestObject('ProjectSetup_Page/DeliverablePrioritiesOption'))
+'Click on the Charter Template Option'
+WebUI.click(findTestObject('ProjectSetup_Page/Menu_CharterTemplate'))
 
 'Wait for the page to load for 5 seconds'
 WebUI.waitForPageLoad(5)
 
-'Verify the Add Button is present in the Deliverable Priorities page'
+'Verify the New Button is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Button_Add'), 5)
 
-'Verify the Search Button is present in the Deliverable Priorities page'
+'Verify the Search Button is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/SearchButton'), 5)
 
-'Verify the Refresh Button is present in the Deliverable Priorities page'
+'Verify the Refresh Button is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Button_Refresh'), 5)
 
-'Verify the Priority DropDown is present in the Deliverable Priorities page'
+'Verify the Delete Button is present in the Charter Template page'
+WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Button_Add'), 5)
+
+'Verify the Search Status Dropdown is present in the Charter Template page'
+WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/SearchButton'), 5)
+
+'Verify the Search Dropdown Option is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PrioritySearchDropdown_Grid'), 5)
 
-'Verify the Priority Search Input box is present in the Deliverable Priorities page'
+'Verify the Table with Titles of  is present in the Charter Template page'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PrioritySearchInput_Grid'), 5)
 
-'Click on the Add Button '
+'Click on the New Button '
 WebUI.click(findTestObject('ProjectSetup_Page/Button_Add'), FailureHandling.STOP_ON_FAILURE)
 
-'Verify the Add Title is Shown in the Add Priority pop up box'
+'Verify the New Charter creation page is displayed'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/Label_AddTitle'), 5)
 
-'Verify the Priority Description is Shown in the Add Priority pop up box'
+'Verify the charter name input box for creating charter is displayed'
 WebUI.verifyElementPresent(findTestObject('ProjectSetup_Page/PriorityDescription_InputBox'), 5)
 
 'Click on Cancel Button'
 WebUI.click(findTestObject('ProjectSetup_Page/Button_Cancel'), FailureHandling.STOP_ON_FAILURE)
-
-'Create a new priority and verify the priority is added successfully'
-CustomKeywords.'apqpModule.ProjectSetup.createNewDeliverablePriorities'('random')
-
-'Modify the name of the newly created Priority'
-CustomKeywords.'apqpModule.ProjectSetup.EditDeliverablePriorities'()
-
-'Delete the created priority successfully'
-CustomKeywords.'apqpModule.ProjectSetup.DeleteDeliverablePriorities'('')
-
-'Create multiple Deliverable Priorities based on the count provided'
-CustomKeywords.'apqpModule.ProjectSetup.CreateMultipleDeliverablePriorities'(3)
-
-'Delete all the newly created Deliverable Priorities'
-CustomKeywords.'apqpModule.ProjectSetup.DeleteAllDeliverablePriorities'('random')
 

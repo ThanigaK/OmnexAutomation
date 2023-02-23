@@ -432,8 +432,7 @@ public class KeyWord extends common {
 			WebUI.click(findTestObject('Login_Page/login_Button'))
 			WebUI.delay(2)
 			String currenturl = WebUI.getUrl()
-			if(currenturl.contains('HomePage'))
-			{
+			if(currenturl.contains('HomePage')) {
 				WebUI.click(findTestObject('Object Repository/Home_Page/popupOk_Button'))
 			}
 		}
