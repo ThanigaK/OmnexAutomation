@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on setup->suit setup->DocPro Setup->Folder management
+4.Expand the levels tree 
+5.Click on the level
+5.In use the level by checking In use checkbox
+6.Observe the Level pdf preference
+7.Click on save button</description>
+   <name>TC-23024 Validate the search column for all the columns in PDF document type preference</name>
+   <tag>Level_Pdf_Preference</tag>
+   <comment></comment>
+   <testCaseGuid>c5b840e1-192a-499e-be44-3f790ae554ad</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c809bb89-315b-4214-be5e-c4f5a1db5770</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>34aad69d-9da8-40af-a175-fd5252d8249b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>12ddb39a-017b-43e6-b34c-294b8e07c9cf</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>c809bb89-315b-4214-be5e-c4f5a1db5770</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation Testing'</defaultValue>
+      <description></description>
+      <id>34aad69d-9da8-40af-a175-fd5252d8249b</id>
+      <masked>false</masked>
+      <name>NewSub</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation'</defaultValue>
+      <description></description>
+      <id>12ddb39a-017b-43e6-b34c-294b8e07c9cf</id>
+      <masked>false</masked>
+      <name>RenameSub</name>
+   </variable>
+</TestCaseEntity>

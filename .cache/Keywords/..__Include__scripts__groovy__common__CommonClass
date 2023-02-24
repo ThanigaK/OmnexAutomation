@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "B9838951250E639692EE9582AD715966",
+  "keywordFileContentHash": "ED7A8CB1E1D51A604E87C031E07AFEBC",
   "keywordClasses": [
     {
       "name": "common.CommonClass",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

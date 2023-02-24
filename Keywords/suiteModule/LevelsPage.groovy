@@ -127,7 +127,7 @@ public class LevelsPage extends common {
 		}
 		
 		WebUI.delay(3)
-		WebUI.click(findTestObject('Object Repository/Page_EwQIMS/label_Allow Site Sub-levels Creation'))
+		WebUI.click(findTestObject('Object Repository/DocPro_Module/Levels_Page/Page_EwQIMS/label_Allow Site Sub-levels Creation'))
 		WebUI.click(findTestObject('Object Repository/DocPro_Module/Levels_Page/saveLevel_Button'))
 	}
 	

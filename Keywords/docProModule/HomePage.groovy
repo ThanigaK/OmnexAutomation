@@ -32,7 +32,7 @@ public class HomePage extends Base {
 		if(WebUI.getAttribute(findTestObject('Object Repository/Home_Page/sideMiniBar'), "class").contains("mini-sidebar")) {
 			waitForClickableAndClick(findTestObject('Home_Page/menu_Icon'), 15)
 		}
-			waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
+		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
 
 		if(WebUI.getAttribute(findTestObject('Object Repository/Home_Page/Sidebar/SuiteSetUp DropDown'), "class").contains("active")) {
 
@@ -61,6 +61,24 @@ public class HomePage extends Base {
 			waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
 			WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/levels_Page'), 15)
 			waitForClickableAndClick(findTestObject('Object Repository/Home_Page/levels_Page'), 15)
+		}
+	}
+
+	@Keyword
+	public void gotoPdfPref() {
+		if(WebUI.getAttribute(findTestObject('Object Repository/Home_Page/sideMiniBar'), "class").contains("mini-sidebar")) {
+			WebUI.click(findTestObject('Home_Page/menu_Icon'))
+		}
+		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
+		if(WebUI.getAttribute(findTestObject('Object Repository/Home_Page/Sidebar/SuiteSetUp DropDown'), "class").contains("active")) {
+
+			WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/Pdf_Preference page'), 15)
+			waitForClickableAndClick(findTestObject('Object Repository/Home_Page/levels_PageObject Repository/Home_Page/Pdf_Preference page'), 15)
+		}
+		else {
+			waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
+			WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/Pdf_Preference page'), 15)
+			waitForClickableAndClick(findTestObject('Object Repository/Home_Page/Pdf_Preference page'), 15)
 		}
 	}
 }
