@@ -1,6 +1,6 @@
 package docProModule
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint 
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -106,6 +106,22 @@ public class Base {
 		}
 		WebUI.switchToDefaultContent();
 	}
-	
-	
+
+	@Keyword
+	public void gotoPdfPreferences() {
+		if(WebUI.getAttribute(findTestObject('Object Repository/Home_Page/sideMiniBar'), "class").contains("mini-sidebar")) {
+			WebUI.click(findTestObject('Home_Page/menu_Icon'))
+		}
+		waitForClickableAndClick(findTestObject('Home_Page/setup_OptionIcon'), 15)
+		if(WebUI.getAttribute(findTestObject('Object Repository/Home_Page/Sidebar/SuiteSetUp DropDown'), "class").contains("active")) {
+
+			WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/Pdf_Preference page'), 15)
+			waitForClickableAndClick(findTestObject('Object Repository/Home_Page/levels_PageObject Repository/Home_Page/Pdf_Preference page'), 15)
+		}
+		else {
+			waitForClickableAndClick(findTestObject('Object Repository/Home_Page/SuiteSetup'), 15)
+			WebUI.scrollToElement(findTestObject('Object Repository/Home_Page/Pdf_Preference page'), 15)
+			waitForClickableAndClick(findTestObject('Object Repository/Home_Page/Pdf_Preference page'), 15)
+		}
+	}
 }
