@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management/Setup→Suite Setup→Docpro Setup→Folder Management 
+4.Expand the levels tree 
+5.Click on the active level</description>
+   <name>TC-22986 Validate the Tag selection option is displayed in Folder management or not</name>
+   <tag>TagSelection</tag>
+   <comment></comment>
+   <testCaseGuid>a2d74543-f1b1-420d-91c9-589b092be4db</testCaseGuid>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>702c9674-c340-4fe4-a9b0-1d79a911fb52</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation Testing'</defaultValue>
+      <description></description>
+      <id>2776506c-f63b-40c4-9713-047983722f4e</id>
+      <masked>false</masked>
+      <name>NewSub</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation'</defaultValue>
+      <description></description>
+      <id>8f770293-a6c5-486b-a264-b149ba2d595b</id>
+      <masked>false</masked>
+      <name>RenameSub</name>
+   </variable>
+</TestCaseEntity>

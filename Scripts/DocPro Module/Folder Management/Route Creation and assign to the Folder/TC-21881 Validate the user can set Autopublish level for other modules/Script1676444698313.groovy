@@ -40,68 +40,16 @@ CustomKeywords.'suiteModule.DocPro.MakeLevelInUse'()
 
 WebUI.delay(3)
 
-WebUI.scrollToElement(findTestObject('DocPro_Module/DocProSetup_Page/route_Link'), 0)
+'Scrolling to Autopublish link'
+WebUI.scrollToElement(findTestObject('DocPro_Module/DocProSetup_Page/moduleAutoPublish_Link'), 3)
 
-RouteOption = WebUI.getText(findTestObject('DocPro_Module/DocProSetup_Page/route_Link'))
+'Select Set Auto Publish Link'
+WebUI.click(findTestObject('DocPro_Module/DocProSetup_Page/moduleAutoPublish_Link'))
 
-WebUI.verifyMatch(RouteOption, 'Inherit from parent', false)
+Heading = WebUI.getText(findTestObject('DocPro_Module/Folder Management/AutoPublish Heading'))
 
-'Validate Route Link is available after make that level In Use'
-WebUI.click(findTestObject('DocPro_Module/DocProSetup_Page/route_Link'))
-
-WebUI.switchToFrame(findTestObject('IFrames/iFrameRoute'), 0)
-
-'Find the total number of columns present in the table'
-List Column = WebUI.findWebElements(findTestObject('Object Repository/DocPro_Module/Folder Management/Route Option/Route Heading'), 
-    10)
-
-'Iterating to validate the checkbox'
-for (int i = 1; i <= Column.size(); i++) {
-    String AttachRight = DriverFactory.getWebDriver().findElement(By.xpath(('(//table[@class=\'table table-bordered\']//th)[' + 
-            i) + ']')).getText()
-
-    if (AttachRight.contains('Levels')) {
-        String ValueLevel = DriverFactory.getWebDriver().findElement(By.xpath(('(//table[@class=\'table table-bordered\']//tbody//tr[1]//td)[' + 
-                i) + ']')).getText()
-
-        WebUI.verifyMatch(ValueLevel, 'Default Routes', false)
-
-        KeywordUtil.logInfo('Default Routes Text')
-    }
-    
-    if (AttachRight.contains('New')) {
-        String ValueLevel = DriverFactory.getWebDriver().findElement(By.xpath(('(//table[@class=\'table table-bordered\']//tbody//tr[1]//td)[' + 
-                i) + ']')).getText()
-
-        WebUI.verifyMatch(ValueLevel, 'Module Auto approval', false)
-
-        KeywordUtil.logInfo('Module Auto Approal for New')
-    }
-    
-    if (AttachRight.contains('Existing')) {
-        String ValueLevel = DriverFactory.getWebDriver().findElement(By.xpath(('(//table[@class=\'table table-bordered\']//tbody//tr[1]//td)[' + 
-                i) + ']')).getText()
-
-        WebUI.verifyMatch(ValueLevel, 'Module Auto approval', false)
-
-        KeywordUtil.logInfo('Module Auto Approal for Existing')
-    }
-}
-
-WebUI.switchToDefaultContent()
-
-DefaultNewRoute = WebUI.getText(findTestObject('DocPro_Module/Folder Management/Route Option/Route New Drop Down'))
-
-WebUI.verifyMatch(DefaultNewRoute, 'Inherit from parent', false)
-
-WebUI.click(findTestObject('Object Repository/DocPro_Module/DocProSetup_Page/popupClose_Icon'))
-
-'Assigning Assign By Admin Route option\r\n'
-CustomKeywords.'suiteModule.DocPro.AssignAutoApprovalRoute'('Yes', 'No', 'Assign by admin')
-
-RouteOption = WebUI.getText(findTestObject('DocPro_Module/DocProSetup_Page/route_Link'))
-
-WebUI.verifyMatch(RouteOption, 'Assign by admin', false)
+'Validate the Set Auto Publish Option'
+WebUI.verifyMatch(Heading, 'Set as auto publish level for these modules', false)
 
 'Navigating to levels page'
 CustomKeywords.'docProModule.HomePage.goToLevelPage'()

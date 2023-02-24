@@ -21,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/DocPro_Module/menuTree_IFrame</value>
-      <webElementGuid>b097cb41-abff-4ebc-80a5-f94aa696852b</webElementGuid>
+      <webElementGuid>6f2d6834-38be-4864-877c-c628abec5085</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
