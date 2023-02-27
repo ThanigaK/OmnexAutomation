@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CloseRoleButton</name>
+   <name>Button_Delete</name>
    <tag></tag>
-   <elementGuidId>48b70284-d4a0-4c3d-8fc9-35b7d7915959</elementGuidId>
+   <elementGuidId>ae44968a-86b5-44c8-9072-4abedd2eada9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='close']</value>
+         <value>//button[@id='btn_delete_hold']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/IFrames/Iframe_MenuData</value>
-      <webElementGuid>abab1477-3730-4f15-9554-75367a5c08e5</webElementGuid>
+      <value>Object Repository/Groups_Page/menuData_iFrame</value>
+      <webElementGuid>53f4aaa7-178c-409c-857d-5b752515cf08</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

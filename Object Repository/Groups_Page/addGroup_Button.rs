@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//*[@ref_element = 'Object Repository/Groups_Page/menuData_iFrame']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +22,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>495874f9-cf80-4d18-9b53-401081f38efa</webElementGuid>
+      <webElementGuid>592a4193-b16e-4405-9b6c-a0ab30f951cd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

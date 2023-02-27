@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AddButton</name>
+   <name>DeliverablePrioritiesOption</name>
    <tag></tag>
-   <elementGuidId>80de8f97-7a5e-40e5-8999-b2c97ea221ff</elementGuidId>
+   <elementGuidId>b8067fd9-d1c4-4bf0-82a4-1ca2539943e9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id='treePanel']//div[text()='Deliverable Priorities']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;btn_add_hold&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>1e06bda2-85ea-428b-acbf-1d4ee8bc5a00</webElementGuid>
+      <value>Object Repository/Home_Page/detailView_iFrame</value>
+      <webElementGuid>b4d00d55-5bbe-41ca-8f33-54c55f57f541</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

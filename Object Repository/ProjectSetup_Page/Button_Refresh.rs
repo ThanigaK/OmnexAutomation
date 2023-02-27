@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AlertDeleteSuccess</name>
+   <name>Button_Refresh</name>
    <tag></tag>
-   <elementGuidId>a7f08ea8-9466-4302-9193-5e66309f5be8</elementGuidId>
+   <elementGuidId>b6755073-b792-44c1-81da-2421d910bec8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='alert alert-danger alert-dismissible border-bottom']</value>
+         <value>//*[@id=&quot;refresh&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>7b446981-8f3a-4a86-ac7b-ae4c37bfced6</webElementGuid>
+      <webElementGuid>d8060ad7-056f-4052-81a0-26a1227a3ff6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>RefreshButton</name>
+   <name>Menu_ProjectGroups</name>
    <tag></tag>
-   <elementGuidId>b6755073-b792-44c1-81da-2421d910bec8</elementGuidId>
+   <elementGuidId>b7f537ee-6cf1-4d3f-ad81-b57aa4078735</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;refresh&quot;]</value>
+         <value>//div[text()='Project Groups']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>d8060ad7-056f-4052-81a0-26a1227a3ff6</webElementGuid>
+      <value>Object Repository/Home_Page/detailView_iFrame</value>
+      <webElementGuid>913d0af0-3776-442e-b122-dc827a8832a4</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AddAdvancedSearch</name>
+   <name>Menu_CharterTemplate</name>
    <tag></tag>
-   <elementGuidId>f84748f8-a8d5-4d36-ae67-f012e80c4a35</elementGuidId>
+   <elementGuidId>d3c1cfc1-908c-4560-a8b6-1c3565b7476d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='dtsb-add dtsb-button']</value>
+         <value>//*[@id='treePanel']//div[text()='Deliverable Priorities']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>c47a9102-463e-4c5c-a1a8-da3ead9a58e3</webElementGuid>
+      <value>Object Repository/Home_Page/detailView_iFrame</value>
+      <webElementGuid>79280592-f847-43ed-aff5-ff4d0971be2d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -436,7 +436,8 @@ public class KeyWord extends common {
 			WebUI.setEncryptedText(findTestObject('Login_Page/password_Input'), Password)
 			WebUI.click(findTestObject('Object Repository/Login_Page/rememberMe_CheckBox'))
 			WebUI.click(findTestObject('Login_Page/login_Button'))
-				WebUI.delay(2)
+
+			WebUI.delay(2)
 			String currenturl = WebUI.getUrl()
 			if(currenturl.contains('HomePage'))
 			{

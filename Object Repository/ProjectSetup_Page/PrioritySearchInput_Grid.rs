@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ClearAdvancedSearch</name>
+   <name>PrioritySearchInput_Grid</name>
    <tag></tag>
-   <elementGuidId>d23aa84c-b5c8-4b42-ac82-83a09473450e</elementGuidId>
+   <elementGuidId>14baa8e5-f3dc-4d5f-a564-3ed5a8f3cc15</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;filtercolumn_DeliverablePriorityGridcontrol&quot;]//following-sibling::input[@type='search']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@class='dtsb-clearAll dtsb-button']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Groups_Page/menuData_iFrame</value>
-      <webElementGuid>81daf77e-26d1-4ebc-9b08-78f62c5fb01d</webElementGuid>
+      <webElementGuid>52f75be7-2b67-48fe-a08a-0166febd3f56</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

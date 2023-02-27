@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ProjectGroupsOption</name>
+   <name>Label_DeliverableStatus5</name>
    <tag></tag>
-   <elementGuidId>b7f537ee-6cf1-4d3f-ad81-b57aa4078735</elementGuidId>
+   <elementGuidId>3a3017df-cbf9-410d-9008-86e0f733d86c</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[text()='Project Groups']</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//section//div[contains(@class,'card-body')]//div[@class='row']//label)[5]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Home_Page/detailView_iFrame</value>
-      <webElementGuid>913d0af0-3776-442e-b122-dc827a8832a4</webElementGuid>
+      <value>Object Repository/Groups_Page/menuData_iFrame</value>
+      <webElementGuid>e05cec13-e4a3-47a3-9f2b-533793e75472</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
