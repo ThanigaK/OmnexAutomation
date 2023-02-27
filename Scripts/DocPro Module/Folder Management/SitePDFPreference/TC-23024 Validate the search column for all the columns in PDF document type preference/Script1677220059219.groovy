@@ -80,3 +80,50 @@ Heading3 = WebUI.getText(findTestObject('PDF_Preference_page/Heading_Search'))
 
 WebUI.verifyMatch(Heading3, 'Search (1)', false)
 
+WebUI.selectOptionByValue(findTestObject('PDF_Preference_page/Ddn_Search_Type'), '4', false)
+
+WebUI.selectOptionByValue(findTestObject('PDF_Preference_page/Ddn_Search_Condition'), 'contains', false)
+
+WebUI.setText(findTestObject('PDF_Preference_page/inp_Search_Value'), 'Project Charter Template')
+
+WebUI.click(findTestObject('PDF_Preference_page/Btn_Search_Done'))
+
+WebUI.delay(3)
+
+List ele = DriverFactory.getWebDriver().findElements(By.xpath('//table[@id=\'gridModPDFDocTypes\']//tbody//tr'))
+
+int size = ele.size()
+
+if (size == 1) {
+	WebUI.click(findTestObject('Object Repository/PDF_Preference_page/Btn_Refresh'))
+} else {
+}
+
+WebUI.click(findTestObject('PDF_Preference_page/Btn_Refresh'))
+
+List ele1 = DriverFactory.getWebDriver().findElements(By.xpath('//table[@id=\'gridModPDFDocTypes\']//tbody//tr'))
+
+int size1 = ele1.size()
+
+if (size1 > 1) {
+	WebUI.click(findTestObject('Object Repository/PDF_Preference_page/Btn_Refresh'))
+} else {
+}
+
+WebUI.click(findTestObject('PDF_Preference_page/Site_Preference_Search'))
+
+WebUI.setText(findTestObject('PDF_Preference_page/inp_Search_Value'), 'Dynamic Control Plan (Production Item)')
+
+WebUI.click(findTestObject('PDF_Preference_page/Btn_Search_Done'))
+
+WebUI.click(findTestObject('PDF_Preference_page/chk_first Selection'))
+
+WebUI.click(findTestObject('PDF_Preference_page/Btn_Update'))
+
+WebUI.click(findTestObject('PDF_Preference_page/Btn_save'))
+
+WebUI.delay(1.5)
+
+WebUI.verifyElementPresent(findTestObject('PDF_Preference_page/Alert_Success'), 5)
+
+
