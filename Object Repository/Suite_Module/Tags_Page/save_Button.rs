@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>save_Button</name>
+   <tag></tag>
+   <elementGuidId>c2cb2283-1c14-4408-ab55-8e02b04c9fe7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[contains(@id,'btnSaveDetails')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[contains(@id,'btnSaveDetails')]</value>
+      <webElementGuid>2cdb2c22-439a-489a-9e06-456b15edd3ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Home_Page/detailView_iFrame</value>
+      <webElementGuid>2c903b3d-61bb-40ba-b53c-a7abe1ce46f4</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

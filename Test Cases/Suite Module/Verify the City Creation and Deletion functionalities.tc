@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the City Creation and Deletion functionalities</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a260ff47-640f-4879-9181-0e131d421060</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef2e59a8-56ab-413b-a0d0-17a2c8c93276</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cea75146-0c73-4961-82bf-b571730c9399</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6fb642be-b465-493f-8098-74c2536576f2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'City Automation'</defaultValue>
+      <description></description>
+      <id>ef2e59a8-56ab-413b-a0d0-17a2c8c93276</id>
+      <masked>false</masked>
+      <name>City</name>
+   </variable>
+   <variable>
+      <defaultValue>'India'</defaultValue>
+      <description></description>
+      <id>cea75146-0c73-4961-82bf-b571730c9399</id>
+      <masked>false</masked>
+      <name>Country</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tamilnadu'</defaultValue>
+      <description></description>
+      <id>6fb642be-b465-493f-8098-74c2536576f2</id>
+      <masked>false</masked>
+      <name>State</name>
+   </variable>
+</TestCaseEntity>

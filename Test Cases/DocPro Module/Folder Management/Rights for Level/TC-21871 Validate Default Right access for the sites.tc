@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator 
+2.Navigate to Docpro
+3.Click on Setup→Folder management 
+4.Expand the levels tree 
+5.Right click on the active level 
+6.Click on rights for sites</description>
+   <name>TC-21871 Validate Default Right access for the sites</name>
+   <tag>LevelRights</tag>
+   <comment></comment>
+   <testCaseGuid>84e8b74b-1b57-4941-bd62-61fa1cd103db</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6279c32c-e37d-45cc-86e2-732751387957</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>6279c32c-e37d-45cc-86e2-732751387957</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+</TestCaseEntity>

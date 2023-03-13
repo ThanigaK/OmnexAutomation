@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Right click on the Parent/child level
+6. Click on rights for sites/groups/users
+7.Click on click link under document management column
+8.Change the rights by checking the checkbox</description>
+   <name>TC-21876 Validate Document management Link access</name>
+   <tag>LevelRights</tag>
+   <comment></comment>
+   <testCaseGuid>bbc1b0b9-ed10-4a4d-b254-da419fd39e53</testCaseGuid>
+</TestCaseEntity>

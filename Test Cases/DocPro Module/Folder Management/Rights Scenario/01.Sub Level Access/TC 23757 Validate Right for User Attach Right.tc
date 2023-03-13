@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Right click on the child level
+6.Click on rights for sites and check in the full access
+7.Click on rights for groups and check in inherit from site
+8.Click on rights for user and check in inherit from site
+9.Right click on the sub child folder
+10.Click on rights for Site,Group and user and check in inherit from parent</description>
+   <name>TC 23757 Validate Right for User Attach Right</name>
+   <tag>Rights Scenario</tag>
+   <comment></comment>
+   <testCaseGuid>e3f84c51-b34e-4dc0-9ad6-87d8cad8c50a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ad738959-37e9-42b0-82f2-2d30e671650c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ae882bcd-3523-4fef-a26b-3d11faaa8ffa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>aca25b60-96fa-4367-81f0-45bc7068b10d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>ad738959-37e9-42b0-82f2-2d30e671650c</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child 1'</defaultValue>
+      <description></description>
+      <id>ae882bcd-3523-4fef-a26b-3d11faaa8ffa</id>
+      <masked>false</masked>
+      <name>NewSub1</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child2\r\n'</defaultValue>
+      <description></description>
+      <id>aca25b60-96fa-4367-81f0-45bc7068b10d</id>
+      <masked>false</masked>
+      <name>NewSub2</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-22999 Validate Display of Level PDF preferences</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>16e8bd4b-2523-473b-981b-0a6e5e64e578</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>67511a8b-fd22-4346-b725-2f88df6d12d6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>44a24a9d-8190-4a34-a0e1-ec978cb26e9c</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation Testing'</defaultValue>
+      <description></description>
+      <id>19afe437-fd1f-45ca-ad58-fe49c9d1b5d6</id>
+      <masked>false</masked>
+      <name>NewSub</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation'</defaultValue>
+      <description></description>
+      <id>cee08ebe-f988-4e97-b443-3cd432462d08</id>
+      <masked>false</masked>
+      <name>RenameSub</name>
+   </variable>
+</TestCaseEntity>

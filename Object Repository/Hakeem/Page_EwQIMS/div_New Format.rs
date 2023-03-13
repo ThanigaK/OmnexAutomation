@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_New Format</name>
+   <tag></tag>
+   <elementGuidId>f8970ed8-8b24-4565-8fc0-092f2144142d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[text()='New Format']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.add</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>baa1aef0-ee63-4b8d-9ea2-ff76d12c6925</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>add</value>
+      <webElementGuid>59178bf3-b077-4dfd-8122-1707b9539d12</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>New Format</value>
+      <webElementGuid>66a76c51-981f-4341-a12e-2a7a7951ff79</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainbody&quot;)/div[@class=&quot;cxt&quot;]/div[@class=&quot;add&quot;]</value>
+      <webElementGuid>9378bd33-cdd7-4738-aa92-7aa410c3deed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Hakeem/Page_EwQIMS/iframe_Logout_Detailview</value>
+      <webElementGuid>758c2eb4-034c-4cf7-b0d4-4a99a8b584c0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//body[@id='mainbody']/div[22]/div[2]</value>
+      <webElementGuid>b0fba1d6-2a49-4b8a-a43d-1e83ad6759a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hide List'])[1]/following::div[1]</value>
+      <webElementGuid>81b2ef36-c91c-4092-b6e7-984361614ec0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading document .......'])[2]/following::div[8]</value>
+      <webElementGuid>4e56cea8-6c62-4794-807f-4c0f5188ef29</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rename Format'])[1]/preceding::div[1]</value>
+      <webElementGuid>f0c3084d-b562-4882-bf9d-f169c943ecfc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Refresh Format'])[1]/preceding::div[2]</value>
+      <webElementGuid>889e5dee-c241-4d2a-9b57-238a345a1d62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='New Format']/parent::*</value>
+      <webElementGuid>900fee96-78bd-4ab8-af01-bf97b092c2d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[22]/div[2]</value>
+      <webElementGuid>e94afcf9-13cc-44e7-aba6-f7405f95a606</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'New Format' or . = 'New Format')]</value>
+      <webElementGuid>74ae3ff2-f1e0-4d38-8053-2b32e59c348a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

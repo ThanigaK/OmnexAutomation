@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC7 - Verify the Status of the charter template without mapping pillar</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>91992d61-4d50-4d68-ba6c-51ec70946df4</testCaseGuid>
+</TestCaseEntity>

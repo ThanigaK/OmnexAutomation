@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>favoritesParentFolder</name>
+   <tag></tag>
+   <elementGuidId>ae4c3fee-7920-4c9b-8b26-cd0209f591c0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[text()='Favorites']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//span[text()='Favorites']</value>
+      <webElementGuid>9c47c68b-e996-4c3b-ae35-88e93eedb7e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Home_Page/detailView_iFrame</value>
+      <webElementGuid>94b8903a-93f4-4d14-88fb-74d1b48fb1eb</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

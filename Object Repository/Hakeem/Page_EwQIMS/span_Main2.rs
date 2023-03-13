@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Main2</name>
+   <tag></tag>
+   <elementGuidId>b5105e7a-0ee7-4c23-a670-81155e4c3d87</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.submenu_list_li.active > ul.inner_submenu > li > #1034 > span.hide_menu</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//a[@id='1034']/span)[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>bdcaaf79-1631-4841-8393-86c76ebafb13</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>hide_menu</value>
+      <webElementGuid>53df9a21-b091-4a19-8f39-c5bd6e11dea5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Main2</value>
+      <webElementGuid>ace13500-8bce-4e83-aab0-871ee43117bd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;submenu&quot;)/li[@class=&quot;submenu_list_li active&quot;]/ul[@class=&quot;inner_submenu&quot;]/li[1]/a[@id=&quot;1034&quot;]/span[@class=&quot;hide_menu&quot;]</value>
+      <webElementGuid>913320d0-5f26-463c-bacb-6f964395b3b2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>(//a[@id='1034']/span)[2]</value>
+      <webElementGuid>336ff5fd-792c-462f-be5d-942412b5181c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AQuAPro'])[2]/following::span[2]</value>
+      <webElementGuid>cf35b9a6-2aeb-402c-8074-d1993abe6edb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Process FMEA'])[1]/following::span[5]</value>
+      <webElementGuid>84ce7c5c-e334-49c0-8998-441d47b32eda</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Administrator Actions'])[3]/preceding::span[1]</value>
+      <webElementGuid>b9cf349a-f253-4953-8259-06a04ec01a62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[4]/preceding::span[2]</value>
+      <webElementGuid>17b29486-d830-4a21-a62a-fd01a2fcaf78</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/ul/li/ul/li/a/span</value>
+      <webElementGuid>b4cd8e91-b8db-4eb9-b9ae-007681e93d4d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Main2' or . = 'Main2')]</value>
+      <webElementGuid>1148dd7e-7f62-4748-934d-0bf1c302e288</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

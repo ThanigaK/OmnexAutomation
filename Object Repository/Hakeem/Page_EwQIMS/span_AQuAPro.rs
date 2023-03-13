@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_AQuAPro</name>
+   <tag></tag>
+   <elementGuidId>ced3ca61-5035-4c0a-bb31-0999dbfd5f48</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#submenu > li.submenu_list_li > a.submenu_list_link.has-arrow > span.hide_menu</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@id='submenu']/li/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>963c5446-f876-4867-a791-36ff37cef8a0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>hide_menu</value>
+      <webElementGuid>adb0d4ba-4a9e-4180-9013-3aeb7385e46f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>AQuAPro</value>
+      <webElementGuid>1625052f-3bb4-41c8-88bf-cad4808b4f9a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;submenu&quot;)/li[@class=&quot;submenu_list_li&quot;]/a[@class=&quot;submenu_list_link has-arrow&quot;]/span[@class=&quot;hide_menu&quot;]</value>
+      <webElementGuid>c3b178c6-66c1-42e7-ae35-ed7513c13494</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='submenu']/li/a/span</value>
+      <webElementGuid>597a73b6-fd16-403d-b638-71a15b23140b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Process FMEA'])[1]/following::span[3]</value>
+      <webElementGuid>b341ef97-4236-4f15-b45f-f95179280df2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Step 7: Result &amp; Documentation'])[2]/following::span[4]</value>
+      <webElementGuid>6ffe4569-cb73-4628-b803-4738ac4c4f48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Main2'])[2]/preceding::span[2]</value>
+      <webElementGuid>a34a459e-20f1-4668-ab4e-d737b15704a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Administrator Actions'])[3]/preceding::span[3]</value>
+      <webElementGuid>ae423b6c-1c1d-4b19-812e-ad6937293a7a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/ul/li/a/span</value>
+      <webElementGuid>1b413fe8-ed94-44bc-bb66-7d3dcf48efc4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'AQuAPro' or . = 'AQuAPro')]</value>
+      <webElementGuid>5af74d28-e3f7-4ce2-b610-641e097a46de</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

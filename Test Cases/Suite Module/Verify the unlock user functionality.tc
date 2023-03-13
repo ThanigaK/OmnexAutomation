@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the unlock user functionality</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06be77b4-98bf-491c-b137-9769765625a1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>020f494d-9f29-4a86-8d69-62e78e6f9d7b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'HUqOjK7L2kY=\r\n'</defaultValue>
+      <description></description>
+      <id>020f494d-9f29-4a86-8d69-62e78e6f9d7b</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>

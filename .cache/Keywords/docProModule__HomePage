@@ -1,0 +1,26 @@
+{
+  "keywordFileContentHash": "A0EE6151B3DC986C53E24FE0B031F83D",
+  "keywordClasses": [
+    {
+      "name": "docProModule.HomePage",
+      "keywordMethods": [
+        {
+          "name": "NavigateToDocProSetup",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "goToLevelPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "gotoPdfPref",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

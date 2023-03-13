@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-21870 Validate the module levels are not displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>52992088-425c-43bf-ad33-c6da5d050051</testCaseGuid>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>c70d9277-f642-4122-b305-2c3486b8c487</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+</TestCaseEntity>

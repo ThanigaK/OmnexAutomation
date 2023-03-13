@@ -1,0 +1,21 @@
+{
+  "keywordFileContentHash": "96E5FF1AAD7CACCA06AA380B0B001C45",
+  "keywordClasses": [
+    {
+      "name": "apqpModule.Roles",
+      "keywordMethods": [
+        {
+          "name": "RandomNumber",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "createRoles",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

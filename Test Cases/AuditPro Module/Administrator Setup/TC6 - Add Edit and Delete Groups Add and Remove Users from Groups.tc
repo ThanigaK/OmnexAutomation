@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC6 - Add Edit and Delete Groups Add and Remove Users from Groups</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e4fa0429-864d-4c2d-8b02-06d96e8e51e6</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Right click on the child level
+6.Click on rights for sites and check in the full access
+7.Click on rights for groups and check in inherit from site
+8.Click on rights for user and check in inherit from site
+9.Right click on the sub child folder
+10.Click on rights for Site,Group and user and check in inherit from parent</description>
+   <name>TC 23770 Validate Only sub child in use</name>
+   <tag>Rights Scenario</tag>
+   <comment></comment>
+   <testCaseGuid>df45220b-3339-4a51-a0dc-7344df6c8ee0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c24b280f-8c1d-4955-93a2-a39df7bad3b5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4dd1ae7a-ea46-4946-a1f6-a9fa8620e68a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c81d8418-70ec-45df-9578-c9b19fa8cbf1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a5be696e-cda7-40bf-8a29-aef724dcf79b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a8e3fef5-3506-4f57-b2dc-b07b71963129</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>c24b280f-8c1d-4955-93a2-a39df7bad3b5</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child1'</defaultValue>
+      <description></description>
+      <id>4dd1ae7a-ea46-4946-a1f6-a9fa8620e68a</id>
+      <masked>false</masked>
+      <name>NewSub1</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child2'</defaultValue>
+      <description></description>
+      <id>c81d8418-70ec-45df-9578-c9b19fa8cbf1</id>
+      <masked>false</masked>
+      <name>NewSub2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child3'</defaultValue>
+      <description></description>
+      <id>a5be696e-cda7-40bf-8a29-aef724dcf79b</id>
+      <masked>false</masked>
+      <name>NewSub3</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child4'</defaultValue>
+      <description></description>
+      <id>a8e3fef5-3506-4f57-b2dc-b07b71963129</id>
+      <masked>false</masked>
+      <name>NewSub4</name>
+   </variable>
+</TestCaseEntity>

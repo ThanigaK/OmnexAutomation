@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Click on The level 
+6.Check the In use option
+7.Click on save</description>
+   <name>TC-21881 Validate set Autopublish level for other modules</name>
+   <tag>RouteLevel</tag>
+   <comment></comment>
+   <testCaseGuid>6dcb0a30-3c80-4086-b59e-afc842ef7496</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8305befa-9fe1-4df6-b4bc-2f645a94b704</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>8305befa-9fe1-4df6-b4bc-2f645a94b704</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+</TestCaseEntity>

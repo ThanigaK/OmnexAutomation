@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "8F9F7051AC1F18E823D7932D7CD005C2",
+  "keywordClasses": [
+    {
+      "name": "cloudQa.sarath",
+      "keywordMethods": [
+        {
+          "name": "goToTagsPage",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Cause Category in Issue Setup</description>
+   <name>TC2-Verify Source of Concern in Issue Setup</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d747dc0c-be69-49d1-b49c-9f6318dd58b9</testCaseGuid>
+</TestCaseEntity>

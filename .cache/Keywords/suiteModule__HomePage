@@ -1,0 +1,265 @@
+{
+  "keywordFileContentHash": "F5AADD6DFA4088E8BB9D7D5D172E4495",
+  "keywordClasses": [
+    {
+      "name": "suiteModule.HomePage",
+      "keywordMethods": [
+        {
+          "name": "NavigateToVendorPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToTagsPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "goToManufacturerPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToSupplierPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigatetoStatepage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToShiftPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToOrganizationProfilePage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "organizationProfileDatilsUpdate",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToPositionsPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToTeamsPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToModulesPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "ValidateUser",
+          "parameters": [
+            {
+              "name": "SearchOption",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "Code",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToUsersPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToPreferencesPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "addUserForModule",
+          "parameters": [
+            {
+              "name": "moduleName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "Code",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "validateCountryCreation",
+          "parameters": [
+            {
+              "name": "Country",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "DeleteCountry",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToEntityPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "createNewEntity",
+          "parameters": [
+            {
+              "name": "EntityName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "Code",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToEntityOwnerPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "assignEntityOwner",
+          "parameters": [
+            {
+              "name": "Code",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "DeleteEntity",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToUnlockUserPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToGroupsPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToDocProSetupPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "NavigateToNewDocRequestPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "goToDocumentsPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "goToDocumentRoutePage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "goToFavouritesPage",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

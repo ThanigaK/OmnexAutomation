@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Click on the level
+6.In use the level by checking In use checkbox
+7.Click on Last Approval date radio button
+8.Click on save button</description>
+   <name>TC-22978 Validate the user can define the revision date option as Last approval date</name>
+   <tag>RevisionLevel</tag>
+   <comment></comment>
+   <testCaseGuid>ba17e62f-c168-49ee-a6cb-7b982add7e06</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>03e6f9a5-6bce-4f87-ab82-0a5bea9ab173</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>68f791e1-9eb4-4ff1-9a4a-467991260493</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2a3d195a-f140-423c-864a-0803cc302968</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9ca7f257-ae01-453d-8c17-65bf4dd15b36</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>03e6f9a5-6bce-4f87-ab82-0a5bea9ab173</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation Testing'</defaultValue>
+      <description></description>
+      <id>68f791e1-9eb4-4ff1-9a4a-467991260493</id>
+      <masked>false</masked>
+      <name>NewSub</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation'</defaultValue>
+      <description></description>
+      <id>2a3d195a-f140-423c-864a-0803cc302968</id>
+      <masked>false</masked>
+      <name>RenameSub</name>
+   </variable>
+   <variable>
+      <defaultValue>'User input date'</defaultValue>
+      <description></description>
+      <id>9ca7f257-ae01-453d-8c17-65bf4dd15b36</id>
+      <masked>false</masked>
+      <name>revDateOpt</name>
+   </variable>
+</TestCaseEntity>

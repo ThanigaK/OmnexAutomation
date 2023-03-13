@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Right click on the child level
+6.Click on rights for sites and check in the full access
+7.Click on rights for groups and check in inherit from site
+8.Click on rights for user and check in inherit from site
+9.Right click on the sub child folder
+10.Click on rights for Site,Group and user and check in inherit from parent</description>
+   <name>TC 23748_49_60 Validate Full Site Access</name>
+   <tag>Rights Scenario</tag>
+   <comment></comment>
+   <testCaseGuid>6a6e8a35-4dee-4f61-a5ba-51d9f0c0b365</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d78cd134-6813-4ad0-afd2-13413981c5dc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0ec1548e-0009-4c15-9d34-f30c8a248462</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>d78cd134-6813-4ad0-afd2-13413981c5dc</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Automation Testing'</defaultValue>
+      <description></description>
+      <id>0ec1548e-0009-4c15-9d34-f30c8a248462</id>
+      <masked>false</masked>
+      <name>NewSub</name>
+   </variable>
+</TestCaseEntity>

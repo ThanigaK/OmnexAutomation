@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>searchInApprovalRoute_TextBox</name>
+   <tag></tag>
+   <elementGuidId>49269caa-6e41-4f8a-85f8-81408e57c7cd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@type='search']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@type='search']</value>
+      <webElementGuid>b71d2842-c98e-4dde-8131-495bd344f3db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/DocPro_Module/iframeActions_IFrame</value>
+      <webElementGuid>98adfdd9-8bbf-4a83-8114-3b74451335be</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

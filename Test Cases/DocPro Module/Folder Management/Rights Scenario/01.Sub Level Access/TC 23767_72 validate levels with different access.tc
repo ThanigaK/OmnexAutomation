@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1.Login to EwQIMS as a module administrator
+2.Navigate to Docpro module
+3.Click on Setup→Folder management
+4.Expand the levels tree 
+5.Right click on the child level
+6.Click on rights for sites and check in the full access
+7.Click on rights for groups and check in inherit from site
+8.Click on rights for user and check in inherit from site
+9.Right click on the sub child folder
+10.Click on rights for Site,Group and user and check in inherit from parent</description>
+   <name>TC 23767_72 validate levels with different access</name>
+   <tag>Rights Scenario</tag>
+   <comment></comment>
+   <testCaseGuid>6c1cc507-ec91-4ae9-a8c0-59ee3d76cf0d</testCaseGuid>
+   <variable>
+      <defaultValue>'random'</defaultValue>
+      <description></description>
+      <id>8eef6e60-1aeb-4c1f-b469-de7197c62d19</id>
+      <masked>false</masked>
+      <name>LevelName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child1'</defaultValue>
+      <description></description>
+      <id>1b54bfa8-7c33-4ba9-809c-46aead7ae805</id>
+      <masked>false</masked>
+      <name>NewSub1</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child2'</defaultValue>
+      <description></description>
+      <id>d49cae6c-eda1-4813-8f14-9d02a647ccaa</id>
+      <masked>false</masked>
+      <name>NewSub2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child3'</defaultValue>
+      <description></description>
+      <id>4a5b59d5-6af8-4b41-ac6f-d7c757a65fc9</id>
+      <masked>false</masked>
+      <name>NewSub3</name>
+   </variable>
+   <variable>
+      <defaultValue>'Child4'</defaultValue>
+      <description></description>
+      <id>a36ef92a-73f9-4452-9f11-87936db67ec8</id>
+      <masked>false</masked>
+      <name>NewSub4</name>
+   </variable>
+</TestCaseEntity>

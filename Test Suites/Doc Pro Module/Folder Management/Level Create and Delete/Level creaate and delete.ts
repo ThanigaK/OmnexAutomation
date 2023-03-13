@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Level creaate and delete</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>057f4484-95df-494c-8f1e-8c8af364c2fe</testSuiteGuid>
+   <testCaseLink>
+      <guid>09ebdebb-ef9d-4846-89ad-edb592d0decf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Levels create and Delete/TC-21854 Validate view levels created by suite administrator</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>48d84443-99e6-46e8-a5f1-8ff95ab269fd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Levels create and Delete/TC-21855 Validate user should not view levels created by suite administrator</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>91ab48f7-af0d-4fb7-9047-d2dfcd37bc4e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Levels create and Delete/TC-21856 Validate activate the levels for the specific site</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aa2ca396-0ac5-4d67-9c7a-3479d291a819</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>30066d21-4561-4b42-b15d-2105750ea4eb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Levels create and Delete/TC-21858 validate Delete should be Disabled</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>827a5f5a-9a7f-4ee2-b71e-fd7a20468767</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ab965c59-7140-4552-965a-a4b3feeb652f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Levels create and Delete/TC-21859 validate Edit the level by suite administrator</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3fbb0775-76d2-464a-a304-638f38b04ce5</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>edf0f224-944f-4123-93c2-7d3614f0fa85</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Levels create and Delete/TC-21860 validate New Option should be Disabled</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b5010b8c-8575-4351-b149-10b42c1f588a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>12ebe667-2736-49f1-9787-681a55362bfb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Levels create and Delete/TC-21861 validate New Option and Sub level create, Edit and Delete</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>528fd614-d9e0-4626-a7f9-646919b14aec</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>01311a42-8fba-45b9-b833-6aac779f793c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6052eea6-a2c0-4e6d-aea5-a4879c877376</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e3d5c039-9c17-4cd1-b7d6-ba3e01ce8512</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DocPro Module/Folder Management/Levels create and Delete/TC-21870 Validate module levels are not displayed</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c70d9277-f642-4122-b305-2c3486b8c487</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
