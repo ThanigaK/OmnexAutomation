@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC11 - Verify Groups rights is included in the groups page as Project Charter and observe the menu</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f75b0d38-64b4-409a-8071-db7b37cc8d4c</testCaseGuid>
-</TestCaseEntity>

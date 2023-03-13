@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC1 - Verify Roles Menu and Create a new role</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>97203ecd-4dd1-4ae4-b47a-ac2d1ce8e730</testCaseGuid>
-</TestCaseEntity>

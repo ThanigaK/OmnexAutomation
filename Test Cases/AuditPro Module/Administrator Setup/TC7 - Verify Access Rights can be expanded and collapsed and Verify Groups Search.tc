@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC7 - Verify Access Rights can be expanded and collapsed and Verify Groups Search</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>619edc5b-2320-463e-99b6-4db1824be9ba</testCaseGuid>
-</TestCaseEntity>

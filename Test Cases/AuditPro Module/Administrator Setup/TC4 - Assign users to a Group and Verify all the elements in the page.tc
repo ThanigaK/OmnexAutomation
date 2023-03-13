@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC4 - Assign users to a Group and Verify all the elements in the page</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b45796c1-f37e-4758-aab2-21175dedce3c</testCaseGuid>
-</TestCaseEntity>

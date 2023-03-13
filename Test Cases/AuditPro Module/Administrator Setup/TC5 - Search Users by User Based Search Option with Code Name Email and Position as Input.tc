@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC5 - Search Users by User Based Search Option with Code Name Email and Position as Input</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>852f684c-ec0a-4d74-a634-15c82640ce21</testCaseGuid>
-</TestCaseEntity>

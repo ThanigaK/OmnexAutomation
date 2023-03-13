@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12 - Assign Department Contact person and map the site with created department</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ce5b7c70-1e83-4b14-827c-f921d1693d7c</testCaseGuid>
-</TestCaseEntity>

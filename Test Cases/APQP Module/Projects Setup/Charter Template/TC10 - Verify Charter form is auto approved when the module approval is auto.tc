@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC10 - Verify Charter form is auto approved when the module approval is auto</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b288b0eb-2376-4c70-8963-2a18de9701a4</testCaseGuid>
-</TestCaseEntity>
