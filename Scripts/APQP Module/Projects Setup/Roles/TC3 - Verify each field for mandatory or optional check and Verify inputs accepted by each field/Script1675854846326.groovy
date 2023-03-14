@@ -93,6 +93,9 @@ WebUI.setText(findTestObject('ProjectSetup_Page/RoleDescription_TextBox'), 'Role
 'Enter the input for Role Level Textbox'
 WebUI.setText(findTestObject('ProjectSetup_Page/RoleLevel_TextBox'), '1')
 
+'Wait for a second for the page to load'
+WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
+
 'Click on Save button to Save the role'
 WebUI.click(findTestObject('ProjectSetup_Page/SaveRole_Button'))
 

@@ -12,10 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>006bada6-ff9a-4981-bfea-72d0d23264ab</testSuiteGuid>
    <testCaseLink>
-      <guid>6b98aaf9-dda3-400f-9d97-4b3fee6989f8</guid>
+      <guid>258f5405-8e44-45c1-8941-83c3934ea622</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/APQP Module/Projects Setup/Task Rating/TC1 - Verify Task Rating page and all the Deliverable Status is Displayed</testCaseId>
+      <testCaseId>Test Cases/APQP Module/Projects Setup/Task Rating/TC1 - Verify Task Rating page and all Deliverable Status</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

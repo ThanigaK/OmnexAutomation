@@ -12,14 +12,14 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>ad9148fe-58f8-493f-99ea-43e7fe738a55</testSuiteGuid>
    <testCaseLink>
-      <guid>6bc94be6-813d-43c5-b4d0-2ca777f4e299</guid>
+      <guid>db1efb71-2189-4fd0-af07-507c2c6a8c85</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Deliverable Priorities/TC1 - Create a new Deliverable Priorities and verify all the elements in the page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d7b95f1e-6a33-406a-b1ac-bb0c80d23cca</guid>
+      <guid>f5781389-3b81-4205-a598-42b94e517e3c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Deliverable Priorities/TC2 - Verify Edit and Delete functionality of Deliverable Priorities</testCaseId>

@@ -12,21 +12,21 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>5984fb41-e49a-4423-be51-04b6c08bafb0</testSuiteGuid>
    <testCaseLink>
-      <guid>9be186e2-b633-41de-a604-3432a2159407</guid>
+      <guid>6dd60df4-e0b4-4537-b62c-711718b8aadb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Project Groups/TC1 - Create a new Project Group and verify default Project Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ba868bd5-d5f3-4e25-87d5-bf99f8f53a9e</guid>
+      <guid>b1e467d9-132a-4fd3-be48-cf3f444fa713</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Project Groups/TC2 - Verify Edit and Delete functionality of Project Groups</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b3b54b77-5da9-4723-b27f-c5c0cd5a9d10</guid>
+      <guid>6b8c5cbc-031d-41aa-b0db-439cee4d7bcd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Project Groups/TC3 - Verify Search functionality and Delete all in Project Groups</testCaseId>

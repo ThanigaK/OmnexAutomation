@@ -12,17 +12,24 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>3081d7a1-51d5-4fb6-bf1a-e93a8874266b</testSuiteGuid>
    <testCaseLink>
-      <guid>0f4f9248-f4b0-4751-8861-1281f4992cfb</guid>
+      <guid>c19e097f-ee5a-4aa3-9dd5-d171cb8153cc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Roles/TC1 - Verify Roles Menu and Create a new role</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>16c5d18a-11c0-4890-8ec8-a4ff4cf1f355</guid>
+      <guid>4bb877b0-f7b4-4056-8099-d9dd071a8153</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Roles/TC2 - Verify Edit and Delete is working with Roles</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0c438524-93d1-4b3d-aa43-ba6ac4c28c7d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/APQP Module/Projects Setup/Roles/TC3 - Verify each field for mandatory or optional check and Verify inputs accepted by each field</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

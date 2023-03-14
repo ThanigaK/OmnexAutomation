@@ -12,28 +12,28 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>79bac51c-cc63-4794-865f-19c6e070ce87</testSuiteGuid>
    <testCaseLink>
-      <guid>ef2c3173-a520-47e5-b9fc-8bc524fb4872</guid>
+      <guid>5a6f743c-8408-46e3-a541-f3e6b5074ae5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Issue Setup/TC1-Verify Cause Category in Issue Setup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>28f62aaf-e8e1-43dd-96f1-fd1c4fbb8540</guid>
+      <guid>6ef9b74e-f138-4402-895f-a0407fcccfca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Issue Setup/TC2-Verify Source of Concern in Issue Setup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4e889816-8af8-4b7e-8aad-56672225bc0c</guid>
+      <guid>83656753-0f84-48cc-838d-29db449ecf84</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Issue Setup/TC3-Verify Issue Category in Issue Setup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>24c11389-66c5-4e34-9dde-ab9ee6344f8d</guid>
+      <guid>8be642e8-cc2c-480c-840d-336943c32fb0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/APQP Module/Projects Setup/Issue Setup/TC4-Verify Business Rule in Issue Setup</testCaseId>
